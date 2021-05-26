@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Nav() {
+const NavBar = () => {
   return (
     <section className="relative pb-56 sm:pb-80">
       <img
@@ -280,4 +280,6 @@ export default function Nav() {
       </div>
     </section>
   );
-}
+};
+
+export default NavBar;
