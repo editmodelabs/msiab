@@ -260,7 +260,7 @@ const NavBar = () => {
               >
                 Sign Up
               </a>
-            </div>
+              </div>
             <p className="my-4 text-xs text-center text-gray-400">
               <span>&copy; 2020 All rights reserved.</span>
             </p>
