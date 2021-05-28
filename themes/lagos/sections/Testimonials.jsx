@@ -176,7 +176,7 @@ export default function Testimonials() {
             </div>
             <div
               class="hidden lg:block absolute w-1/3 px-3 opacity-50"
-              style={{ right: "-370px", top: 0 }}
+              style={{ right: -370, top: 0 }}
             >
               <div class="p-5 bg-white shadow rounded">
                 <svg
