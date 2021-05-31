@@ -1,3 +1,5 @@
+import Tabs from "../components/Tabs";
+
 export default function Faq() {
   return (
     <section>
@@ -46,9 +48,12 @@ export default function Faq() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <ul>
+
+        <div className="max-w-3xl mx-auto">
+          <Tabs>
+            <div label="General">General</div>
+            <ul label="Payment">Payment</ul>
+            <ul label="drum">
               <li className="py-12 pr-4 border-b">
                 <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
                   <span className="text-xl">
@@ -238,7 +243,7 @@ export default function Faq() {
                 </p>
               </li>
             </ul>
-          </div>
+          </Tabs>
         </div>
       </div>
       <div className="skew skew-bottom mr-for-radius">
