@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Tab from "./Tab";
 
+
 export default function Tabs({ children }) {
   const [activeTab, setActiveTab] = useState(children[0].props.label);
 
