@@ -5,7 +5,7 @@ import useConstant from "use-constant";
 const TabsState = createContext();
 const Elements = createContext();
 
-export const Tabs = ({ state: outerState, children }) => {
+export default function Tabs({ state: outerState, children }) {
   const innerState = useState(0);
   const elements = useConstant(() => ({ tabs: 0, panels: 0 }));
   const state = outerState || innerState;
@@ -15,4 +15,4 @@ export const Tabs = ({ state: outerState, children }) => {
       <TabsState.Provider value={state}>{children}</TabsState.Provider>
     </Elements.Provider>
   );
-};
+}

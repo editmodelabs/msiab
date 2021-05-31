@@ -19,7 +19,7 @@ const NavBar = () => {
           <button className="navbar-burger flex items-center text-gray-400 p-3">
             <svg
               className="block h-4 w-4 fill-current"
-              viewbox="0 0 20 20"
+              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <title>Mobile menu</title>
@@ -38,13 +38,13 @@ const NavBar = () => {
               className="w-4 h-4 current-fill"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              viewbox="0 0 24 24"
+              viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
               ></path>
             </svg>
@@ -59,13 +59,13 @@ const NavBar = () => {
               className="w-4 h-4 current-fill"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              viewbox="0 0 24 24"
+              viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
               ></path>
             </svg>
@@ -80,13 +80,13 @@ const NavBar = () => {
               className="w-4 h-4 current-fill"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              viewbox="0 0 24 24"
+              viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
               ></path>
             </svg>
@@ -101,13 +101,13 @@ const NavBar = () => {
               className="w-4 h-4 current-fill"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              viewbox="0 0 24 24"
+              viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
               ></path>
             </svg>
@@ -158,13 +158,13 @@ const NavBar = () => {
               <svg
                 className="w-16 h-16 text-green-600 hover:text-green-700 transition duration-200"
                 xmlns="http://www.w3.org/2000/svg"
-                viewbox="0 0 20 20"
+                viewBox="0 0 20 20"
                 fill="currentColor"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </button>
@@ -188,13 +188,13 @@ const NavBar = () => {
                 className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                viewbox="0 0 24 24"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M6 18L18 6M6 6l12 12"
                 ></path>
               </svg>

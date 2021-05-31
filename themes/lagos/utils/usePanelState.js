@@ -1,3 +1,8 @@
+import { useContext } from "react";
+import TabsState from "../components/TabsStateContext";
+import Elements from "../components/ElementsContext";
+import useConstant from "use-constant";
+
 export default usePanelState = () => {
   const [activeIndex] = useContext(TabsState);
   const elements = useContext(Elements);

@@ -1,76 +1,76 @@
 export default function Testimonials() {
   return (
     <section>
-      <div class="skew skew-top mr-for-radius">
+      <div className="skew skew-top mr-for-radius">
         <svg
-          class="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
           <polygon fill="currentColor" points="0 0 10 10 0 10" />
         </svg>
       </div>
-      <div class="skew skew-top ml-for-radius">
+      <div className="skew skew-top ml-for-radius">
         <svg
-          class="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
       </div>
-      <div class="py-20 bg-gray-50 radius-for-skewed overflow-hidden">
-        <div class="container mx-auto px-4">
-          <div class="pt-8 pb-16 flex flex-wrap justify-center items-center">
-            <button class="mr-3 lg:mr-0 order-last lg:order-first bg-white p-4 rounded-full shadow-md text-green-600 hover:text-green-400 transition duration-200">
+      <div className="py-20 bg-gray-50 radius-for-skewed overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="pt-8 pb-16 flex flex-wrap justify-center items-center">
+            <button className="mr-3 lg:mr-0 order-last lg:order-first bg-white p-4 rounded-full shadow-md text-green-600 hover:text-green-400 transition duration-200">
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                viewbox="0 0 24 24"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M10 19l-7-7m0 0l7-7m-7 7h18"
                 ></path>
               </svg>
             </button>
-            <div class="mb-10 max-w-lg text-center mx-auto">
-              <span class="text-green-600 font-bold">
+            <div className="mb-10 max-w-lg text-center mx-auto">
+              <span className="text-green-600 font-bold">
                 Dolor sit amet consectutar
               </span>
-              <h2 class="mt-4 text-4xl lg:text-5xl font-bold font-heading">
+              <h2 className="mt-4 text-4xl lg:text-5xl font-bold font-heading">
                 What our clients think about us
               </h2>
             </div>
-            <button class="order-last bg-white p-4 rounded-full shadow-md text-green-600 hover:text-green-400 transition duration-200">
+            <button className="order-last bg-white p-4 rounded-full shadow-md text-green-600 hover:text-green-400 transition duration-200">
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                viewbox="0 0 24 24"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 ></path>
               </svg>
             </button>
           </div>
-          <div class="flex w-full relative">
+          <div className="flex w-full relative">
             <div
-              class="hidden lg:block absolute w-1/3 px-3 opacity-50"
+              className="hidden lg:block absolute w-1/3 px-3 opacity-50"
               style={{ left: "-370px", top: 0 }}
             >
-              <div class="p-5 bg-white shadow rounded">
+              <div className="p-5 bg-white shadow rounded">
                 <svg
-                  class="mb-6 text-green-600 h-8"
+                  className="mb-6 text-green-600 h-8"
                   viewBox="0 0 32 28"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,20 +84,20 @@ export default function Testimonials() {
                     fill="currentColor"
                   />
                 </svg>
-                <p class="text-gray-500 leading-loose mb-4">
+                <p className="text-gray-500 leading-loose mb-4">
                   Suspendisse gravida nec erat sit amet posuere. Nam sit amet
                   nunc a nulla commodo pulvinar quis eu neque. Maecenas maximus
                   lobortis libero non dignissim. Integer quis tempor lorem.
                 </p>
-                <h4 class="font-bold font-heading">Ian Brown</h4>
-                <p class="text-gray-500">Product Designer</p>
+                <h4 className="font-bold font-heading">Ian Brown</h4>
+                <p className="text-gray-500">Product Designer</p>
               </div>
             </div>
-            <div class="flex flex-wrap justify-center mx-auto">
-              <div class="mb-4 w-full lg:w-1/3 px-3">
-                <div class="p-5 bg-white shadow rounded">
+            <div className="flex flex-wrap justify-center mx-auto">
+              <div className="mb-4 w-full lg:w-1/3 px-3">
+                <div className="p-5 bg-white shadow rounded">
                   <svg
-                    class="mb-6 text-green-600 h-8"
+                    className="mb-6 text-green-600 h-8"
                     viewBox="0 0 32 28"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -111,19 +111,19 @@ export default function Testimonials() {
                       fill="currentColor"
                     />
                   </svg>
-                  <p class="text-gray-500 leading-loose mb-4">
+                  <p className="text-gray-500 leading-loose mb-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Pellentesque et placerat metus. Morbi aliquet felis sit amet
                     erat finibus, ac condimentum ligula ornare.
                   </p>
-                  <h4 class="font-bold font-heading">Daisy Carter</h4>
-                  <p class="text-gray-500">Product Development</p>
+                  <h4 className="font-bold font-heading">Daisy Carter</h4>
+                  <p className="text-gray-500">Product Development</p>
                 </div>
               </div>
-              <div class="mb-4 w-full lg:w-1/3 px-3">
-                <div class="p-5 bg-white shadow rounded">
+              <div className="mb-4 w-full lg:w-1/3 px-3">
+                <div className="p-5 bg-white shadow rounded">
                   <svg
-                    class="mb-6 text-green-600 h-8"
+                    className="mb-6 text-green-600 h-8"
                     viewBox="0 0 32 28"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -137,20 +137,20 @@ export default function Testimonials() {
                       fill="currentColor"
                     />
                   </svg>
-                  <p class="text-gray-500 leading-loose mb-4">
+                  <p className="text-gray-500 leading-loose mb-4">
                     Hasellus sollicitudin massa ut quam aliquam, feugiat
                     fringilla est aliquam. Phasellus tincidunt mi a pellentesque
                     fermentum. Quisque vitae erat iaculis, porttitor elit sed,
                     viverra nisl. Maecenas facilisis viverra sollicitudin.
                   </p>
-                  <h4 class="font-bold font-heading">Ian Brown</h4>
-                  <p class="text-gray-500">Product Designer</p>
+                  <h4 className="font-bold font-heading">Ian Brown</h4>
+                  <p className="text-gray-500">Product Designer</p>
                 </div>
               </div>
-              <div class="mb-4 w-full lg:w-1/3 px-3">
-                <div class="p-5 bg-white shadow rounded">
+              <div className="mb-4 w-full lg:w-1/3 px-3">
+                <div className="p-5 bg-white shadow rounded">
                   <svg
-                    class="mb-6 text-green-600 h-8"
+                    className="mb-6 text-green-600 h-8"
                     viewBox="0 0 32 28"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -164,23 +164,23 @@ export default function Testimonials() {
                       fill="currentColor"
                     />
                   </svg>
-                  <p class="text-gray-500 leading-loose mb-4">
+                  <p className="text-gray-500 leading-loose mb-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Pellentesque et placerat metus. Morbi aliquet felis sit amet
                     erat finibus, ac condimentum ligula ornare.
                   </p>
-                  <h4 class="font-bold font-heading">Daisy Carter</h4>
-                  <p class="text-gray-500">Product Development</p>
+                  <h4 className="font-bold font-heading">Daisy Carter</h4>
+                  <p className="text-gray-500">Product Development</p>
                 </div>
               </div>
             </div>
             <div
-              class="hidden lg:block absolute w-1/3 px-3 opacity-50"
+              className="hidden lg:block absolute w-1/3 px-3 opacity-50"
               style={{ right: -370, top: 0 }}
             >
-              <div class="p-5 bg-white shadow rounded">
+              <div className="p-5 bg-white shadow rounded">
                 <svg
-                  class="mb-6 text-green-600 h-8"
+                  className="mb-6 text-green-600 h-8"
                   viewBox="0 0 32 28"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -194,31 +194,31 @@ export default function Testimonials() {
                     fill="currentColor"
                   />
                 </svg>
-                <p class="text-gray-500 leading-loose mb-4">
+                <p className="text-gray-500 leading-loose mb-4">
                   Hasellus sollicitudin massa ut quam aliquam, feugiat fringilla
                   est aliquam. Phasellus tincidunt mi a pellentesque fermentum.
                   Quisque vitae erat iaculis, porttitor elit sed, viverra nisl.
                   Maecenas facilisis viverra sollicitudin.
                 </p>
-                <h4 class="font-bold font-heading">Ian Brown</h4>
-                <p class="text-gray-500">Product Designer</p>
+                <h4 className="font-bold font-heading">Ian Brown</h4>
+                <p className="text-gray-500">Product Designer</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="skew skew-bottom mr-for-radius">
+      <div className="skew skew-bottom mr-for-radius">
         <svg
-          class="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
           <polygon fill="currentColor" points="0 0 10 0 0 10" />
         </svg>
       </div>
-      <div class="skew skew-bottom ml-for-radius">
+      <div className="skew skew-bottom ml-for-radius">
         <svg
-          class="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
