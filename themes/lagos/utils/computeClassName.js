@@ -1,8 +1,8 @@
-export default function computeClassName(activeTab, label) {
-  let className = "tab-list-item";
-  if (activeTab === label) {
+export default function computeClassName(isActive) {
+  let className;
+  if (isActive) {
     className +=
-      " tab-list-active px-4 py-4 w-full md:w-1/2 lg:w-auto font-bold text-green-600 border-b-2 border-green-600";
+      " px-4 py-4 w-full md:w-1/2 lg:w-auto font-bold text-green-600 border-b-2 border-green-600";
   } else
     className =
       className +
