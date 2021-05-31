@@ -1,3 +1,4 @@
 import { createContext } from "react";
 
-export default TabsState = createContext();
+const TabsState = createContext();
+export default TabsState;

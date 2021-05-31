@@ -1,3 +1,4 @@
 import { createContext } from "react";
 
-export default Elements = createContext();
+const Elements = createContext();
+export default Elements;

@@ -51,9 +51,7 @@ export default function Faq() {
 
         <div className="max-w-3xl mx-auto">
           <Tabs>
-            <div label="General">General</div>
-            <ul label="Payment">Payment</ul>
-            <ul label="drum">
+            <ul>
               <li className="py-12 pr-4 border-b">
                 <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
                   <span className="text-xl">

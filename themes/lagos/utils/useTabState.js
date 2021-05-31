@@ -3,7 +3,7 @@ import useConstant from "use-constant";
 import TabsState from "../components/TabsStateContext";
 import Elements from "../components/ElementsContext";
 
-export default useTabState = () => {
+const useTabState = () => {
   const [activeIndex, setActive] = useContext(TabsState);
   const elements = useContext(Elements);
 
@@ -26,3 +26,5 @@ export default useTabState = () => {
 
   return state;
 };
+
+export default useTabState;

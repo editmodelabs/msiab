@@ -3,7 +3,7 @@ import TabsState from "../components/TabsStateContext";
 import Elements from "../components/ElementsContext";
 import useConstant from "use-constant";
 
-export default usePanelState = () => {
+const usePanelState = () => {
   const [activeIndex] = useContext(TabsState);
   const elements = useContext(Elements);
 
@@ -16,3 +16,5 @@ export default usePanelState = () => {
 
   return panelIndex === activeIndex;
 };
+
+export default usePanelState
