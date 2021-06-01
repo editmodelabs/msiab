@@ -5,17 +5,20 @@ import Faq from "../sections/FAQ";
 import UserBrands from "../sections/UserBrands";
 import Testimonials from "../sections/Testimonials";
 import Footer from "../sections/Footer";
+// import { ChunkFieldValue } from "editmode-react";
 
 export default function Home() {
   return (
-    <div>
-      <Hero />
-      <Features />
-      <Team />
-      <Faq />
-      <UserBrands />
-      <Testimonials />
-      <Footer />
-    </div>
+    <body>
+      <div>
+        <Hero />
+        <Features />
+        <Team />
+        <Faq />
+        <UserBrands />
+        <Testimonials />
+        <Footer />
+      </div>
+    </body>
   );
 }
