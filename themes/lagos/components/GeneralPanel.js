@@ -3,31 +3,24 @@ import { useState, useEffect } from "react";
 
 const GeneralPanelContent = () => {
   const [activeQuestions, setActiveQuestions] = useState([]);
-  // console.log("ddsds", activeQuestions);
-
-  const computeClassName = (item) => {
-    activeQuestions && activeQuestions.includes(item)
-      ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
-      : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose";
-  };
 
   const handleClick = (e) => {
     e.preventDefault();
     if (
       Array.isArray(activeQuestions) &&
-      activeQuestions.includes(e.currentTarget.dataset.dub)
+      activeQuestions.includes(e.currentTarget.dataset.id)
     ) {
       const newList = activeQuestions?.filter(
-        (item) => item !== e.currentTarget.dataset.dub
+        (item) => item !== e.currentTarget.dataset.id
       );
       return setActiveQuestions(newList);
     } else if (
       Array.isArray(activeQuestions) &&
-      !activeQuestions.includes(e.currentTarget.dataset.dub)
+      !activeQuestions.includes(e.currentTarget.dataset.id)
     ) {
       return setActiveQuestions([
         ...activeQuestions,
-        e.currentTarget.dataset.dub,
+        e.currentTarget.dataset.id,
       ]);
     }
   };
@@ -39,7 +32,7 @@ const GeneralPanelContent = () => {
           <li className="py-12 pr-4 border-b">
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
-              data-dub={"one"}
+              data-id={"one"}
               onClick={handleClick}
             >
               <span className="text-xl">
@@ -56,7 +49,11 @@ const GeneralPanelContent = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M5 10l7-7m0 0l7 7m-7-7v18"
+                  d={
+                    activeQuestions.includes("one")
+                      ? "M19 14l-7 7m0 0l-7-7m7 7V3"
+                      : "M5 10l7-7m0 0l7 7m-7-7v18"
+                  }
                 ></path>
               </svg>
             </button>
@@ -73,7 +70,7 @@ const GeneralPanelContent = () => {
           <li className="py-6 lg:py-12 pr-4 border-b">
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
-              data-dub="two"
+              data-id="two"
               onClick={handleClick}
             >
               <span className="text-xl">
@@ -90,7 +87,11 @@ const GeneralPanelContent = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  d={
+                    activeQuestions.includes("two")
+                      ? "M19 14l-7 7m0 0l-7-7m7 7V3"
+                      : "M5 10l7-7m0 0l7 7m-7-7v18"
+                  }
                 ></path>
               </svg>
             </button>
@@ -107,7 +108,7 @@ const GeneralPanelContent = () => {
           <li className="py-6 lg:py-12 pr-4 border-b">
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
-              data-dub="three"
+              data-id="three"
               onClick={handleClick}
             >
               <span className="text-xl">
@@ -124,7 +125,11 @@ const GeneralPanelContent = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  d={
+                    activeQuestions.includes("three")
+                      ? "M19 14l-7 7m0 0l-7-7m7 7V3"
+                      : "M5 10l7-7m0 0l7 7m-7-7v18"
+                  }
                 ></path>
               </svg>
             </button>
@@ -134,7 +139,7 @@ const GeneralPanelContent = () => {
                   ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
                   : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
               }
-              data-dub="three"
+              data-id="three"
             >
               <Chunk identifier="cnk_449c3c251ba6b0946b90" />
             </p>
@@ -142,7 +147,7 @@ const GeneralPanelContent = () => {
           <li className="py-6 lg:py-12 pr-4 border-b">
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
-              data-dub="four"
+              data-id="four"
               onClick={handleClick}
             >
               <span className="text-xl">
@@ -159,7 +164,11 @@ const GeneralPanelContent = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  d={
+                    activeQuestions.includes("four")
+                      ? "M19 14l-7 7m0 0l-7-7m7 7V3"
+                      : "M5 10l7-7m0 0l7 7m-7-7v18"
+                  }
                 ></path>
               </svg>
             </button>
@@ -169,7 +178,7 @@ const GeneralPanelContent = () => {
                   ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
                   : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
               }
-              data-dub="four"
+              data-id="four"
             >
               <Chunk identifier="cnk_c9cd61d92ad8a41f1f32" />
             </p>
@@ -177,7 +186,7 @@ const GeneralPanelContent = () => {
           <li className="py-6 lg:py-12 pr-4 border-b">
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
-              data-dub="five"
+              data-id="five"
               onClick={handleClick}
             >
               <span className="text-xl">
@@ -194,7 +203,11 @@ const GeneralPanelContent = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  d={
+                    activeQuestions.includes("five")
+                      ? "M19 14l-7 7m0 0l-7-7m7 7V3"
+                      : "M5 10l7-7m0 0l7 7m-7-7v18"
+                  }
                 ></path>
               </svg>
             </button>
@@ -204,7 +217,7 @@ const GeneralPanelContent = () => {
                   ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
                   : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
               }
-              data-dub="five"
+              data-id="five"
             >
               <Chunk identifier="cnk_d19c04c7537f0d805cd1" />
             </p>
@@ -212,7 +225,7 @@ const GeneralPanelContent = () => {
           <li className="py-6 lg:py-12 pr-4 border-b">
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
-              data-dub="six"
+              data-id="six"
               onClick={handleClick}
             >
               <span className="text-xl">
@@ -229,7 +242,11 @@ const GeneralPanelContent = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  d={
+                    activeQuestions.includes("six")
+                      ? "M19 14l-7 7m0 0l-7-7m7 7V3"
+                      : "M5 10l7-7m0 0l7 7m-7-7v18"
+                  }
                 ></path>
               </svg>
             </button>
