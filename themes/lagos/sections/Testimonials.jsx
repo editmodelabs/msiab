@@ -1,6 +1,5 @@
 import {
   CustomChunkCollection,
-  ChunkCollection,
   useCollectionChunks,
   ChunkFieldValue,
   CollectionItemWrapper,
