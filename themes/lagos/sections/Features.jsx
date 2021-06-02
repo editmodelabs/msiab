@@ -1,3 +1,11 @@
+import {
+  CustomChunkCollection,
+  useCollectionChunks,
+  ChunkFieldValue,
+  CollectionItemWrapper,
+  Chunk,
+} from "editmode-react";
+
 export default function Features() {
   return (
     <>
@@ -24,10 +32,10 @@ export default function Features() {
           <div className="container mx-auto px-4">
             <div className="mb-16 max-w-md mx-auto text-center">
               <span className="text-green-600 font-bold">
-                Dolor sit amet consectutar
+                <Chunk identifier="cnk_f016d8e22b0f55263050" />
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold font-heading">
-                Build &amp; Launch without problems
+                <Chunk identifier="cnk_92412d30d95ba4ceadd9" />
               </h2>
             </div>
             <div className="flex flex-wrap -mx-3">
@@ -53,11 +61,10 @@ export default function Features() {
                   </div>
                   <div className="w-full lg:w-2/3">
                     <h3 className="mb-2 text-2xl font-bold font-heading">
-                      Ut congue nec leo eget
+                      <Chunk identifier="cnk_b4d3b28576396fa30532" />
                     </h3>
                     <p className="text-gray-500">
-                      Donec ut ligula nunc. Mauris blandit vel est et facilisis.
-                      Integer sapien felis, aliquet.
+                      <Chunk identifier="cnk_4785c4e7fe0297555636" />
                     </p>
                   </div>
                 </div>
@@ -78,11 +85,10 @@ export default function Features() {
                   </div>
                   <div className="w-full lg:w-2/3">
                     <h3 className="mb-2 text-2xl font-bold font-heading">
-                      Lorem ipsum dolor sit amet
+                      <Chunk identifier="cnk_6d7dd358e1078480137a" />
                     </h3>
                     <p className="text-gray-500">
-                      Donec ut ligula nunc. Mauris blandit vel est et facilisis.
-                      Integer sapien felis, aliquet.
+                      <Chunk identifier="cnk_4c6e967117906535453d" />
                     </p>
                   </div>
                 </div>
@@ -109,11 +115,10 @@ export default function Features() {
                   </div>
                   <div className="w-full lg:w-2/3">
                     <h3 className="mb-2 text-2xl font-bold font-heading">
-                      Morbi sagittis ligula sit
+                      <Chunk identifier="cnk_e35b889faeaefdf1f77b" />
                     </h3>
                     <p className="text-gray-500">
-                      Donec ut ligula nunc. Mauris blandit vel est et facilisis.
-                      Integer sapien felis, aliquet.
+                      <Chunk identifier="cnk_4f0a1a64e9f23b2be198" />
                     </p>
                   </div>
                 </div>
@@ -139,11 +144,10 @@ export default function Features() {
                   </div>
                   <div className="w-full lg:w-2/3">
                     <h3 className="mb-2 text-2xl font-bold font-heading">
-                      Proin fringilla eleifend justo
+                      <Chunk identifier="cnk_19fff869f63356d38757" />
                     </h3>
                     <p className="text-gray-500">
-                      Donec ut ligula nunc. Mauris blandit vel est et facilisis.
-                      Integer sapien felis, aliquet.
+                      <Chunk identifier="cnk_ad854dce5d98f576198d" />
                     </p>
                   </div>
                 </div>
@@ -195,14 +199,13 @@ export default function Features() {
               <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
                 <div className="max-w-md lg:mx-auto">
                   <span className="text-green-600 font-bold">
-                    Dolor sit amet consectutar
+                    <Chunk identifier="cnk_640b45459e4a0aa69247" />
                   </span>
                   <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading">
-                    Build &amp; Launch without problems
+                    <Chunk identifier="cnk_ff63b1f750f4b0299f90" />
                   </h2>
                   <p className="mb-6 text-gray-500 leading-loose">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque efficitur nisl sodales egestas lobortis.
+                    <Chunk identifier="cnk_9c466bdb2b00eac59055" />
                   </p>
                   <ul className="text-gray-500 font-bold">
                     <li className="flex mb-4">
@@ -218,7 +221,9 @@ export default function Features() {
                           clipRule="evenodd"
                         ></path>
                       </svg>
-                      <span>Vestibulum viverra ante non libero</span>
+                      <span>
+                        <Chunk identifier="cnk_c9728cf138ee665368a9" />
+                      </span>
                     </li>
                     <li className="flex mb-4">
                       <svg
@@ -233,7 +238,9 @@ export default function Features() {
                           clipRule="evenodd"
                         ></path>
                       </svg>
-                      <span>Morbi mollis metus pretium ultrices tincidunt</span>
+                      <span>
+                        <Chunk identifier="cnk_3f22e7a384727a47b2f7" />
+                      </span>
                     </li>
                     <li className="flex mb-4">
                       <svg
@@ -248,7 +255,9 @@ export default function Features() {
                           clipRule="evenodd"
                         ></path>
                       </svg>
-                      <span>Etiam lectus nunc, commodo et risus in</span>
+                      <span>
+                        <Chunk identifier="cnk_d0cb959be05c15934743" />
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -273,10 +282,10 @@ export default function Features() {
                       </svg>
                     </span>
                     <h4 className="mb-2 text-2xl font-bold font-heading">
-                      Lorem ipsum dolor sit amet
+                      <Chunk identifier="cnk_28cea5fb8cf5504be5ab" />
                     </h4>
                     <p className="text-gray-500 leading-loose">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      <Chunk identifier="cnk_7e24146cffe7eb2c4e97" />
                     </p>
                   </div>
                   <div className="py-6 pl-6 pr-4 shadow rounded bg-white">
@@ -291,10 +300,10 @@ export default function Features() {
                       </svg>
                     </span>
                     <h4 className="mb-2 text-2xl font-bold font-heading">
-                      Lorem ipsum dolor sit amet
+                      <Chunk identifier="cnk_e7456bfa2614db732adb" />
                     </h4>
                     <p className="text-gray-500 leading-loose">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      <Chunk identifier="cnk_d9e003b43143200d4935" />
                     </p>
                   </div>
                 </div>
@@ -317,10 +326,10 @@ export default function Features() {
                       </svg>
                     </span>
                     <h4 className="mb-2 text-2xl font-bold font-heading">
-                      Lorem ipsum dolor sit amet
+                      <Chunk identifier="cnk_ea05a24997d5850d863e" />
                     </h4>
                     <p className="text-gray-500 leading-loose">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      <Chunk identifier="cnk_c9309fe1dae3695ea67c" />
                     </p>
                   </div>
                   <div className="py-6 pl-6 pr-4 shadow rounded-lg bg-white">
@@ -340,10 +349,10 @@ export default function Features() {
                       </svg>
                     </span>
                     <h4 className="mb-2 text-2xl font-bold font-heading">
-                      Lorem ipsum dolor sit amet
+                      <Chunk identifier="cnk_cb67b867181f6fbf7ecb" />
                     </h4>
                     <p className="text-gray-500 leading-loose">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      <Chunk identifier="cnk_69ae9ff0ed3d68803d04" />
                     </p>
                   </div>
                 </div>

@@ -3,11 +3,11 @@ import {
   useCollectionChunks,
   ChunkFieldValue,
   CollectionItemWrapper,
+  Chunk,
 } from "editmode-react";
 
 export default function Team() {
   const chunks = useCollectionChunks("col_tOfYwasuEFgj");
-  console.log("CHUNKS", chunks);
   return (
     <section>
       <div className="skew skew-top mr-for-radius">
@@ -32,10 +32,10 @@ export default function Team() {
         <div className="container mx-auto px-4">
           <div className="mb-8 lg:mb-16 text-center mx-auto max-w-xl">
             <span className="text-green-600 font-bold">
-              Dolor sit amet consectutar
+              <Chunk identifier="cnk_761e8fe9acaae81977b3" />
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold font-heading">
-              Check our awesome team members
+              <Chunk identifier="cnk_cf559d5a3bb48c6395e4" />
             </h2>
           </div>
           <CustomChunkCollection
