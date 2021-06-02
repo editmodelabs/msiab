@@ -1,29 +1,9 @@
 import { Chunk } from "editmode-react";
 import { useState, useEffect } from "react";
+import handleClick from "../utils/handleClick";
 
 const GeneralPanelContent = () => {
   const [activeQuestions, setActiveQuestions] = useState([]);
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    if (
-      Array.isArray(activeQuestions) &&
-      activeQuestions.includes(e.currentTarget.dataset.id)
-    ) {
-      const newList = activeQuestions?.filter(
-        (item) => item !== e.currentTarget.dataset.id
-      );
-      return setActiveQuestions(newList);
-    } else if (
-      Array.isArray(activeQuestions) &&
-      !activeQuestions.includes(e.currentTarget.dataset.id)
-    ) {
-      return setActiveQuestions([
-        ...activeQuestions,
-        e.currentTarget.dataset.id,
-      ]);
-    }
-  };
 
   return (
     <div className="container mx-auto px-4">
@@ -33,7 +13,9 @@ const GeneralPanelContent = () => {
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
               data-id={"one"}
-              onClick={handleClick}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
             >
               <span className="text-xl">
                 <Chunk identifier="cnk_4b6e8a21e9d79d33fc15" />
@@ -71,7 +53,9 @@ const GeneralPanelContent = () => {
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
               data-id="two"
-              onClick={handleClick}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
             >
               <span className="text-xl">
                 <Chunk identifier="cnk_e26a87736713ae3a4b97" />
@@ -109,7 +93,9 @@ const GeneralPanelContent = () => {
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
               data-id="three"
-              onClick={handleClick}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
             >
               <span className="text-xl">
                 <Chunk identifier="cnk_31b2a55e5ec11e6fb878" />
@@ -148,7 +134,9 @@ const GeneralPanelContent = () => {
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
               data-id="four"
-              onClick={handleClick}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
             >
               <span className="text-xl">
                 <Chunk identifier="cnk_00120b81971100b90465" />
@@ -187,7 +175,9 @@ const GeneralPanelContent = () => {
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
               data-id="five"
-              onClick={handleClick}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
             >
               <span className="text-xl">
                 <Chunk identifier="cnk_8b5a4dc10655ca1863af" />
@@ -226,7 +216,9 @@ const GeneralPanelContent = () => {
             <button
               className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
               data-id="six"
-              onClick={handleClick}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
             >
               <span className="text-xl">
                 <Chunk identifier="cnk_e75c2f1e3f7ce834a765" />
