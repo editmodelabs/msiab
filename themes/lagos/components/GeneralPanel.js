@@ -1,3 +1,5 @@
+import { Chunk } from "editmode-react";
+
 const GeneralPanelContent = () => {
   return (
     <div className="container mx-auto px-4">
@@ -6,7 +8,7 @@ const GeneralPanelContent = () => {
           <li className="py-12 pr-4 border-b">
             <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
               <span className="text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                <Chunk identifier="cnk_4b6e8a21e9d79d33fc15" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -24,17 +26,13 @@ const GeneralPanelContent = () => {
               </svg>
             </button>
             <p className="mt-4 pr-4 text-gray-400 font-normal leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              euismod orci sed tristique placerat. Fusce in ligula urna. Fusce
-              eget nunc et libero accumsan rutrum quis nec lectus. Quisque
-              luctus sem nibh, quis ornare neque consectetur varius. Maecenas
-              rhoncus consectetur rutrum.
+              <Chunk identifier="cnk_950032e19f2560371652" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
             <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
               <span className="text-xl">
-                Nunc maximus odio sit amet eros faucibus?
+                <Chunk identifier="cnk_e26a87736713ae3a4b97" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -52,21 +50,13 @@ const GeneralPanelContent = () => {
               </svg>
             </button>
             <p className="hidden mt-4 pr-4 text-gray-400 font-normal leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida,
-              hendrerit enim non, gravida turpis. Praesent non lectus porttitor,
-              scelerisque nulla nec, ornare neque. Integer massa libero, ornare
-              ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum
-              lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus.
-              Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet
-              tortor quis porttitor. Suspendisse tempus erat non dui volutpat
-              eleifend.
+              <Chunk identifier="cnk_983e534d957f4f680660" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
             <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
               <span className="text-xl">
-                Nunc maximus odio sit amet eros faucibus?
+                <Chunk identifier="cnk_31b2a55e5ec11e6fb878" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -84,21 +74,13 @@ const GeneralPanelContent = () => {
               </svg>
             </button>
             <p className="hidden mt-4 pr-4 text-gray-400 font-normal leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida,
-              hendrerit enim non, gravida turpis. Praesent non lectus porttitor,
-              scelerisque nulla nec, ornare neque. Integer massa libero, ornare
-              ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum
-              lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus.
-              Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet
-              tortor quis porttitor. Suspendisse tempus erat non dui volutpat
-              eleifend.
+              <Chunk identifier="cnk_449c3c251ba6b0946b90" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
             <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
               <span className="text-xl">
-                Nunc maximus odio sit amet eros faucibus?
+                <Chunk identifier="cnk_00120b81971100b90465" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -116,21 +98,13 @@ const GeneralPanelContent = () => {
               </svg>
             </button>
             <p className="hidden mt-4 pr-4 text-gray-400 font-normal leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida,
-              hendrerit enim non, gravida turpis. Praesent non lectus porttitor,
-              scelerisque nulla nec, ornare neque. Integer massa libero, ornare
-              ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum
-              lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus.
-              Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet
-              tortor quis porttitor. Suspendisse tempus erat non dui volutpat
-              eleifend.
+              <Chunk identifier="cnk_c9cd61d92ad8a41f1f32" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
             <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
               <span className="text-xl">
-                Nunc maximus odio sit amet eros faucibus?
+                <Chunk identifier="cnk_8b5a4dc10655ca1863af" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -148,21 +122,13 @@ const GeneralPanelContent = () => {
               </svg>
             </button>
             <p className="hidden mt-4 pr-4 text-gray-400 font-normal leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida,
-              hendrerit enim non, gravida turpis. Praesent non lectus porttitor,
-              scelerisque nulla nec, ornare neque. Integer massa libero, ornare
-              ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum
-              lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus.
-              Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet
-              tortor quis porttitor. Suspendisse tempus erat non dui volutpat
-              eleifend.
+              <Chunk identifier="cnk_d19c04c7537f0d805cd1" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
             <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
               <span className="text-xl">
-                Nunc maximus odio sit amet eros faucibus?
+                <Chunk identifier="cnk_e75c2f1e3f7ce834a765" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -180,15 +146,7 @@ const GeneralPanelContent = () => {
               </svg>
             </button>
             <p className="hidden mt-4 pr-4 text-gray-400 font-normal leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida,
-              hendrerit enim non, gravida turpis. Praesent non lectus porttitor,
-              scelerisque nulla nec, ornare neque. Integer massa libero, ornare
-              ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum
-              lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus.
-              Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet
-              tortor quis porttitor. Suspendisse tempus erat non dui volutpat
-              eleifend.
+              <Chunk identifier="cnk_3a2f94eb5062011aa9a4" />
             </p>
           </li>
         </ul>
