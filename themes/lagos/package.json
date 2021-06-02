@@ -8,9 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "editmode-react": "3.1.22-canary",
     "next": "10.2.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "16.*",
+    "react-dom": "16.*",
     "styled-components": "^5.3.0",
     "styled-reset": "^4.3.4",
     "use-constant": "^1.1.0"

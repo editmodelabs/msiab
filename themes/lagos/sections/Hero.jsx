@@ -1,3 +1,4 @@
+import { Chunk } from "editmode-react";
 const NavBar = () => {
   return (
     <section className="relative pb-56 sm:pb-80">
@@ -22,7 +23,9 @@ const NavBar = () => {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>Mobile menu</title>
+              <title>
+                <Chunk identifier="cnk_32d80e54054d215c7555" />
+              </title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
             </svg>
           </button>
@@ -30,7 +33,7 @@ const NavBar = () => {
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
             <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              Start
+              <Chunk identifier="cnk_07513ba53ec24027bd4e" />
             </a>
           </li>
           <li className="text-gray-200">
@@ -51,7 +54,7 @@ const NavBar = () => {
           </li>
           <li>
             <a className="text-sm text-green-600 font-bold" href="#">
-              About Us
+              <Chunk identifier="cnk_aa9d1bbc588d9f3b8442" />
             </a>
           </li>
           <li className="text-gray-200">
@@ -72,7 +75,7 @@ const NavBar = () => {
           </li>
           <li>
             <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              Services
+              <Chunk identifier="cnk_65282bf8c63166170363" />
             </a>
           </li>
           <li className="text-gray-200">
@@ -93,7 +96,7 @@ const NavBar = () => {
           </li>
           <li>
             <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              Platform
+              <Chunk identifier="cnk_98309e7c2cb5c82c810e" />
             </a>
           </li>
           <li className="text-gray-200">
@@ -114,7 +117,7 @@ const NavBar = () => {
           </li>
           <li>
             <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              Testimonials
+              <Chunk identifier="cnk_dba81e0738754d0351c7" />
             </a>
           </li>
         </ul>
@@ -122,27 +125,27 @@ const NavBar = () => {
           className="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-green-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
           href="#"
         >
-          Contact Us
+          <Chunk identifier="cnk_916f95c6189cbe2932d4" />
         </a>
       </nav>
       <div className="relative pt-12 md:pt-16 pb-32 md:pb-64 bg-gray-50 border-b-4 border-green-600">
         <div className="relative container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-12 md:mb-20">
             <h2 className="mb-10 text-4xl lg:text-5xl font-bold">
-              Learn how We will help you to reach your goals
+              <Chunk identifier="cnk_280ac782a18101aea779" />
             </h2>
             <div>
               <a
                 className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 bg-green-600 hover:bg-green-700 text-white font-semibold leading-loose rounded-l-xl rounded-t-xl transition duration-200"
                 href="#"
               >
-                Get Started
+                <Chunk identifier="cnk_68438bab8e718c8c5be5" />
               </a>
               <a
                 className="inline-block w-full lg:w-auto py-2 px-6 font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
                 href="#"
               >
-                How it works
+                <Chunk identifier="cnk_f243cf1175a8a55c0793" />
               </a>
             </div>
           </div>
@@ -250,13 +253,13 @@ const NavBar = () => {
                 className="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
                 href="#"
               >
-                Sign In
+                <Chunk identifier="cnk_85bbdb44ba664dacb903" />
               </a>
               <a
                 className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-green-600 hover:bg-green-700 rounded-l-xl rounded-t-xl"
                 href="#"
               >
-                Sign Up
+                <Chunk identifier="cnk_6da5480de32b981c647f" />
               </a>
             </div>
             <p className="my-4 text-xs text-center text-gray-400">

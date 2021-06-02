@@ -1,7 +1,7 @@
 const GeneralPanelContent = () => {
   return (
-    <div class="container mx-auto px-4">
-      <div class="max-w-3xl mx-auto">
+    <div className="container mx-auto px-4">
+      <div className="max-w-3xl mx-auto">
         <ul>
           <li className="py-12 pr-4 border-b">
             <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">

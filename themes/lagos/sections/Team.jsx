@@ -1,4 +1,13 @@
+import {
+  CustomChunkCollection,
+  useCollectionChunks,
+  ChunkFieldValue,
+  CollectionItemWrapper,
+} from "editmode-react";
+
 export default function Team() {
+  const chunks = useCollectionChunks("col_tOfYwasuEFgj");
+  console.log("CHUNKS", chunks);
   return (
     <section>
       <div className="skew skew-top mr-for-radius">
@@ -29,124 +38,46 @@ export default function Team() {
               Check our awesome team members
             </h2>
           </div>
-          <div className="flex flex-wrap -mx-4">
-            <div className="mb-6 w-full lg:w-1/2 px-4">
-              <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
-                <img
-                  className="w-full lg:w-1/3 h-80 object-cover"
-                  src="https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
-                  alt=""
-                />
-                <div className="w-full lg:w-2/3 lg:pl-6 p-4">
-                  <h4 className="mb-2 text-2xl font-bold font-heading">
-                    Danny Bailey
-                  </h4>
-                  <p className="mb-4 text-gray-500 leading-loose">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    vitae felis at ante bibendum mollis et et mauris.
-                  </p>
-                  <div className="flex">
-                    <a className="mr-3" href="#">
-                      <img src="atis-assets/social/facebook.svg" alt="" />
-                    </a>
-                    <a className="mr-3" href="#">
-                      <img src="atis-assets/social/twitter.svg" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="atis-assets/social/instagram.svg" alt="" />
-                    </a>
+          <CustomChunkCollection
+            className="flex flex-wrap -mx-4"
+            identifier="col_tOfYwasuEFgj"
+            chunks={chunks}
+          >
+            {" "}
+            {chunks.map((chunk) => (
+              <CollectionItemWrapper
+                className="mb-6 w-full lg:w-1/2 px-4"
+                key={chunk.identifier}
+                chunk={chunk}
+              >
+                <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
+                  <ChunkFieldValue
+                    identifier="fld_X7FAhXkkrTLV"
+                    className="w-full lg:w-1/3 h-80 object-cover"
+                  />
+                  <div className="w-full lg:w-2/3 lg:pl-6 p-4">
+                    <h4 className="mb-2 text-2xl font-bold font-heading">
+                      <ChunkFieldValue identifier="fld_Egw0QfAtjpEl" />
+                    </h4>
+                    <p className="mb-4 text-gray-500 leading-loose">
+                      <ChunkFieldValue identifier="fld_3blqE46PPUIz" />
+                    </p>
+                    <div className="flex">
+                      <a className="mr-3" href="#">
+                        <img src="atis-assets/social/facebook.svg" alt="" />
+                      </a>
+                      <a className="mr-3" href="#">
+                        <img src="atis-assets/social/twitter.svg" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="atis-assets/social/instagram.svg" alt="" />
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="mb-6 w-full lg:w-1/2 px-4">
-              <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
-                <img
-                  className="w-full lg:w-1/3 h-80 object-cover"
-                  src="https://images.unsplash.com/photo-1559548331-f9cb98001426?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
-                  alt=""
-                />
-                <div className="w-full lg:w-2/3 lg:pl-6 p-4">
-                  <h4 className="mb-2 text-2xl font-bold font-heading">
-                    Ian Brown
-                  </h4>
-                  <p className="mb-4 text-gray-500 leading-loose">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    vitae felis at ante bibendum mollis et et mauris.
-                  </p>
-                  <div className="flex">
-                    <a className="mr-3" href="#">
-                      <img src="atis-assets/social/facebook.svg" alt="" />
-                    </a>
-                    <a className="mr-3" href="#">
-                      <img src="atis-assets/social/twitter.svg" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="atis-assets/social/instagram.svg" alt="" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mb-6 w-full lg:w-1/2 px-4">
-              <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
-                <img
-                  className="w-full lg:w-1/3 h-80 object-cover"
-                  src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
-                  alt=""
-                />
-                <div className="w-full lg:w-2/3 lg:pl-6 p-4">
-                  <h4 className="mb-2 text-2xl font-bold font-heading">
-                    Daisy Carter
-                  </h4>
-                  <p className="mb-4 text-gray-500 leading-loose">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    vitae felis at ante bibendum mollis et et mauris.
-                  </p>
-                  <div className="flex">
-                    <a className="mr-3" href="#">
-                      <img src="atis-assets/social/facebook.svg" alt="" />
-                    </a>
-                    <a className="mr-3" href="#">
-                      <img src="atis-assets/social/twitter.svg" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="atis-assets/social/instagram.svg" alt="" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mb-6 w-full lg:w-1/2 px-4">
-              <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
-                <img
-                  className="w-full lg:w-1/3 h-80 object-cover"
-                  src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
-                  alt=""
-                />
-                <div className="w-full lg:w-2/3 lg:pl-6 p-4">
-                  <h4 className="mb-2 text-2xl font-bold font-heading">
-                    Dennis Robertson
-                  </h4>
-                  <p className="mb-4 text-gray-500 leading-loose">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    vitae felis at ante bibendum mollis et et mauris.
-                  </p>
-                  <div className="flex">
-                    <a className="mr-3" href="#">
-                      <img src="atis-assets/social/facebook.svg" alt="" />
-                    </a>
-                    <a className="mr-3" href="#">
-                      <img src="atis-assets/social/twitter.svg" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="atis-assets/social/instagram.svg" alt="" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+              </CollectionItemWrapper>
+            ))}
+          </CustomChunkCollection>
         </div>
       </div>
       <div className="skew skew-bottom mr-for-radius">
