@@ -1,12 +1,21 @@
 import { Chunk } from "editmode-react";
+import handleClick from "../utils/handleClick";
+import { useState } from "react";
 
 const PaymentsPanelContent = () => {
+  const [activeQuestions, setActiveQuestions] = useState([]);
   return (
     <div className="container mx-auto px-4">
       <div className="max-w-3xl mx-auto">
         <ul>
           <li className="py-12 pr-4 border-b">
-            <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+            <button
+              className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
+              data-id={"one"}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
+            >
               <span className="text-xl">
                 <Chunk identifier="cnk_047459fe89c7b8386c69" />
               </span>
@@ -25,12 +34,24 @@ const PaymentsPanelContent = () => {
                 ></path>
               </svg>
             </button>
-            <p className="mt-4 pr-4 text-gray-400 font-normal leading-loose">
+            <p
+              className={
+                activeQuestions && activeQuestions.includes("one")
+                  ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
+                  : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
+              }
+            >
               <Chunk identifier="cnk_8fe37fa427c3f98c4645" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
-            <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+            <button
+              className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
+              data-id={"two"}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
+            >
               <span className="text-xl">
                 <Chunk identifier="cnk_26161bd4690855c32796" />
               </span>
@@ -49,12 +70,24 @@ const PaymentsPanelContent = () => {
                 ></path>
               </svg>
             </button>
-            <p className="hidden mt-4 pr-4 text-gray-400 font-normal leading-loose">
+            <p
+              className={
+                activeQuestions && activeQuestions.includes("two")
+                  ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
+                  : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
+              }
+            >
               <Chunk identifier="cnk_2ce8ecd65c6a4ae0f260" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
-            <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+            <button
+              className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
+              data-id={"three"}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
+            >
               <span className="text-xl">
                 <Chunk identifier="cnk_e8a7020f34ce9a09c74f" />
               </span>
@@ -73,12 +106,24 @@ const PaymentsPanelContent = () => {
                 ></path>
               </svg>
             </button>
-            <p className="hidden mt-4 pr-4 text-gray-400 font-normal leading-loose">
+            <p
+              className={
+                activeQuestions && activeQuestions.includes("three")
+                  ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
+                  : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
+              }
+            >
               <Chunk identifier="cnk_c20f1e796504a2b4efc2" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
-            <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+            <button
+              className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
+              data-id={"four"}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
+            >
               <span className="text-xl">
                 <Chunk identifier="cnk_900d58a6cb265dbf8a01" />
               </span>
@@ -97,12 +142,24 @@ const PaymentsPanelContent = () => {
                 ></path>
               </svg>
             </button>
-            <p className="hidden mt-4 pr-4 text-gray-400 font-normal leading-loose">
+            <p
+              className={
+                activeQuestions && activeQuestions.includes("four")
+                  ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
+                  : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
+              }
+            >
               <Chunk identifier="cnk_a263bdf6781db312f0b7" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
-            <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+            <button
+              className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
+              data-id={"five"}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
+            >
               <span className="text-xl">
                 Nunc maximus odio sit amet eros faucibus?
               </span>
@@ -121,12 +178,24 @@ const PaymentsPanelContent = () => {
                 ></path>
               </svg>
             </button>
-            <p className="hidden mt-4 pr-4 text-gray-400 font-normal leading-loose">
+            <p
+              className={
+                activeQuestions && activeQuestions.includes("five")
+                  ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
+                  : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
+              }
+            >
               <Chunk identifier="cnk_e73b16ca4412f8984262" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
-            <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+            <button
+              className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
+              data-id={"six"}
+              onClick={(e) =>
+                handleClick(e, activeQuestions, setActiveQuestions)
+              }
+            >
               <span className="text-xl">
                 <Chunk identifier="cnk_d11bc35b3e3fdb0588c9" />
               </span>
@@ -145,7 +214,13 @@ const PaymentsPanelContent = () => {
                 ></path>
               </svg>
             </button>
-            <p className="hidden mt-4 pr-4 text-gray-400 font-normal leading-loose">
+            <p
+              className={
+                activeQuestions && activeQuestions.includes("six")
+                  ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
+                  : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
+              }
+            >
               <Chunk identifier="cnk_4933e4c8fdf41f8756d9" />
             </p>
           </li>
