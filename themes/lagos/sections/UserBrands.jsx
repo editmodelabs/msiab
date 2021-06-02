@@ -35,6 +35,7 @@ export default function UserBrands() {
                     : "mb-4 w-full lg:w-1/3 px-2"
                 }
                 chunk={chunk}
+                key={chunk.identifier}
               >
                 <div className="py-16 bg-gray-50 rounded">
                   <ChunkFieldValue

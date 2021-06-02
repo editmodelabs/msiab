@@ -1,10 +1,4 @@
-import {
-  CustomChunkCollection,
-  useCollectionChunks,
-  ChunkFieldValue,
-  CollectionItemWrapper,
-  Chunk,
-} from "editmode-react";
+import { Chunk } from "editmode-react";
 
 export default function Features() {
   return (
