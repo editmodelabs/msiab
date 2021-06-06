@@ -1,0 +1,9 @@
+{
+    "em_authentication_token": "Umyf9C7DfqMWU8nEQc9FrSwD",
+    "em_default_snippet_template": "react",
+    "em_snippet_templates": {
+      "rails_erb": "= E('{identifier}')",
+      "react": 
+        "<Chunk identifier='{identifier}'>{content}</Chunk>"
+    }
+}

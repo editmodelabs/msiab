@@ -1,3 +1,4 @@
+import { Chunk, ChunkCollection, ChunkFieldValue } from 'editmode-react'
 
 const dashboard = {
   top: "9%",
@@ -23,51 +24,34 @@ export default function Header() {
             </button>
           </div>
           <ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-            <li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Product</a></li>
-            <li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Company</a></li>
-            <li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">About Us</a></li>
-            <li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Features</a></li>
+            <li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#"><Chunk identifier='menu_product'>Product</Chunk></a></li>
+            <li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#"><Chunk identifier='menu_company'>Company</Chunk></a></li>
+            <li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#"><Chunk identifier='menu_about_us'>About Us</Chunk></a></li>
+            <li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#"><Chunk identifier='menu_features'>Features</Chunk></a></li>
           </ul>
-          <div className="hidden lg:block"><a className="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Log In</a><a className="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#">Sign Up</a></div>
+          <div className="hidden lg:block"><a className="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#"><Chunk identifier='btn_login'>Log In</Chunk></a><a className="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#"><Chunk identifier='btn_signup'>Sign Up</Chunk></a></div>
         </nav>
         <div className="pt-12 text-center">
           <div className="max-w-lg mx-auto mb-8">
-            <h2 className="text-3xl md:text-4xl mb-4 font-bold font-heading"><span>The quick</span> <span className="text-blue-600">brown fox</span> <span>jumps over the lazy dog.</span></h2>
-            <p className="text-blueGray-400 leading-relaxed">The quick brown fox jumps over the lazy dog.</p>
+            <Chunk identifier='headings'><h2 className="text-3xl md:text-4xl mb-4 font-bold font-heading"><span>The quick</span> <span className="text-blue-600">brown fox</span> <span>jumps over the lazy dog.</span></h2></Chunk>
+            <p className="text-blueGray-400 leading-relaxed"><Chunk identifier='heading2'>The quick brown fox jumps over the lazy dog.</Chunk></p>
           </div>
-          <div><a className="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" href="#">Check Now</a><a className="block sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white rounded" href="#">Documentation</a></div>
+          <div><a className="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" href="#"><Chunk identifier='btn_check_now'>Check Now</Chunk></a><a className="block sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white rounded" href="#"><Chunk identifier='btn_docs'>Documentation</Chunk></a></div>
         </div>
       </div>
       <div className="relative max-w-6xl mt-16 md:mt-8 mb-8 mx-auto"><img src="metis-assets/elements/pattern.png" alt="" />
-        <div className="absolute" style={dashboard}><img className="rounded" src="metis-assets/placeholders/metis-dashboard.png" alt="" /></div>
+        <div className="absolute" style={dashboard}><Chunk identifier="cnk_352859bfadf90809e071" /></div>
       </div>
       <div className="container px-4 mx-auto">
-        <div className="flex flex-wrap justify-between pt-8 pb-16">
+        <ChunkCollection identifier="col_HUF6cPR4n8Eh" className="flex flex-wrap justify-between pt-8 pb-16">
           <div className="flex w-1/2 lg:w-auto py-4">
-            <div className="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20"><img className="h-6 sm:h-8" src="metis-assets/icons/user-circle.svg" alt="" /></div>
-            <div className="sm:py-2 ml-2 sm:ml-6"><span className="sm:text-2xl font-bold font-heading">250 324</span>
-              <p className="text-xs sm:text-base text-blueGray-400">Followers</p>
+            <div className="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20"><ChunkFieldValue identifier="icon" /></div>
+            <div className="sm:py-2 ml-2 sm:ml-6">
+              <ChunkFieldValue identifier="count" class="sm:text-2xl font-bold font-heading" />
+              <p className="text-xs sm:text-base text-blueGray-400"><ChunkFieldValue identifier="title" /></p>
             </div>
           </div>
-          <div className="flex w-1/2 lg:w-auto py-4">
-            <div className="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20"><img className="h-6 sm:h-8" src="metis-assets/icons/puzzle.svg" alt="" /></div>
-            <div className="sm:py-2 ml-2 sm:ml-6"><span className="sm:text-2xl font-bold font-heading">6 510</span>
-              <p className="text-xs sm:text-base text-blueGray-400">Solved Problems</p>
-            </div>
-          </div>
-          <div className="flex w-1/2 lg:w-auto py-4">
-            <div className="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20"><img className="h-6 sm:h-8" src="metis-assets/icons/thumb-up.svg" alt="" /></div>
-            <div className="sm:py-2 ml-2 sm:ml-6"><span className="sm:text-2xl font-bold font-heading">14 350</span>
-              <p className="text-xs sm:text-base text-blueGray-400">Happy Customers</p>
-            </div>
-          </div>
-          <div className="flex w-1/2 lg:w-auto py-4">
-            <div className="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20"><img className="h-6 sm:h-8" src="metis-assets/icons/terminal.svg" alt="" /></div>
-            <div className="sm:py-2 ml-2 sm:ml-6"><span className="sm:text-2xl font-bold font-heading">149 324</span>
-              <p className="text-xs sm:text-base text-blueGray-400">Projects</p>
-            </div>
-          </div>
-        </div>
+        </ChunkCollection>
       </div>
       <div className="hidden navbar-menu relative z-50">
         <div className="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
