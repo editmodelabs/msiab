@@ -18,7 +18,7 @@ const GeneralPanelContent = () => {
               }
             >
               <span className="text-xl">
-                <Chunk identifier="cnk_4b6e8a21e9d79d33fc15" />
+                <Chunk contentKey="tab_one_question_one_title" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -46,7 +46,7 @@ const GeneralPanelContent = () => {
                   : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
               }
             >
-              <Chunk identifier="cnk_950032e19f2560371652" />
+              <Chunk contentKey="tab_one_question_one_content" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
@@ -58,7 +58,7 @@ const GeneralPanelContent = () => {
               }
             >
               <span className="text-xl">
-                <Chunk identifier="cnk_e26a87736713ae3a4b97" />
+                <Chunk contentKey="tab_one_question_two_title" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -86,7 +86,7 @@ const GeneralPanelContent = () => {
                   : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
               }
             >
-              <Chunk identifier="cnk_983e534d957f4f680660" />
+              <Chunk contentKey="tab_one_question_two_content" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
@@ -98,7 +98,7 @@ const GeneralPanelContent = () => {
               }
             >
               <span className="text-xl">
-                <Chunk identifier="cnk_31b2a55e5ec11e6fb878" />
+                <Chunk contentKey="tab_one_question_three_title" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -127,7 +127,7 @@ const GeneralPanelContent = () => {
               }
               data-id="three"
             >
-              <Chunk identifier="cnk_449c3c251ba6b0946b90" />
+              <Chunk contentKey="tab_one_question_three_content" />
             </p>
           </li>
         </ul>

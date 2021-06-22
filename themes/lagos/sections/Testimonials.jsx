@@ -7,7 +7,7 @@ import {
 } from "editmode-react";
 
 export default function Testimonials() {
-  const chunks = useCollectionChunks("col_ZjBDXiDMb9EQ");
+  const chunks = useCollectionChunks("col_MFxBu6fiTyRM");
   return (
     <section>
       <div className="skew skew-top mr-for-radius">
@@ -49,10 +49,10 @@ export default function Testimonials() {
             </button>
             <div className="mb-10 max-w-lg text-center mx-auto">
               <span className="text-green-600 font-bold">
-                <Chunk identifier="cnk_b1a072b5748ff3837478" />
+                <Chunk contentKey="testimonial_title_before" />
               </span>
               <h2 className="mt-4 text-4xl lg:text-5xl font-bold font-heading">
-                <Chunk identifier="cnk_76274e2c4c32c997d01d" />
+                <Chunk contentKey="testimonial_title" />
               </h2>
             </div>
             <button className="order-last bg-white p-4 rounded-full shadow-md text-green-600 hover:text-green-400 transition duration-200">
@@ -103,13 +103,13 @@ export default function Testimonials() {
                         />
                       </svg>
                       <p className="text-gray-500 leading-loose mb-4">
-                        <ChunkFieldValue identifier="fld_0gug5oOockhG" />
+                        <ChunkFieldValue identifier="fld_LyRI6y3v2D8c" />
                       </p>
                       <h4 className="font-bold font-heading">
-                        <ChunkFieldValue identifier="fld_mvvBBBPBpvTy" />
+                        <ChunkFieldValue identifier="fld_LscoanYMdCOy" />
                       </h4>
                       <p className="text-gray-500">
-                        <ChunkFieldValue identifier="fld_PWnpVzs5kkYa" />
+                        <ChunkFieldValue identifier="fld_Iq94B0LyQxGc" />
                       </p>
                     </div>
                   </CollectionItemWrapper>

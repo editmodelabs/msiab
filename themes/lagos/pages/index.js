@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <Editmode projectId="prj_UNCcdY6M5Teg">
+        <Editmode projectId="prj_Y5HfCBS4rqZg">
           <Hero />
           <Features />
           <Team />

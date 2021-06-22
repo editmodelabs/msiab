@@ -7,7 +7,7 @@ import {
 } from "editmode-react";
 
 export default function UserBrands() {
-  const chunks = useCollectionChunks("col_KrxogBTFjqYS");
+  const chunks = useCollectionChunks("col_QoWb1ECjVYrn");
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -15,10 +15,10 @@ export default function UserBrands() {
           <div className="mb-12 lg:mb-0 w-full lg:w-1/2">
             <div className="max-w-md">
               <h2 className="mb-4 text-4xl lg:text-5xl font-bold font-heading">
-                <Chunk identifier="cnk_88e356621b7bbd640f07" />
+                <Chunk contentKey="brand_statement" />
               </h2>
               <p className="text-gray-500 leading-loose">
-                <Chunk identifier="cnk_cdb1532a6594b0f887ab" />
+                <Chunk contentKey="brand_state_desc" />
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function UserBrands() {
                 <div className="py-16 bg-gray-50 rounded">
                   <ChunkFieldValue
                     className="mx-auto h-6"
-                    identifier="fld_wNjHMTcUj9h0"
+                    identifier="fld_tk5LkL0naTLG"
                   />
                 </div>
               </CollectionItemWrapper>

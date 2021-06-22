@@ -7,7 +7,7 @@ import {
 } from "editmode-react";
 
 export default function Team() {
-  const chunks = useCollectionChunks("col_tOfYwasuEFgj");
+  const chunks = useCollectionChunks("col_Ka1xr5iCS5Gl");
   console.log(chunks);
   return (
     <section>
@@ -33,10 +33,10 @@ export default function Team() {
         <div className="container mx-auto px-4">
           <div className="mb-8 lg:mb-16 text-center mx-auto max-w-xl">
             <span className="text-green-600 font-bold">
-              <Chunk identifier="cnk_761e8fe9acaae81977b3" />
+              <Chunk contentKey="lagos_team_title_before" />
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold font-heading">
-              <Chunk identifier="cnk_cf559d5a3bb48c6395e4" />
+              <Chunk contentKey="lagos_team_title" />
             </h2>
           </div>
           <CustomChunkCollection
@@ -53,15 +53,15 @@ export default function Team() {
               >
                 <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
                   <ChunkFieldValue
-                    identifier="fld_X7FAhXkkrTLV"
+                    identifier="fld_OHjKfVrv9koY"
                     className="w-full lg:w-1/3 h-80 object-cover"
                   />
                   <div className="w-full lg:w-2/3 lg:pl-6 p-4">
                     <h4 className="mb-2 text-2xl font-bold font-heading">
-                      <ChunkFieldValue identifier="fld_Egw0QfAtjpEl" />
+                      <ChunkFieldValue identifier="fld_HkyH9bdRPczO" />
                     </h4>
                     <p className="mb-4 text-gray-500 leading-loose">
-                      <ChunkFieldValue identifier="fld_3blqE46PPUIz" />
+                      <ChunkFieldValue identifier="fld_Nnbhz1u9YnkY" />
                     </p>
                     <div className="flex">
                       <a className="mr-3" href="#">
