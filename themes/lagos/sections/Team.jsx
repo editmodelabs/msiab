@@ -8,6 +8,7 @@ import {
 
 export default function Team() {
   const chunks = useCollectionChunks("col_tOfYwasuEFgj");
+  console.log(chunks);
   return (
     <section>
       <div className="skew skew-top mr-for-radius">

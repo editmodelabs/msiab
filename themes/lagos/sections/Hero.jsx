@@ -132,7 +132,7 @@ const NavBar = () => {
         <div className="relative container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-12 md:mb-20">
             <h2 className="mb-10 text-4xl lg:text-5xl font-bold">
-              <Chunk identifier="cnk_280ac782a18101aea779" />
+              <Chunk contentKey="hero_text" />
             </h2>
             <div>
               <a
