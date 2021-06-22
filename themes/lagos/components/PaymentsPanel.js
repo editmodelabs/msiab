@@ -17,7 +17,7 @@ const PaymentsPanelContent = () => {
               }
             >
               <span className="text-xl">
-                <Chunk identifier="cnk_047459fe89c7b8386c69" />
+                <Chunk contentKey="tab_two_question_one_title" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -41,7 +41,7 @@ const PaymentsPanelContent = () => {
                   : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
               }
             >
-              <Chunk identifier="cnk_8fe37fa427c3f98c4645" />
+              <Chunk contentKey="tab_two_question_one_content" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
@@ -53,7 +53,7 @@ const PaymentsPanelContent = () => {
               }
             >
               <span className="text-xl">
-                <Chunk identifier="cnk_26161bd4690855c32796" />
+                <Chunk contentKey="tab_two_question_two_title" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -77,7 +77,7 @@ const PaymentsPanelContent = () => {
                   : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
               }
             >
-              <Chunk identifier="cnk_2ce8ecd65c6a4ae0f260" />
+              <Chunk contentKey="tab_two_question_two_content" />
             </p>
           </li>
           <li className="py-6 lg:py-12 pr-4 border-b">
@@ -89,7 +89,7 @@ const PaymentsPanelContent = () => {
               }
             >
               <span className="text-xl">
-                <Chunk identifier="cnk_e8a7020f34ce9a09c74f" />
+                <Chunk contentKey="tab_two_question_three_title" />
               </span>
               <svg
                 className="w-4 h-4 text-green-600"
@@ -113,7 +113,7 @@ const PaymentsPanelContent = () => {
                   : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
               }
             >
-              <Chunk identifier="cnk_c20f1e796504a2b4efc2" />
+              <Chunk contentKey="tab_two_question_three_content" />
             </p>
           </li>
         </ul>

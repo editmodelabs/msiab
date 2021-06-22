@@ -33,7 +33,7 @@ const NavBar = () => {
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
             <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              <Chunk identifier="cnk_07513ba53ec24027bd4e" />
+              <Chunk contentKey="lagos_nav_start" />
             </a>
           </li>
           <li className="text-gray-200">
@@ -54,7 +54,7 @@ const NavBar = () => {
           </li>
           <li>
             <a className="text-sm text-green-600 font-bold" href="#">
-              <Chunk identifier="cnk_aa9d1bbc588d9f3b8442" />
+              <Chunk contentKey="lagos_nav_about" />
             </a>
           </li>
           <li className="text-gray-200">
@@ -75,7 +75,7 @@ const NavBar = () => {
           </li>
           <li>
             <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              <Chunk identifier="cnk_65282bf8c63166170363" />
+              <Chunk contentKey="lagos_nav_services" />
             </a>
           </li>
           <li className="text-gray-200">
@@ -96,7 +96,7 @@ const NavBar = () => {
           </li>
           <li>
             <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              <Chunk identifier="cnk_98309e7c2cb5c82c810e" />
+              <Chunk contentKey="lagos_nav_platform" />
             </a>
           </li>
           <li className="text-gray-200">
@@ -117,7 +117,7 @@ const NavBar = () => {
           </li>
           <li>
             <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              <Chunk identifier="cnk_dba81e0738754d0351c7" />
+              <Chunk contentKey="lagos_nav_testimonial" />
             </a>
           </li>
         </ul>
@@ -125,27 +125,27 @@ const NavBar = () => {
           className="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-green-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
           href="#"
         >
-          <Chunk identifier="cnk_916f95c6189cbe2932d4" />
+          <Chunk contentKey="lagos_nav_contact" />
         </a>
       </nav>
       <div className="relative pt-12 md:pt-16 pb-32 md:pb-64 bg-gray-50 border-b-4 border-green-600">
         <div className="relative container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-12 md:mb-20">
             <h2 className="mb-10 text-4xl lg:text-5xl font-bold">
-              <Chunk contentKey="hero_text" />
+              <Chunk contentKey="lagos_hero_callout" />
             </h2>
             <div>
               <a
                 className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 bg-green-600 hover:bg-green-700 text-white font-semibold leading-loose rounded-l-xl rounded-t-xl transition duration-200"
                 href="#"
               >
-                <Chunk identifier="cnk_68438bab8e718c8c5be5" />
+                <Chunk contentKey="lagos_get_started_button" />
               </a>
               <a
                 className="inline-block w-full lg:w-auto py-2 px-6 font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
                 href="#"
               >
-                <Chunk identifier="cnk_f243cf1175a8a55c0793" />
+                <Chunk contentKey="lagos_how_it_works" />
               </a>
             </div>
           </div>
