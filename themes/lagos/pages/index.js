@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <Editmode projectId={process.env.NEXT_PUBLIC_EDITMODE_PROJECT_ID}>
+        <Editmode projectId="prj_Y5HfCBS4rqZg">
           <Hero />
           <Features />
           <Team />
