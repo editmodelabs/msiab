@@ -8,7 +8,6 @@ import {
 
 export default function Team() {
   const chunks = useCollectionChunks("col_Ka1xr5iCS5Gl");
-  console.log(chunks);
   return (
     <section>
       <div className="skew skew-top mr-for-radius">
@@ -33,10 +32,10 @@ export default function Team() {
         <div className="container mx-auto px-4">
           <div className="mb-8 lg:mb-16 text-center mx-auto max-w-xl">
             <span className="text-green-600 font-bold">
-              <Chunk contentKey="lagos_team_title_before" />
+              <Chunk contentKey="team_section_heading_before" />
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold font-heading">
-              <Chunk contentKey="lagos_team_title" />
+              <Chunk contentKey="team_section_heading" />
             </h2>
           </div>
           <CustomChunkCollection

@@ -49,10 +49,10 @@ export default function Testimonials() {
             </button>
             <div className="mb-10 max-w-lg text-center mx-auto">
               <span className="text-green-600 font-bold">
-                <Chunk contentKey="testimonial_title_before" />
+                <Chunk contentKey="testimonial_section_heading_before" />
               </span>
               <h2 className="mt-4 text-4xl lg:text-5xl font-bold font-heading">
-                <Chunk contentKey="testimonial_title" />
+                <Chunk contentKey="testimonial_section_heading" />
               </h2>
             </div>
             <button className="order-last bg-white p-4 rounded-full shadow-md text-green-600 hover:text-green-400 transition duration-200">

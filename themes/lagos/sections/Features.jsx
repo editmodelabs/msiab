@@ -26,10 +26,10 @@ export default function Features() {
           <div className="container mx-auto px-4">
             <div className="mb-16 max-w-md mx-auto text-center">
               <span className="text-green-600 font-bold">
-                <Chunk contentKey="lagos_features_title_secondary" />
+                <Chunk contentKey="features_section_heading_before" />
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold font-heading">
-                <Chunk contentKey="lagos_features_title_primary" />
+                <Chunk contentKey="features_section_heading" />
               </h2>
             </div>
             <div className="flex flex-wrap -mx-3">
@@ -55,10 +55,10 @@ export default function Features() {
                   </div>
                   <div className="w-full lg:w-2/3">
                     <h3 className="mb-2 text-2xl font-bold font-heading">
-                      <Chunk contentKey="lagos_feature_one_title" />
+                      <Chunk contentKey="feature_one_title" />
                     </h3>
                     <p className="text-gray-500">
-                      <Chunk contentKey="lagos_feature_one_desc" />
+                      <Chunk contentKey="feature_one_desc" />
                     </p>
                   </div>
                 </div>
@@ -79,10 +79,10 @@ export default function Features() {
                   </div>
                   <div className="w-full lg:w-2/3">
                     <h3 className="mb-2 text-2xl font-bold font-heading">
-                      <Chunk contentKey="lagos_feature_two_title" />
+                      <Chunk contentKey="feature_two_title" />
                     </h3>
                     <p className="text-gray-500">
-                      <Chunk contentKey="lagos_feature_two_desc" />
+                      <Chunk contentKey="feature_two_desc" />
                     </p>
                   </div>
                 </div>
@@ -109,10 +109,10 @@ export default function Features() {
                   </div>
                   <div className="w-full lg:w-2/3">
                     <h3 className="mb-2 text-2xl font-bold font-heading">
-                      <Chunk contentKey="lagos_feature_three_title" />
+                      <Chunk contentKey="feature_three_title" />
                     </h3>
                     <p className="text-gray-500">
-                      <Chunk contentKey="lagos_feature_three_desc" />
+                      <Chunk contentKey="feature_three_desc" />
                     </p>
                   </div>
                 </div>
@@ -138,10 +138,10 @@ export default function Features() {
                   </div>
                   <div className="w-full lg:w-2/3">
                     <h3 className="mb-2 text-2xl font-bold font-heading">
-                      <Chunk contentKey="lagos_feature_four_title" />
+                      <Chunk contentKey="feature_four_title" />
                     </h3>
                     <p className="text-gray-500">
-                      <Chunk contentKey="lagos_feature_four_desc" />
+                      <Chunk contentKey="feature_four_desc" />
                     </p>
                   </div>
                 </div>
@@ -193,13 +193,13 @@ export default function Features() {
               <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
                 <div className="max-w-md lg:mx-auto">
                   <span className="text-green-600 font-bold">
-                    <Chunk contentKey="lagos_alt_features_title_secondary" />
+                    <Chunk contentKey="second_features_section_heading_before" />
                   </span>
                   <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading">
-                    <Chunk contentKey="lagos_alt_features_title_primary" />
+                    <Chunk contentKey="second_features_section_heading" />
                   </h2>
                   <p className="mb-6 text-gray-500 leading-loose">
-                    <Chunk contentKey="lagos_alt_features_desc" />
+                    <Chunk contentKey="second_features_section_desc" />
                   </p>
                   <ul className="text-gray-500 font-bold">
                     <li className="flex mb-4">
@@ -216,7 +216,7 @@ export default function Features() {
                         ></path>
                       </svg>
                       <span>
-                        <Chunk contentKey="lagos_features_list_one" />
+                        <Chunk contentKey="features_list_one" />
                       </span>
                     </li>
                     <li className="flex mb-4">
@@ -233,7 +233,7 @@ export default function Features() {
                         ></path>
                       </svg>
                       <span>
-                        <Chunk contentKey="lagos_features_list_two" />
+                        <Chunk contentKey="features_list_two" />
                       </span>
                     </li>
                     <li className="flex mb-4">
@@ -250,7 +250,7 @@ export default function Features() {
                         ></path>
                       </svg>
                       <span>
-                        <Chunk contentKey="lagos_features_list_three" />
+                        <Chunk contentKey="features_list_three" />
                       </span>
                     </li>
                   </ul>

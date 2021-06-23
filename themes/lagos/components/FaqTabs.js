@@ -12,19 +12,19 @@ export default function FaqTabs() {
       <div className="border-b">
         <div className="mb-16 max-w-xl mx-auto px-4 text-center">
           <span className="text-green-600 font-bold">
-            <Chunk contentKey="lagos_faq_before" />
+            <Chunk contentKey="faq_section_heading_before" />
           </span>
           <h2 className="text-4xl lg:text-5xl font-bold font-heading">
-            <Chunk contentKey="lagos_faq" />
+            <Chunk contentKey="faq_section_heading" />
           </h2>
         </div>
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-wrap px-4 text-center lg:-mx-4 lg:space-x-4 text-base lg:text-xl">
             <Tab>
-              <Chunk contentKey="lagos_tab_one" />
+              <Chunk contentKey="faq_tab_one_name" />
             </Tab>
             <Tab>
-              <Chunk contentKey="lagos_tab_two" />
+              <Chunk contentKey="faq_tab_two_name" />
             </Tab>
           </div>
         </div>

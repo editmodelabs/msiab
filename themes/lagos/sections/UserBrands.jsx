@@ -18,7 +18,7 @@ export default function UserBrands() {
                 <Chunk contentKey="brand_statement" />
               </h2>
               <p className="text-gray-500 leading-loose">
-                <Chunk contentKey="brand_state_desc" />
+                <Chunk contentKey="brand_statement_desc" />
               </p>
             </div>
           </div>
