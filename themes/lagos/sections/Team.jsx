@@ -38,15 +38,15 @@ export default function Team() {
           >
             <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
               <ChunkFieldValue
-                identifier="fld_OHjKfVrv9koY"
+                identifier="Avatar"
                 className="w-full lg:w-1/3 h-80 object-cover"
               />
               <div className="w-full lg:w-2/3 lg:pl-6 p-4">
                 <h4 className="mb-2 text-2xl font-bold font-heading">
-                  <ChunkFieldValue identifier="fld_HkyH9bdRPczO" />
+                  <ChunkFieldValue identifier="Name" />
                 </h4>
                 <p className="mb-4 text-gray-500 leading-loose">
-                  <ChunkFieldValue identifier="fld_Nnbhz1u9YnkY" />
+                  <ChunkFieldValue identifier="Bio" />
                 </p>
                 <div className="flex">
                   <a className="mr-3" href="#">
