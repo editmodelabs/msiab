@@ -19,7 +19,6 @@ const NavBar = () => {
         <a className="text-3xl font-bold text-primary leading-none flex" href="/">
           <Chunk identifier="logo_icon" className="w-5 text-primary" />
           <Chunk identifier="company_name" className="text-lg" />
-          <Chunk identifier="company_name" field="" className="text-lg" />
         </a>
 
         

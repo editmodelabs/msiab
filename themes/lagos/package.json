@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "editmode-react": "^3.1.31-canary.50.36bc5b1.0",
+    "editmode-react": "^3.1.31-canary.50.5a331a8.0",
     "next": "10.2.3",
     "react": "16.*",
     "react-dom": "16.*",
