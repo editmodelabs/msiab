@@ -4,15 +4,7 @@ import handleClick from "../utils/handleClick";
 
 const GeneralPanelContent = () => {
   const [activeQuestions, setActiveQuestions] = useState([]);
-  const [nodeId, setNodeId] = useState(1);
 
-  const parRef = useRef();
-  const pathRef = useRef();
-
-  console.log(
-    "path",
-    pathRef.current?.parentNode?.parentNode.getAttribute("data-id")
-  );
   return (
     <div className="container mx-auto px-4">
       <div className="max-w-3xl mx-auto">
@@ -46,7 +38,6 @@ const GeneralPanelContent = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
-                      ref={pathRef}
                       d={
                         activeQuestions.includes(getChunk(chunk, "Question"))
                           ? "M19 14l-7 7m0 0l-7-7m7 7V3"
@@ -62,7 +53,6 @@ const GeneralPanelContent = () => {
                       ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
                       : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
                   }
-                  ref={parRef}
                 >
                   <ChunkFieldValue identifier="Answer" />
                 </p>
