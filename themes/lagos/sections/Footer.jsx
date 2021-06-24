@@ -1,3 +1,4 @@
+import { Chunk, ChunkCollection } from "editmode-react";
 export default function Footer() {
   return (
     <section>
@@ -23,136 +24,69 @@ export default function Footer() {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
-              <a
-                className="inline-block mb-3 text-3xl font-bold leading-none"
-                href="#"
-              >
-                <img
-                  className="h-12"
-                  src="atis-assets/logo/atis/atis-mono-black.svg"
-                  alt=""
-                  width="auto"
-                />
+              <a className="text-3xl font-bold text-primary leading-none flex items-center mb-3" href="/">
+                <Chunk identifier="logo_icon" className="w-12 text-primary" />
+                <Chunk identifier="company_name" className="text-3xl" />
               </a>
-              <p className="mb-4 max-w-sm text-gray-400 leading-loose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                tincidunt felis eu est.
-              </p>
-              <div>
-                <a
-                  className="inline-block w-10 mr-2 p-2 bg-gray-50 hover:bg-gray-100 rounded"
-                  href="#"
-                >
-                  <img
-                    className="mx-auto"
-                    src="atis-assets/social/facebook.svg"
-                  />
-                </a>
-                <a
-                  className="inline-block w-10 mr-2 p-2 bg-gray-50 hover:bg-gray-100 rounded"
-                  href="#"
-                >
-                  <img
-                    className="mx-auto"
-                    src="atis-assets/social/twitter.svg"
-                  />
-                </a>
-                <a
-                  className="inline-block w-10 p-2 bg-gray-50 hover:bg-gray-100 rounded"
-                  href="#"
-                >
-                  <img
-                    className="mx-auto"
-                    src="atis-assets/social/instagram.svg"
-                  />
-                </a>
-              </div>
+              <Chunk identifier="company_tagline" className="mb-4 max-w-sm text-gray-400 leading-loose" />
+          
+              <ChunkCollection identifier="social_links" className="flex" >
+                { (getChunk, chunk) => (
+                  <a
+                    className="inline-block w-10 mr-2 p-2 bg-gray-50 hover:bg-gray-100 rounded"
+                    href={getChunk(chunk,"Url")}
+                  >
+                    <img src={getChunk(chunk,"Image")} />
+                  </a>
+                )}
+              </ChunkCollection>
+
             </div>
             <div className="w-full lg:w-2/3 lg:pl-16 flex flex-wrap justify-between">
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
-                <h3 className="mb-6 text-2xl font-bold">Products</h3>
-                <ul>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Services
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      About Us
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      News and Stories
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Roadmap
-                    </a>
-                  </li>
-                </ul>
+
+                <Chunk identifier="footer_menu_title_1" className="mb-6 text-2xl font-bold" />
+                <ChunkCollection identifier="navigation_items" tags={["footer_nav_1"]} >
+          
+                  { (getChunk, chunk) => (
+                    <div className="flex items-center">
+                      <a className="text-gray-800 hover:text-gray-600 mb-4" href={getChunk(chunk,"Url")}>
+                        {getChunk(chunk,"Title")}
+                      </a>
+                    </div>              
+                  )}
+
+                </ChunkCollection>
+
               </div>
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
-                <h3 className="mb-6 text-2xl font-bold">Important Links</h3>
-                <ul>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Organization Team
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Our Journeys
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Pricing Plans
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Roadmap
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Terms &amp; Conditions
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Privacy Policy
-                    </a>
-                  </li>
-                </ul>
+
+                <Chunk identifier="footer_menu_title_2" className="mb-6 text-2xl font-bold" />
+                <ChunkCollection identifier="navigation_items" tags={["footer_nav_2"]} >          
+                  { (getChunk, chunk) => (
+                    <div className="flex items-center">
+                      <a className="text-gray-800 hover:text-gray-600 mb-4" href={getChunk(chunk,"Url")}>
+                        {getChunk(chunk,"Title")}
+                      </a>
+                    </div>              
+                  )}
+                </ChunkCollection>
+                
               </div>
+
               <div className="w-full md:w-1/3 lg:w-auto">
-                <h3 className="mb-6 text-2xl font-bold">Company</h3>
-                <ul>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      About Us
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Jobs
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Press
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-800 hover:text-gray-600" href="#">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
+
+                <Chunk identifier="footer_menu_title_3" className="mb-6 text-2xl font-bold" />
+                <ChunkCollection identifier="navigation_items" tags={["footer_nav_3"]} >          
+                  { (getChunk, chunk) => (
+                    <div className="flex items-center">
+                      <a className="text-gray-800 hover:text-gray-600 mb-4" href={getChunk(chunk,"Url")}>
+                        {getChunk(chunk,"Title")}
+                      </a>
+                    </div>              
+                  )}
+                </ChunkCollection>
+
               </div>
             </div>
           </div>
