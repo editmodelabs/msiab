@@ -1,4 +1,4 @@
-import { Chunk } from "editmode-react";
+import { Chunk, ChunkCollection, ChunkFieldValue } from "editmode-react";
 import { useState, useEffect } from "react";
 import handleClick from "../utils/handleClick";
 
@@ -6,6 +6,55 @@ const GeneralPanelContent = () => {
   const [activeQuestions, setActiveQuestions] = useState([]);
 
   return (
+    // <div className="container mx-auto px-4">
+    //   <div className="max-w-3xl mx-auto">
+    //     <ul>
+    //       <ChunkCollection>
+    //         <li className="py-12 pr-4 border-b">
+    //           <button
+    //             className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
+    //             data-id={"one"}
+    //             onClick={(e) =>
+    //               handleClick(e, activeQuestions, setActiveQuestions)
+    //             }
+    //           >
+    //             <span className="text-xl">
+    //               <ChunkFieldValue contentKey="Question" tags={['faq_general']} />
+    //             </span>
+    //             <svg
+    //               className="w-4 h-4 text-green-600"
+    //               xmlns="http://www.w3.org/2000/svg"
+    //               fill="none"
+    //               viewBox="0 0 24 24"
+    //               stroke="currentColor"
+    //             >
+    //               <path
+    //                 strokeLinecap="round"
+    //                 strokeLinejoin="round"
+    //                 strokeWidth="2"
+    //                 d={
+    //                   activeQuestions.includes("one")
+    //                     ? "M19 14l-7 7m0 0l-7-7m7 7V3"
+    //                     : "M5 10l7-7m0 0l7 7m-7-7v18"
+    //                 }
+    //               ></path>
+    //             </svg>
+    //           </button>
+    //           <p
+    //             className={
+    //               activeQuestions && activeQuestions.includes("one")
+    //                 ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
+    //                 : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
+    //             }
+    //           >
+    //             <ChunkFieldValue contentKey="Answer" />
+    //           </p>
+    //         </li>
+    //       </ChunkCollection>
+    //     </ul>
+    //   </div>
+    // </div>
+
     <div className="container mx-auto px-4">
       <div className="max-w-3xl mx-auto">
         <ul>

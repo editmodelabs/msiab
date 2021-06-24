@@ -1,13 +1,6 @@
-import {
-  CustomChunkCollection,
-  useCollectionChunks,
-  ChunkFieldValue,
-  CollectionItemWrapper,
-  Chunk,
-} from "editmode-react";
+import { ChunkCollection, ChunkFieldValue, Chunk } from "editmode-react";
 
 export default function Team() {
-  const chunks = useCollectionChunks("col_Ka1xr5iCS5Gl");
   return (
     <section>
       <div className="skew skew-top mr-for-radius">
@@ -38,46 +31,39 @@ export default function Team() {
               <Chunk contentKey="team_section_heading" />
             </h2>
           </div>
-          <CustomChunkCollection
+          <ChunkCollection
             className="flex flex-wrap -mx-4"
-            identifier="col_tOfYwasuEFgj"
-            chunks={chunks}
+            identifier="team_members"
+            itemClass="mb-6 w-full lg:w-1/2 px-4"
           >
-            {" "}
-            {chunks.map((chunk) => (
-              <CollectionItemWrapper
-                className="mb-6 w-full lg:w-1/2 px-4"
-                key={chunk.identifier}
-                chunk={chunk}
-              >
-                <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
-                  <ChunkFieldValue
-                    identifier="fld_OHjKfVrv9koY"
-                    className="w-full lg:w-1/3 h-80 object-cover"
-                  />
-                  <div className="w-full lg:w-2/3 lg:pl-6 p-4">
-                    <h4 className="mb-2 text-2xl font-bold font-heading">
-                      <ChunkFieldValue identifier="fld_HkyH9bdRPczO" />
-                    </h4>
-                    <p className="mb-4 text-gray-500 leading-loose">
-                      <ChunkFieldValue identifier="fld_Nnbhz1u9YnkY" />
-                    </p>
-                    <div className="flex">
-                      <a className="mr-3" href="#">
-                        <img src="atis-assets/social/facebook.svg" alt="" />
-                      </a>
-                      <a className="mr-3" href="#">
-                        <img src="atis-assets/social/twitter.svg" alt="" />
-                      </a>
-                      <a href="#">
-                        <img src="atis-assets/social/instagram.svg" alt="" />
-                      </a>
-                    </div>
+            {(getChunk, chunk) => (
+              <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
+                <ChunkFieldValue
+                  identifier="Avatar"
+                  className="w-full lg:w-1/3 h-80 object-cover"
+                />
+                <div className="w-full lg:w-2/3 lg:pl-6 p-4">
+                  <h4 className="mb-2 text-2xl font-bold font-heading">
+                    <ChunkFieldValue identifier="Name" />
+                  </h4>
+                  <p className="mb-4 text-gray-500 leading-loose">
+                    <ChunkFieldValue identifier="Bio" />
+                  </p>
+                  <div className="flex">
+                    <a className="mr-3" href={getChunk(chunk, "FacebookURL")}>
+                      <Chunk identifier="facebook_img" />
+                    </a>
+                    <a className="mr-3" href={getChunk(chunk, "TwitterURL")}>
+                      <Chunk identifier="twitter_img" />
+                    </a>
+                    <a href={getChunk(chunk, "InstagramURL")}>
+                      <Chunk identifier="instagram_img" />
+                    </a>
                   </div>
                 </div>
-              </CollectionItemWrapper>
-            ))}
-          </CustomChunkCollection>
+              </div>
+            )}
+          </ChunkCollection>
         </div>
       </div>
       <div className="skew skew-bottom mr-for-radius">

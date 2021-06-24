@@ -1,13 +1,6 @@
-import {
-  CustomChunkCollection,
-  useCollectionChunks,
-  ChunkFieldValue,
-  CollectionItemWrapper,
-  Chunk,
-} from "editmode-react";
+import { Chunk, ChunkFieldValue, ChunkCollection } from "editmode-react";
 
 export default function UserBrands() {
-  const chunks = useCollectionChunks("col_QoWb1ECjVYrn");
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -22,30 +15,15 @@ export default function UserBrands() {
               </p>
             </div>
           </div>
-          <CustomChunkCollection
-            identifier="col_KrxogBTFjqYS"
+          <ChunkCollection
+            identifier="user_brands"
             className="w-full lg:w-1/2 flex flex-wrap -mx-2"
-            chunks={chunks}
+            itemClass="mb-4 w-full lg:w-1/3 px-2"
           >
-            {chunks.map((chunk, idx) => (
-              <CollectionItemWrapper
-                className={
-                  idx === chunks.length - 1
-                    ? "w-full lg:w-1/3 px-2"
-                    : "mb-4 w-full lg:w-1/3 px-2"
-                }
-                chunk={chunk}
-                key={chunk.identifier}
-              >
-                <div className="py-16 bg-gray-50 rounded">
-                  <ChunkFieldValue
-                    className="mx-auto h-6"
-                    identifier="fld_tk5LkL0naTLG"
-                  />
-                </div>
-              </CollectionItemWrapper>
-            ))}
-          </CustomChunkCollection>
+            <div className="py-16 bg-gray-50 rounded">
+              <ChunkFieldValue className="mx-auto h-6" identifier="Logo" />
+            </div>
+          </ChunkCollection>
         </div>
       </div>
     </section>
