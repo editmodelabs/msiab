@@ -8,13 +8,17 @@ const NavBar = () => {
         alt=""
       />
       <nav className="relative px-6 py-6 flex justify-between items-center bg-gray-50">
-        <a className="text-3xl font-bold leading-none" href="#">
-          <img
-            className="h-12"
-            src="atis-assets/logo/atis/atis-mono-black.svg"
-            alt=""
-            width="auto"
-          />
+        <style jsx>{`
+          .text-primary {
+            color: red
+          }
+          .bg-primary {
+            background-color: red
+          }
+        `}</style>
+        <a className="text-3xl font-bold text-primary leading-none flex" href="/">
+          <Chunk identifier="logo_icon" className="w-5 text-primary" />
+          <Chunk identifier="company_name" className="text-lg" />
         </a>
         <div className="lg:hidden">
           <button className="navbar-burger flex items-center text-gray-400 p-3">
