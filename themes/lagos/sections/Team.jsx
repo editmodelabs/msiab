@@ -36,31 +36,33 @@ export default function Team() {
             identifier="team_members"
             itemClass="mb-6 w-full lg:w-1/2 px-4"
           >
-            <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
-              <ChunkFieldValue
-                identifier="Avatar"
-                className="w-full lg:w-1/3 h-80 object-cover"
-              />
-              <div className="w-full lg:w-2/3 lg:pl-6 p-4">
-                <h4 className="mb-2 text-2xl font-bold font-heading">
-                  <ChunkFieldValue identifier="Name" />
-                </h4>
-                <p className="mb-4 text-gray-500 leading-loose">
-                  <ChunkFieldValue identifier="Bio" />
-                </p>
-                <div className="flex">
-                  <a className="mr-3" href="#">
-                    <img src="atis-assets/social/facebook.svg" alt="" />
-                  </a>
-                  <a className="mr-3" href="#">
-                    <img src="atis-assets/social/twitter.svg" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="atis-assets/social/instagram.svg" alt="" />
-                  </a>
+            {(getChunk, chunk) => (
+              <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
+                <ChunkFieldValue
+                  identifier="Avatar"
+                  className="w-full lg:w-1/3 h-80 object-cover"
+                />
+                <div className="w-full lg:w-2/3 lg:pl-6 p-4">
+                  <h4 className="mb-2 text-2xl font-bold font-heading">
+                    <ChunkFieldValue identifier="Name" />
+                  </h4>
+                  <p className="mb-4 text-gray-500 leading-loose">
+                    <ChunkFieldValue identifier="Bio" />
+                  </p>
+                  <div className="flex">
+                    <a className="mr-3" href={getChunk(chunk, "FacebookURL")}>
+                      <Chunk identifier="facebook_img" />
+                    </a>
+                    <a className="mr-3" href={getChunk(chunk, "TwitterURL")}>
+                      <Chunk identifier="twitter_img" />
+                    </a>
+                    <a href={getChunk(chunk, "InstagramURL")}>
+                      <Chunk identifier="instagram_img" />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
           </ChunkCollection>
         </div>
       </div>
