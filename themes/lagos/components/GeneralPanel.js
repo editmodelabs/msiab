@@ -1,4 +1,4 @@
-import { Chunk, ChunkCollection, ChunkFieldValue } from "editmode-react";
+import { ChunkCollection, ChunkFieldValue } from "editmode-react";
 import { useState } from "react";
 import handleClick from "../utils/handleClick";
 
