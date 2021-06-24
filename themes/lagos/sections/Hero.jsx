@@ -1,4 +1,4 @@
-import { Chunk } from "editmode-react";
+import { Chunk, ChunkCollection } from "editmode-react";
 const NavBar = () => {
   return (
     <section className="relative pb-56 sm:pb-80">
@@ -10,16 +10,19 @@ const NavBar = () => {
       <nav className="relative px-6 py-6 flex justify-between items-center bg-gray-50">
         <style jsx>{`
           .text-primary {
-            color: red
+            color: red;
           }
           .bg-primary {
-            background-color: red
+            background-color: blue;
           }
         `}</style>
         <a className="text-3xl font-bold text-primary leading-none flex" href="/">
           <Chunk identifier="logo_icon" className="w-5 text-primary" />
           <Chunk identifier="company_name" className="text-lg" />
+          <Chunk identifier="company_name" field="" className="text-lg" />
         </a>
+
+        
         <div className="lg:hidden">
           <button className="navbar-burger flex items-center text-gray-400 p-3">
             <svg
@@ -34,97 +37,34 @@ const NavBar = () => {
             </svg>
           </button>
         </div>
-        <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-          <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              <Chunk contentKey="nav_link_start" />
-            </a>
-          </li>
-          <li className="text-gray-200">
-            <svg
-              className="w-4 h-4 current-fill"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-              ></path>
-            </svg>
-          </li>
-          <li>
-            <a className="text-sm text-green-600 font-bold" href="#">
-              <Chunk contentKey="nav_link_about" />
-            </a>
-          </li>
-          <li className="text-gray-200">
-            <svg
-              className="w-4 h-4 current-fill"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-              ></path>
-            </svg>
-          </li>
-          <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              <Chunk contentKey="nav_link_services" />
-            </a>
-          </li>
-          <li className="text-gray-200">
-            <svg
-              className="w-4 h-4 current-fill"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-              ></path>
-            </svg>
-          </li>
-          <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              <Chunk contentKey="nav_link_platform" />
-            </a>
-          </li>
-          <li className="text-gray-200">
-            <svg
-              className="w-4 h-4 current-fill"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-              ></path>
-            </svg>
-          </li>
-          <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
-              <Chunk contentKey="nav_link_testimonial" />
-            </a>
-          </li>
-        </ul>
+        
+        <ChunkCollection identifier="navigation_items" tags={["top_nav"]}  className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto" itemClass="team_member">
+          
+          { (getChunk, chunk) => (
+            <div className="flex items-center">
+              <a className="text-sm text-gray-400 hover:text-gray-500 px-4" href={getChunk(chunk,"Url")}>
+                {getChunk(chunk,"Title")}
+              </a>
+              <svg
+                className="w-4 h-4 current-fill"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                ></path>
+              </svg>
+            </div>              
+          )}
+
+        </ChunkCollection>
+
+
         <a
           className="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-green-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
           href="#"
@@ -136,7 +76,7 @@ const NavBar = () => {
         <div className="relative container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-12 md:mb-20">
             <h2 className="mb-10 text-4xl lg:text-5xl font-bold">
-              <Chunk contentKey="hero_callout" />
+              <Chunk contentKey="home_hero" field="Headline" />
             </h2>
             <div>
               <a
