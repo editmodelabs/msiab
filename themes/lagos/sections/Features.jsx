@@ -33,10 +33,13 @@ export default function Features() {
               </h2>
             </div>
 
-            <ChunkCollection identifier="feature_highlights" tags={["home_feature_section"]} className="flex flex-wrap -mx-3" itemClass="mb-6 w-full lg:w-1/2 px-3" >
-          
-              { (getChunk, chunk) => (
-
+            <ChunkCollection
+              identifier="feature_highlights"
+              tags={["home_feature_section"]}
+              className="flex flex-wrap -mx-3"
+              itemClass="mb-6 w-full lg:w-1/2 px-3"
+            >
+              {(getChunk, chunk) => (
                 <div className="p-6 flex flex-wrap bg-white shadow rounded-lg">
                   <div>
                     <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-lg bg-green-100">
@@ -64,10 +67,9 @@ export default function Features() {
                       <ChunkFieldValue identifier="Description" />
                     </p>
                   </div>
-                </div>    
+                </div>
               )}
             </ChunkCollection>
-
           </div>
         </div>
         <div className="skew skew-bottom mr-for-radius">
@@ -122,8 +124,12 @@ export default function Features() {
                   <p className="mb-6 text-gray-500 leading-loose">
                     <Chunk contentKey="second_features_section_desc" />
                   </p>
-                  <ul className="text-gray-500 font-bold">
-                    <li className="flex mb-4">
+                  <ChunkCollection
+                    identifier="list_items"
+                    className="text-gray-500 font-bold"
+                    itemClass="flex mb-4"
+                  >
+                    <>
                       <svg
                         className="mr-2 w-6 h-6 text-green-400"
                         xmlns="http://www.w3.org/2000/svg"
@@ -137,44 +143,10 @@ export default function Features() {
                         ></path>
                       </svg>
                       <span>
-                        <Chunk contentKey="features_list_one" />
+                        <ChunkFieldValue identifier="Item" />
                       </span>
-                    </li>
-                    <li className="flex mb-4">
-                      <svg
-                        className="mr-2 w-6 h-6 text-green-400"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span>
-                        <Chunk contentKey="features_list_two" />
-                      </span>
-                    </li>
-                    <li className="flex mb-4">
-                      <svg
-                        className="mr-2 w-6 h-6 text-green-400"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span>
-                        <Chunk contentKey="features_list_three" />
-                      </span>
-                    </li>
-                  </ul>
+                    </>
+                  </ChunkCollection>
                 </div>
               </div>
               <div className="w-full lg:w-1/2 flex flex-wrap -mx-4">
