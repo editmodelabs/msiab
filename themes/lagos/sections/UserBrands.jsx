@@ -18,9 +18,7 @@ export default function UserBrands() {
           <ChunkCollection
             identifier="user_brands"
             className="w-full lg:w-1/2 flex flex-wrap -mx-2"
-            itemClass={
-              true ? "w-full lg:w-1/3 px-2" : "mb-4 w-full lg:w-1/3 px-2"
-            }
+            itemClass="mb-4 w-full lg:w-1/3 px-2"
           >
             <div className="py-16 bg-gray-50 rounded">
               <ChunkFieldValue className="mx-auto h-6" identifier="Logo" />
