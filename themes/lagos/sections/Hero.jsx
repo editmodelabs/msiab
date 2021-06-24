@@ -63,7 +63,6 @@ const NavBar = () => {
 
         </ChunkCollection>
 
-
         <a
           className="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-green-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
           href="#"
