@@ -36,48 +36,41 @@ export default function Team() {
             identifier="team_members"
             itemClass="mb-6 w-full lg:w-1/2 px-4"
           >
-            {(getChunk, chunk) => (
-              <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
-                <ChunkFieldValue
-                  identifier="Avatar"
-                  className="w-full lg:w-1/3 h-80 object-cover"
-                />
-                <div className="w-full lg:w-2/3 lg:pl-6 p-4">
-                  <h4 className="mb-2 text-2xl font-bold font-heading">
-                    <ChunkFieldValue identifier="Name" />
-                  </h4>
-                  <p className="mb-4 text-gray-500 leading-loose">
-                    <ChunkFieldValue identifier="Bio" />
-                  </p>
-                  <div className="flex">
-                    <ChunkCollection
-                      identifier="social_links_old"
-                      itemClass="links_socials"
-                      className="socials"
-                    >
-                      <a href={getChunk(chunk, "FacebookURL")} class="mr-3">
-                        <ChunkFieldValue
-                          identifier="FacebookLogo"
-                          fill={getChunk(chunk, "Theme")}
-                        />
-                      </a>
-                      <a href={getChunk(chunk, "TwitterURL")} class="mr-3">
-                        <ChunkFieldValue
-                          identifier="TwitterLogo"
-                          fill={getChunk(chunk, "Theme")}
-                        />
-                      </a>
-                      <a href={getChunk(chunk, "InstagramURL")} class="mr-3">
-                        <ChunkFieldValue
-                          identifier="InstagramLogo"
-                          fill={getChunk(chunk, "Theme")}
-                        />
-                      </a>
-                    </ChunkCollection>
+            {(getChunk, chunk) => {
+              return (
+                <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
+                  <ChunkFieldValue
+                    identifier="Avatar"
+                    className="w-full lg:w-1/3 h-80 object-cover"
+                  />
+                  <div className="w-full lg:w-2/3 lg:pl-6 p-4">
+                    <h4 className="mb-2 text-2xl font-bold font-heading">
+                      <ChunkFieldValue identifier="Name" />
+                    </h4>
+                    <p className="mb-4 text-gray-500 leading-loose">
+                      <ChunkFieldValue identifier="Bio" />
+                    </p>
+                    <div className="flex">
+                      <ChunkCollection
+                        identifier="social_links_old"
+                        itemClass="links_socials"
+                        className="socials"
+                      >
+                        <a href={getChunk(chunk, "FacebookURL")} class="mr-3">
+                          <ChunkFieldValue identifier="FacebookLogo" />
+                        </a>
+                        <a href={getChunk(chunk, "TwitterURL")} class="mr-3">
+                          <ChunkFieldValue identifier="TwitterLogo" />
+                        </a>
+                        <a href={getChunk(chunk, "InstagramURL")} class="mr-3">
+                          <ChunkFieldValue identifier="InstagramLogo" />
+                        </a>
+                      </ChunkCollection>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              );
+            }}
           </ChunkCollection>
         </div>
       </div>
