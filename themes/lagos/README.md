@@ -1,6 +1,6 @@
 **Step #1**
 
-Clone the starter Editmode project <a href="https://app.editmode.com/projects/prj_Y5HfCBS4rqZg/clone" target="_blanl">here</a> to generate a new ID.
+Clone the starter Editmode project <a href="https://app.editmode.com/projects/prj_Y5HfCBS4rqZg/clone" target="_blank">here</a> to generate a new ID.
 
 <br/>
 
