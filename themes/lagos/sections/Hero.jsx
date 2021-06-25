@@ -16,33 +16,27 @@ const NavBar = () => {
             background-color: blue;
           }
         `}</style>
-        <a className="text-3xl font-bold text-primary leading-none flex" href="/">
+        <a
+          className="text-3xl font-bold text-primary leading-none flex"
+          href="/"
+        >
           <Chunk identifier="logo_icon" className="w-5 text-primary" />
           <Chunk identifier="company_name" className="text-lg" />
         </a>
 
-        
-        <div className="lg:hidden">
-          <button className="navbar-burger flex items-center text-gray-400 p-3">
-            <svg
-              className="block h-4 w-4 fill-current"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                <Chunk identifier="cnk_32d80e54054d215c7555" />
-              </title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </button>
-        </div>
-        
-        <ChunkCollection identifier="navigation_items" tags={["top_nav"]}  className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto" itemClass="team_member">
-          
-          { (getChunk, chunk) => (
+        <ChunkCollection
+          identifier="navigation_items"
+          tags={["top_nav"]}
+          className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto"
+          itemClass="team_member"
+        >
+          {(getChunk, chunk) => (
             <div className="flex items-center">
-              <a className="text-sm text-gray-400 hover:text-gray-500 px-4" href={getChunk(chunk,"Url")}>
-                {getChunk(chunk,"Title")}
+              <a
+                className="text-sm text-gray-400 hover:text-gray-500 px-4"
+                href={getChunk(chunk, "Url")}
+              >
+                {getChunk(chunk, "Title")}
               </a>
               <svg
                 className="w-4 h-4 current-fill"
@@ -58,9 +52,8 @@ const NavBar = () => {
                   d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                 ></path>
               </svg>
-            </div>              
+            </div>
           )}
-
         </ChunkCollection>
 
         <a
@@ -188,36 +181,6 @@ const NavBar = () => {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="mt-auto">
-            <div className="pt-6">
-              <a
-                className="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
-                href="#"
-              >
-                <Chunk identifier="cnk_85bbdb44ba664dacb903" />
-              </a>
-              <a
-                className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-green-600 hover:bg-green-700 rounded-l-xl rounded-t-xl"
-                href="#"
-              >
-                <Chunk identifier="cnk_6da5480de32b981c647f" />
-              </a>
-            </div>
-            <p className="my-4 text-xs text-center text-gray-400">
-              <span>&copy; 2020 All rights reserved.</span>
-            </p>
-            <div className="text-center">
-              <a className="inline-block px-1" href="#">
-                <img src="atis-assets/social/facebook.svg" alt="" />
-              </a>
-              <a className="inline-block px-1" href="#">
-                <img src="atis-assets/social/twitter.svg" alt="" />
-              </a>
-              <a className="inline-block px-1" href="#">
-                <img src="atis-assets/social/instagram.svg" alt="" />
-              </a>
-            </div>
           </div>
         </nav>
       </div>
