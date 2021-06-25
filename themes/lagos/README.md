@@ -10,7 +10,7 @@ Clone the starter Editmode project <a href="https://app.editmode.com/projects/pr
 
 **Step #3**
 
-Add `NEXT_PUBLIC_PROJECT_ID` as an environment variable for the Vercel project being deployed - its value should be the project ID generated from the cloned starter project.
+Add the ID generated from the cloned starter project to the `NEXT_PUBLIC_PROJECT_ID` environment variable.
 
 <br/>
 
