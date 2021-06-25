@@ -1,4 +1,5 @@
 import "../styles/globals.min.css";
+import "../styles/custom.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

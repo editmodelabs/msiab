@@ -43,20 +43,11 @@ export default function Features() {
                 <div className="p-6 flex flex-wrap bg-white shadow rounded-lg">
                   <div>
                     <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-lg bg-green-100">
-                      <svg
+                      <ChunkFieldValue
+                        identifier="Image"
                         className="h-8 w-8 md:w-12 md:h-12 text-green-500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        ></path>
-                      </svg>
+                        stroke={getChunk(chunk, "Theme")}
+                      />
                     </span>
                   </div>
                   <div className="w-full lg:w-2/3">

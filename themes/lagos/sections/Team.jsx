@@ -50,15 +50,30 @@ export default function Team() {
                     <ChunkFieldValue identifier="Bio" />
                   </p>
                   <div className="flex">
-                    <a className="mr-3" href={getChunk(chunk, "FacebookURL")}>
-                      <Chunk identifier="facebook_img" />
-                    </a>
-                    <a className="mr-3" href={getChunk(chunk, "TwitterURL")}>
-                      <Chunk identifier="twitter_img" />
-                    </a>
-                    <a href={getChunk(chunk, "InstagramURL")}>
-                      <Chunk identifier="instagram_img" />
-                    </a>
+                    <ChunkCollection
+                      identifier="social_links_old"
+                      itemClass="links_socials"
+                      className="socials"
+                    >
+                      <a href={getChunk(chunk, "FacebookURL")} class="mr-3">
+                        <ChunkFieldValue
+                          identifier="FacebookLogo"
+                          fill={getChunk(chunk, "Theme")}
+                        />
+                      </a>
+                      <a href={getChunk(chunk, "TwitterURL")} class="mr-3">
+                        <ChunkFieldValue
+                          identifier="TwitterLogo"
+                          fill={getChunk(chunk, "Theme")}
+                        />
+                      </a>
+                      <a href={getChunk(chunk, "InstagramURL")} class="mr-3">
+                        <ChunkFieldValue
+                          identifier="InstagramLogo"
+                          fill={getChunk(chunk, "Theme")}
+                        />
+                      </a>
+                    </ChunkCollection>
                   </div>
                 </div>
               </div>
