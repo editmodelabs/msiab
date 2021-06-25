@@ -3,7 +3,7 @@ import { useState } from "react";
 import handleClick from "../utils/handleClick";
 
 const PaymentPanelContent = () => {
-  const [activeQuestions, setActiveQuestions] = useState([]);
+  const [activePaymentQuestions, setActivePaymentQuestions] = useState([]);
 
   return (
     <div className="container mx-auto px-4">
@@ -20,7 +20,11 @@ const PaymentPanelContent = () => {
                   className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600"
                   id={getChunk(chunk, "Question")}
                   onClick={(e) =>
-                    handleClick(e, activeQuestions, setActiveQuestions)
+                    handleClick(
+                      e,
+                      activePaymentQuestions,
+                      setActivePaymentQuestions
+                    )
                   }
                   data-id={getChunk(chunk, "Question")}
                 >
@@ -39,7 +43,9 @@ const PaymentPanelContent = () => {
                       strokeLinejoin="round"
                       strokeWidth="2"
                       d={
-                        activeQuestions.includes(getChunk(chunk, "Question"))
+                        activePaymentQuestions.includes(
+                          getChunk(chunk, "Question")
+                        )
                           ? "M19 14l-7 7m0 0l-7-7m7 7V3"
                           : "M5 10l7-7m0 0l7 7m-7-7v18"
                       }
@@ -48,8 +54,8 @@ const PaymentPanelContent = () => {
                 </button>
                 <p
                   className={
-                    activeQuestions &&
-                    activeQuestions.includes(getChunk(chunk, "Question"))
+                    activePaymentQuestions &&
+                    activePaymentQuestions.includes(getChunk(chunk, "Question"))
                       ? "mt-4 pr-4 text-gray-400 font-normal leading-loose"
                       : "hidden mt-4 pr-4 text-gray-400 font-normal leading-loose"
                   }
