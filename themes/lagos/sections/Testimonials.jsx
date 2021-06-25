@@ -1,14 +1,11 @@
 import {
   ChunkCollection,
-  CustomChunkCollection,
   useCollectionChunks,
   ChunkFieldValue,
-  CollectionItemWrapper,
   Chunk,
 } from "editmode-react";
 
 export default function Testimonials() {
-  const chunks = useCollectionChunks("col_MFxBu6fiTyRM");
   return (
     <section>
       <div className="skew skew-top mr-for-radius">
@@ -32,7 +29,6 @@ export default function Testimonials() {
       <div className="py-20 bg-gray-50 radius-for-skewed overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="pt-8 pb-16 flex flex-wrap justify-center items-center">
-            
             <div className="mb-10 max-w-lg text-center mx-auto">
               <span className="text-green-600 font-bold">
                 <Chunk contentKey="testimonial_home_section" field="Tagline" />
@@ -43,8 +39,12 @@ export default function Testimonials() {
             </div>
           </div>
           <div className="flex w-full relative">
-          
-            <ChunkCollection identifier="testimonials" tags={["home_testimonials"]}  className="flex flex-wrap justify-center mx-auto" itemClass="mb-4 w-full lg:w-1/3 px-3" >
+            <ChunkCollection
+              identifier="testimonials"
+              tags={["home_testimonials"]}
+              className="flex flex-wrap justify-center mx-auto"
+              itemClass="mb-4 w-full lg:w-1/3 px-3"
+            >
               <div className="p-5 bg-white shadow rounded">
                 <svg
                   className="mb-6 text-green-600 h-8"
@@ -72,7 +72,6 @@ export default function Testimonials() {
                 </p>
               </div>
             </ChunkCollection>
-
           </div>
         </div>
       </div>
