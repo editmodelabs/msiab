@@ -1,10 +1,9 @@
-const questionRef = useCallback((questionNode) => {
+import { useCallback } from "react";
+
+export const useQuestionRef = useCallback((questionNode) => {
   const child = questionNode ? questionNode.parentNode : "";
   const buttonToSet = child ? child?.children[0].children[0] : "";
-  const parent =
-    child && questionNode.parentNode && questionNode.parentNode.parentNode
-      ? questionNode.parentNode.parentNode
-      : "";
+  const parent = child && child.parentNode ? child.parentNode : "";
   if (child && parent && buttonToSet) {
     return buttonToSet.setAttribute(
       "data-id",
