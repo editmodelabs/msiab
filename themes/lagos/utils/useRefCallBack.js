@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 
-export const useQuestionRef = useCallback((questionNode) => {
+const useQuestionRef = useCallback((questionNode) => {
   const child = questionNode ? questionNode.parentNode : "";
   const buttonToSet = child ? child?.children[0].children[0] : "";
   const parent = child && child.parentNode ? child.parentNode : "";
