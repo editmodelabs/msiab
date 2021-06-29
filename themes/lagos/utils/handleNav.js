@@ -1,7 +1,5 @@
 export default function handleNav() {
   if (typeof window !== "undefined") {
-    // document.addEventListener("DOMContentLoaded", function () {
-    // open
     const burger = document.querySelectorAll(".navbar-burger");
     const menu = document.querySelectorAll(".navbar-menu");
 

@@ -50,7 +50,7 @@ export default function Team() {
                     <p className="mb-4 text-gray-500 leading-loose">
                       <ChunkFieldValue identifier="Bio" />
                     </p>
-                    <div className="flex">
+                    {/* <div className="flex">
                       <ChunkCollection
                         identifier="social_links_old"
                         itemClass="links_socials"
@@ -66,7 +66,7 @@ export default function Team() {
                           <ChunkFieldValue identifier="InstagramLogo" />
                         </a>
                       </ChunkCollection>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               );
