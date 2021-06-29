@@ -1,4 +1,4 @@
-import { Chunk, ChunkCollection } from "editmode-react";
+import { Chunk, ChunkCollection, ChunkFieldValue } from "editmode-react";
 export default function Footer() {
   return (
     <section>
@@ -38,11 +38,16 @@ export default function Footer() {
 
               <ChunkCollection identifier="social_links" className="flex">
                 {(getChunk, chunk) => (
+                  
                   <a
-                    className="inline-block w-10 mr-2 p-2 bg-gray-50 hover:bg-gray-100 rounded"
+                    className="inline-block w-8 mr-2 bg-gray-50 hover:bg-gray-100 rounded text-primary"
                     href={getChunk(chunk, "Url")}
                   >
-                    <img src={getChunk(chunk, "Image")} />
+                    <ChunkFieldValue
+                      identifier="Image"
+                      className="h-8 w-8 text-primary"
+                      stroke={getChunk(chunk, "Image")}
+                    />
                   </a>
                 )}
               </ChunkCollection>

@@ -11,7 +11,7 @@ export default function FaqTabs() {
     <Tabs>
       <div className="border-b">
         <div className="mb-16 max-w-xl mx-auto px-4 text-center">
-          <span className="text-green-600 font-bold">
+          <span className="text-primary font-bold">
             <Chunk contentKey="faq_section_heading_before" />
           </span>
           <h2 className="text-4xl lg:text-5xl font-bold font-heading">

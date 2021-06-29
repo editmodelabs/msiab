@@ -21,7 +21,7 @@ export default function Testimonials() {
         <div className="container mx-auto px-4">
           <div className="pt-8 pb-16 flex flex-wrap justify-center items-center">
             <div className="mb-10 max-w-lg text-center mx-auto">
-              <span className="text-green-600 font-bold">
+              <span className="text-primary font-bold">
                 <Chunk contentKey="testimonial_home_section" field="Tagline" />
               </span>
               <h2 className="mt-4 text-4xl lg:text-5xl font-bold font-heading">
@@ -38,7 +38,7 @@ export default function Testimonials() {
             >
               <div className="p-5 bg-white shadow rounded">
                 <svg
-                  className="mb-6 text-green-600 h-8"
+                  className="mb-6 text-primary h-8"
                   viewBox="0 0 32 28"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"

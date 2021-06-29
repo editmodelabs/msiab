@@ -25,7 +25,7 @@ export default function Features() {
         <div className="py-20 bg-gray-50 radius-for-skewed">
           <div className="container mx-auto px-4">
             <div className="mb-16 max-w-md mx-auto text-center">
-              <span className="text-green-600 font-bold">
+              <span className="text-primary font-bold">
                 <Chunk contentKey="feature_home_section" field="Tagline" />
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold font-heading">
@@ -42,10 +42,10 @@ export default function Features() {
               {(getChunk, chunk) => (
                 <div className="p-6 flex flex-wrap bg-white shadow rounded-lg">
                   <div>
-                    <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-lg bg-green-100">
+                    <span className="mb-4 lg:mb-0 mr-6 inline-block p-3 md:p-5 rounded-lg bg-primary-100 bg-blend-screen">
                       <ChunkFieldValue
                         identifier="Image"
-                        className="h-8 w-8 md:w-12 md:h-12 text-green-500"
+                        className="h-8 w-8 md:w-12 md:h-12 text-primary"
                         stroke={getChunk(chunk, "Theme")}
                       />
                     </span>
