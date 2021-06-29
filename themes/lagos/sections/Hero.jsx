@@ -150,48 +150,20 @@ const NavBar = () => {
             </button>
           </div>
           <div>
-            <ul>
-              <li className="mb-1">
+            <ChunkCollection
+              identifier="navigation_items"
+              tags={["top_nav"]}
+              itemClass="mb-1"
+            >
+              {(getChunk, chunk) => (
                 <a
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
-                  href="#"
+                  href={getChunk(chunk, "Url")}
                 >
-                  Start
+                  {getChunk(chunk, "Title")}
                 </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
-                  href="#"
-                >
-                  About Us
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
-                  href="#"
-                >
-                  Services
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
-                  href="#"
-                >
-                  Platform
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
-                  href="#"
-                >
-                  Testimonials
-                </a>
-              </li>
-            </ul>
+              )}
+            </ChunkCollection>
           </div>
         </nav>
       </div>
