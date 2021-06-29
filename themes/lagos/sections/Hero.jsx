@@ -24,11 +24,22 @@ const NavBar = () => {
           <Chunk identifier="company_name" className="text-lg" />
         </a>
 
+        <div className="lg:hidden">
+          <button className="navbar-burger flex items-center text-gray-400 p-3">
+            <svg
+              className="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
         <ChunkCollection
           identifier="navigation_items"
           tags={["top_nav"]}
-          className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto"
-          itemClass="team_member"
+          className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
         >
           {(getChunk, chunk) => (
             <div className="flex items-center">

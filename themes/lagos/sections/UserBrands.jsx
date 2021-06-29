@@ -16,7 +16,7 @@ export default function UserBrands() {
             </div>
           </div>
           <ChunkCollection
-            identifier="user_brands"
+            identifier="customer_logos"
             className="w-full lg:w-1/2 flex flex-wrap -mx-2"
             itemClass="mb-4 w-full lg:w-1/3 px-2"
           >
