@@ -11,7 +11,6 @@ import { Editmode } from "editmode-react";
 import { useEffect } from "react";
 import handleNav from "../utils/handleNav";
 import Head from 'next/head'
-import InlineStyles from "../styles/InlineStyles";
 
 export default function Home() {
   useEffect(() => {
