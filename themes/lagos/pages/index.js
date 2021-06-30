@@ -1,3 +1,4 @@
+import Layout from "../components/Layout";
 import Hero from "../sections/Hero";
 import Features from "../sections/Features";
 import HowItWorks from "../sections/HowItWorks";
@@ -14,43 +15,24 @@ import { useGetChunk } from "editmode-react";
 
 export default function Home() {
 
-  const primaryColor = useGetChunk("primary_color")
   useEffect(() => {
     handleNav();
   }, []);
   return (
     <>
       <div>
-        <Editmode projectId={process.env.NEXT_PUBLIC_PROJECT_ID}>
-
-          <style global jsx>{`
-            .text-primary {
-              color: ${primaryColor};
-            }
-            .bg-primary {
-              background-color: ${primaryColor};
-            }
-            .bg-primary-100 {
-              background-color: ${primaryColor}10;
-            }
-            .border-primary {
-              border-color: ${primaryColor};
-            }
-          `}
-          </style>
+        <Layout>
           <Head>
             <title>My page title</title>
-            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           </Head>
           <Hero />
           <HowItWorks />
           <Features />
-          <Team />
           <Faq />
           <UserBrands />
           <Testimonials />
           <Footer />
-        </Editmode>
+        </Layout>
       </div>
     </>
   );
