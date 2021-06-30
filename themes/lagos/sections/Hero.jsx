@@ -89,7 +89,7 @@ const NavBar = () => {
                 className="inline-block w-full lg:w-auto py-2 px-6 font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
                 href="#"
               >
-                <Chunk contentKey="how_it_works" />
+                <Chunk contentKey="home_hero_sign_up_cta" />
               </a>
             </div>
           </div>

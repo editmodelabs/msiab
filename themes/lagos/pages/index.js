@@ -1,5 +1,6 @@
 import Hero from "../sections/Hero";
 import Features from "../sections/Features";
+import HowItWorks from "../sections/HowItWorks";
 import Team from "../sections/Team";
 import Faq from "../sections/FAQ";
 import UserBrands from "../sections/UserBrands";
@@ -42,6 +43,7 @@ export default function Home() {
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           </Head>
           <Hero />
+          <HowItWorks />
           <Features />
           <Team />
           <Faq />
