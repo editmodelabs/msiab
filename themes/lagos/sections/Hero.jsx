@@ -1,4 +1,4 @@
-import { Chunk, ChunkCollection, useGetChunk } from "editmode-react";
+import { Chunk, ChunkCollection, ChunkFieldValue, useGetChunk } from "editmode-react";
 const NavBar = () => {
 
   const primaryColor = useGetChunk("primary_color")
@@ -44,7 +44,7 @@ const NavBar = () => {
                 className="text-sm text-gray-400 hover:text-gray-500 px-4"
                 href={getChunk(chunk, "Url")}
               >
-                {getChunk(chunk, "Title")}
+                <ChunkFieldValue identifier="Title" />
               </a>
               <svg
                 className="w-4 h-4 current-fill"
@@ -81,15 +81,15 @@ const NavBar = () => {
             <div>
               <a
                 className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 bg-primary text-white font-semibold leading-loose rounded-l-xl rounded-t-xl transition duration-200"
-                href="#"
+                href={useGetChunk("home_hero_primary_cta","Url")}
               >
-                <Chunk contentKey="get_started_button" />
+                {useGetChunk("home_hero_primary_cta","Button Text")}
               </a>
               <a
                 className="inline-block w-full lg:w-auto py-2 px-6 font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
-                href="#"
+                href={useGetChunk("home_hero_secondary_cta","Url")}
               >
-                <Chunk contentKey="home_hero_sign_up_cta" />
+                {useGetChunk("home_hero_secondary_cta","Button Text")}
               </a>
             </div>
           </div>
