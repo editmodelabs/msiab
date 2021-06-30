@@ -857,10 +857,10 @@ dompurify@^2.0.14:
   resolved "https://registry.npmjs.org/dompurify/-/dompurify-2.2.9.tgz"
   integrity sha512-+9MqacuigMIZ+1+EwoEltogyWGFTJZWU3258Rupxs+2CGs4H914G9er6pZbsme/bvb5L67o2rade9n21e4RW/w==
 
-editmode-react@3.1.31-canary.d4280e6.0:
-  version "3.1.31-canary.d4280e6.0"
-  resolved "https://registry.yarnpkg.com/editmode-react/-/editmode-react-3.1.31-canary.d4280e6.0.tgz#c8b650219f822a634626f4b92e461e53493edd7b"
-  integrity sha512-9u98jHlEnDv4bcacG6Iywo0NHli7s6Ifc8in7O+0QfS4kT9oRFEE+j5rLVv+JvWWB4KpWkCIB0OGs2c6vqFvsQ==
+editmode-react@3.1.31-canary.52.39b030d.0:
+  version "3.1.31-canary.52.39b030d.0"
+  resolved "https://registry.yarnpkg.com/editmode-react/-/editmode-react-3.1.31-canary.52.39b030d.0.tgz#8d6f698e04087bfa670a4ab596003025ba8d3c5c"
+  integrity sha512-qMtlOqnLjimVJMSOUJxRfSPyq2RW8+lqV9/hfxer50nMCH5FkhImDb8wYg/Xzut1Nyn0yTL27F99CydsUY3zSw==
   dependencies:
     "@emotion/hash" "^0.8.0"
     axios "0.20.0"
@@ -2513,6 +2513,11 @@ watchpack@2.1.1:
   dependencies:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
+
+webfontloader@^1.6.28:
+  version "1.6.28"
+  resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+  integrity sha1-23hhKSU8tujq5UwvsF+HCvZnW64=
 
 webidl-conversions@^4.0.2:
   version "4.0.2"
