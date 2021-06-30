@@ -22,7 +22,7 @@ export default function Features() {
             <polygon fill="currentColor" points="0 10 10 0 10 10" />
           </svg>
         </div>
-        <div className="py-20 bg-gray-50 radius-for-skewed">
+        <div className="py-20 radius-for-skewed">
           <div className="container mx-auto px-4">
             <div className="mb-16 max-w-md mx-auto text-center">
               <span className="text-primary font-bold">
