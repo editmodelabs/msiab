@@ -17,7 +17,7 @@ export default function Testimonials() {
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
       </div>
-      <div className="py-20 bg-gray-50 radius-for-skewed overflow-hidden">
+      <div className="py-20 bg-gray-50 shadow-sm radius-for-skewed overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="pt-8 pb-16 flex flex-wrap justify-center items-center">
             <div className="mb-10 max-w-lg text-center mx-auto">
