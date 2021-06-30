@@ -8,13 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "editmode-react": "3.1.31-canary.d4280e6.0",
+    "editmode-react": "3.1.31-canary.52.39b030d.0",
     "next": "10.2.3",
     "react": "16.*",
     "react-dom": "16.*",
     "styled-components": "^5.3.0",
     "styled-reset": "^4.3.4",
-    "use-constant": "^1.1.0"
+    "use-constant": "^1.1.0",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6"
