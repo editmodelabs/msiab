@@ -46,7 +46,6 @@ export default function Features() {
                       <ChunkFieldValue
                         identifier="Image"
                         className="h-8 w-8 md:w-12 md:h-12 text-primary"
-                        stroke={getChunk(chunk, "Theme")}
                       />
                     </span>
                   </div>
