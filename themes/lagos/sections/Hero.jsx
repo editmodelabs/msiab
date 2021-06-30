@@ -95,11 +95,7 @@ const NavBar = () => {
           </div>
         </div>
         <div className="absolute inset-x-0 max-w-3xl mx-auto px-4">
-          <img
-            className="rounded-3xl md:rounded-6xl md:rounded-br-none"
-            src="https://images.unsplash.com/photo-1572521165329-b197f9ea3da6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80"
-            alt="/"
-          />
+          <Chunk contentKey="home_hero_image" className="rounded-3xl md:rounded-6xl md:rounded-br-none" />
         </div>
       </div>
       <div className="hidden navbar-menu relative z-50">
