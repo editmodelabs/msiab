@@ -19,21 +19,17 @@ export default function Home() {
     handleNav();
   }, []);
   return (
-    <>
-      <div>
-        <Layout>
-          <Head>
-            <title>My page title</title>
-          </Head>
-          <Hero />
-          <HowItWorks />
-          <Features />
-          <Faq />
-          <UserBrands />
-          <Testimonials />
-          <Footer />
-        </Layout>
-      </div>
-    </>
+    <div>
+      <Head>
+        <title>My page title</title>
+      </Head>
+      <Hero />
+      <HowItWorks />
+      <Features />
+      <Faq />
+      <UserBrands />
+      <Testimonials />
+      <Footer />
+    </div>
   );
 }
