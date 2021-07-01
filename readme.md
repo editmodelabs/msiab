@@ -42,7 +42,7 @@ The goal of Marketing Site in a Box is to provide the two pillars of any marketi
 | <h3> Lagos </h3>             |  Manila | Dublin
 :-------------------------:|:-------------------------:|:-------------------------:
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Feditmodelabs%2Fmsiab%2Ftree%2Fmain%2Fthemes%2Flagos?&env=NEXT_PUBLIC_PROJECT_ID)  | Coming Soon | Coming Soon
-<img src="/themes/lagos/preview.png" width="350" />  |  <img src="/themes/lagos/preview.png" width="350" /> |  <img src="/themes/lagos/preview.png" width="350" /> 
+<img src="/themes/lagos/preview.png" width="350" />  |  <img src="/themes/comingsoon.png" width="350" /> |  <img src="/themes/comingsoon.png" width="350" /> 
 
 ---
 
