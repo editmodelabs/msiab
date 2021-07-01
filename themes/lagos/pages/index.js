@@ -9,17 +9,12 @@ import Testimonials from "../sections/Testimonials";
 import Footer from "../sections/Footer";
 import { Editmode } from "editmode-react";
 import { useEffect } from "react";
-import handleNav from "../utils/handleNav";
 import Head from 'next/head'
 
 export default function Home() {
-  useEffect(() => {
-    handleNav();
-  }, []);
   return (
     <div>
       <Head>
-        <title>My page title</title>
       </Head>
       <Hero />
       <HowItWorks />

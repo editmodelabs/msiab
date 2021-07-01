@@ -1,13 +1,21 @@
 import Head from 'next/head'
+import { useEffect } from "react";
+import handleNav from "../utils/handleNav";
 import { useGetChunk } from "editmode-react";
 
 function Layout(props) {
   const primaryColor = useGetChunk("primary_color")
   const font = useGetChunk('google_font_family')
+  const defaultMetaTitle = `${useGetChunk('company_name')} -  ${useGetChunk('company_tagline')}`
+
+  useEffect(() => {
+    handleNav();
+  }, []);
   return (
     <div>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>{defaultMetaTitle}</title>
       </Head>
       {props.children}
       <style jsx global>{`
