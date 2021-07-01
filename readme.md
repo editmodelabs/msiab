@@ -39,10 +39,10 @@ The goal of Marketing Site in a Box is to provide the two pillars of any marketi
 
 #### 2. Choose a theme and hit the button to deploy it to Vercel
 
-| <h3> Lagos </h3>             |  Manila | Dublin
+| <h3> Lagos </h3>             |  <h3>Manila</h3> | <h3>Dublin</h3>
 :-------------------------:|:-------------------------:|:-------------------------:
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Feditmodelabs%2Fmsiab%2Ftree%2Fmain%2Fthemes%2Flagos?&env=NEXT_PUBLIC_PROJECT_ID)  | Coming Soon | Coming Soon
-<img src="/themes/lagos/preview.png" width="350" />  |  <img src="/themes/lagos/preview.png" width="350" /> |  <img src="/themes/lagos/preview.png" width="350" /> 
+<img src="/themes/lagos/preview.png" width="350" />  |  <img src="/themes/comingsoon.png" width="350" /> |  <img src="/themes/comingsoon.png" width="350" /> 
 
 ---
 
