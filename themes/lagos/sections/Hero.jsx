@@ -4,14 +4,14 @@ const NavBar = () => {
   const primaryColor = useGetChunk("primary_color")
   return (
     
-    <section className="relative pb-56 sm:pb-80">
+    <section className="relative overflow-hidden pb-56 sm:pb-80">
       
       <img
-        className="hidden lg:block absolute inset-0 w-full"
+        className="hidden sm:block md:block absolute w-full"
         src="atis-assets/background/lines.svg"
         alt=""
       />
-      <nav className="relative px-6 py-6 flex justify-between items-center bg-gray-50">
+      <nav className="relative px-6 py-6 flex justify-between items-center bg-white shadow">
         
         <a
           className="text-3xl font-bold text-primary leading-none flex"
@@ -72,10 +72,10 @@ const NavBar = () => {
           <Chunk contentKey="nav_link_contact" />
         </a>
       </nav>
-      <div className="relative pt-12 md:pt-16 pb-32 md:pb-64 bg-gray-50 border-b-4 border-primary">
+      <div className="relative pt-12 md:pt-16 pb-32 md:pb-64  border-b-4 border-primary">
         <div className="relative container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-12 md:mb-20">
-            <h2 className="mb-10 text-4xl lg:text-5xl font-bold">
+            <h2 className="mb-10 text-4xl lg:text-5xl font-bold leading-tight">
               <Chunk contentKey="home_hero" field="Headline" />
             </h2>
             <div>
