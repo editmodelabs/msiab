@@ -179,9 +179,9 @@
     "@hapi/hoek" "9.x.x"
 
 "@hapi/boom@9.x.x":
-  version "9.1.2"
-  resolved "https://registry.yarnpkg.com/@hapi/boom/-/boom-9.1.2.tgz#48bd41d67437164a2d636e3b5bc954f8c8dc5e38"
-  integrity sha512-uJEJtiNHzKw80JpngDGBCGAmWjBtzxDCz17A9NO2zCi8LLBlb5Frpq4pXwyN+2JQMod4pKz5BALwyneCgDg89Q==
+  version "9.1.3"
+  resolved "https://registry.yarnpkg.com/@hapi/boom/-/boom-9.1.3.tgz#22cad56e39b7a4819161a99b1db19eaaa9b6cc6e"
+  integrity sha512-RlrGyZ603hE/eRTZtTltocRm50HHmrmL3kGOP0SQ9MasazlW1mt/fkv4C5P/6rnpFXjwld/POFX1C8tMZE3ldg==
   dependencies:
     "@hapi/hoek" "9.x.x"
 
@@ -247,9 +247,9 @@
     "@types/trusted-types" "*"
 
 "@types/node@*":
-  version "15.12.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.5.tgz#9a78318a45d75c9523d2396131bd3cca54b2d185"
-  integrity sha512-se3yX7UHv5Bscf8f1ERKvQOD6sTyycH3hdaoozvaLxgUiY5lIGEeH37AD0G0Qi9kPqihPn0HOfd2yaIEN9VwEg==
+  version "15.14.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.14.0.tgz#74dbf254fb375551a9d2a71faf6b9dbc2178dc53"
+  integrity sha512-um/+/ip3QZmwLfIkWZSNtQIJNVAqrJ92OkLMeuZrjZMTAJniI7fh8N8OICyDhAJ2mzgk/fmYFo72jRr5HyZ1EQ==
 
 "@types/trusted-types@*":
   version "2.0.1"
@@ -864,10 +864,10 @@ dompurify@^2.0.14:
   resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.2.9.tgz#4b42e244238032d9286a0d2c87b51313581d9624"
   integrity sha512-+9MqacuigMIZ+1+EwoEltogyWGFTJZWU3258Rupxs+2CGs4H914G9er6pZbsme/bvb5L67o2rade9n21e4RW/w==
 
-editmode-react@3.1.31-canary.10:
-  version "3.1.31-canary.10"
-  resolved "https://registry.yarnpkg.com/editmode-react/-/editmode-react-3.1.31-canary.10.tgz#f319f22bff9a34e55abd770b3f31cef314acd1bb"
-  integrity sha512-V1Ss+0+mogDPf0uXNfIiH7g1+GAI7Q0qp8c1rFz/jR1sk9Hvp4a9aSPhTPOAFF0/op4ApmIxcGzFvi4CjXpfXg==
+editmode-react@3.1.31-canary.52.2c65fe0.0:
+  version "3.1.31-canary.52.2c65fe0.0"
+  resolved "https://registry.yarnpkg.com/editmode-react/-/editmode-react-3.1.31-canary.52.2c65fe0.0.tgz#c26d4cfb607477f0cf96f8d17924b7e892750a70"
+  integrity sha512-pCQ20EHGJ5y91InfhrQAZffRymifBuETJZIFrh8K7MVSPXyi/YliFqz9Bhe4yA9Ew322vXhvhUcgybs4J5+tsA==
   dependencies:
     "@emotion/hash" "^0.8.0"
     axios "0.20.0"
@@ -877,9 +877,9 @@ editmode-react@3.1.31-canary.10:
     react-router-dom "^5.2.0"
 
 electron-to-chromium@^1.3.723:
-  version "1.3.763"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.763.tgz#93f6f02506d099941f557b9db9ba50b30215bf15"
-  integrity sha512-UyvEPae0wvzsyNJhVfGeFSOlUkHEze8xSIiExO5tZQ8QTr7obFiJWGk3U4e7afFOJMQJDszqU/3Pk5jtKiaSEg==
+  version "1.3.765"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.765.tgz#36fa0ef7a81048bb487bfe3d297100967e2b8db2"
+  integrity sha512-4NhcsfZYlr1x4FehYkK+R9CNNTOZ8vLcIu8Y1uWehxYp5r/jlCGAfBqChIubEfdtX+rBQpXx4yJuX/dzILH/nw==
 
 elliptic@^6.5.3:
   version "6.5.4"
