@@ -28,7 +28,7 @@ export default function Features() {
               <span className="text-primary font-bold">
                 <Chunk contentKey="feature_home_section" field="Tagline" />
               </span>
-              <h2 className="text-4xl lg:text-5xl font-bold font-heading">
+              <h2 className="text-4xl lg:text-5xl font-bold font-heading leading-tight mt-3">
                 <Chunk contentKey="feature_home_section" field="Headline" />
               </h2>
             </div>

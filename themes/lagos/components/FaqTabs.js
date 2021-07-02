@@ -14,7 +14,7 @@ export default function FaqTabs() {
           <span className="text-primary font-bold">
             <Chunk contentKey="faq_section_heading_before" />
           </span>
-          <h2 className="text-4xl lg:text-5xl font-bold font-heading">
+          <h2 className="text-4xl lg:text-5xl font-bold font-heading leading-tight">
             <Chunk contentKey="faq_section_heading" />
           </h2>
         </div>

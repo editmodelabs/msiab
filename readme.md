@@ -32,11 +32,17 @@ The goal of Marketing Site in a Box is to provide the two pillars of any marketi
 ---
 ### How It Works
 
-1. Clone the Editmode Website Starter project from [here](https://app.editmode.com/projects/prj_Y5HfCBS4rqZg/clone). Take note of your newly created project id.
-2. Browse our [themes](https://github.com/editmodelabs/msiab/tree/main/themes) and hit the deploy button on your chosen theme to deploy it straight to Vercel. This will also create a copy of the codebase into your own github account. Set the `NEXT_PUBLIC_PROJECT_ID` variable, as recorded in Step 1.
-3. Open your new website and hit `CMD & SHIFT & E` to enable Editmode and update your content inline. Visit the Editmode Content Hub and invite your team to let them make updates too.
+#### 1. 👇  Get an Editmode project id by cloning the Marketing Site Starter project. 
 
-That's it, congrats! You now have a beautiful, content managed marketing website ready to expand and deploy as you please. 🤗
+ &nbsp;&nbsp;&nbsp;&nbsp; [<img src="https://img.editmode.com/production/content_pieces/cnk_4282820621bc70b3d147/98CipzYMT2eD/images/original/getproject.png" width="170" />](https://app.editmode.com/projects/prj_Y5HfCBS4rqZg/clone)
+
+
+#### 2. Choose a theme and hit the button to deploy it to Vercel
+
+| <h3> Lagos </h3>             |  <h3>Manila</h3> | <h3>Dublin</h3>
+:-------------------------:|:-------------------------:|:-------------------------:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Feditmodelabs%2Fmsiab%2Ftree%2Fmain%2Fthemes%2Flagos?&env=NEXT_PUBLIC_PROJECT_ID)  | Coming Soon | Coming Soon
+<img src="/themes/lagos/preview.png" width="350" />  |  <img src="/themes/comingsoon.png" width="350" /> |  <img src="/themes/comingsoon.png" width="350" /> 
 
 ---
 

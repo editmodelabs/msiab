@@ -3,7 +3,7 @@ import { ChunkCollection, ChunkFieldValue, Chunk } from "editmode-react";
 
 export default function HowItWorks() {
   return (
-    <section>
+    <section className="shadow">
       <div className="skew skew-top mr-for-radius">
         <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
           <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
@@ -21,7 +21,7 @@ export default function HowItWorks() {
             <span className="text-primary font-bold">
               <Chunk contentKey="how_it_works" field="Tagline" />
             </span>
-            <h2 className="text-4xl lg:text-5xl font-bold font-heading">
+            <h2 className="text-4xl lg:text-5xl font-bold font-heading leading-tight mt-2">
               <Chunk contentKey="how_it_works" field="Headline" />
             </h2>
           </div>
