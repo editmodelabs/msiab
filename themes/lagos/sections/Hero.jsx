@@ -11,7 +11,6 @@ const NavBar = () => {
         src="atis-assets/background/lines.svg"
         alt=""
       />
-      
       <div className="relative pt-12 md:pt-16 pb-32 md:pb-64  border-b-4 border-primary">
         <div className="relative container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-12 md:mb-20">
@@ -26,7 +25,7 @@ const NavBar = () => {
                 {useGetChunk("home_hero_primary_cta","Button Text")}
               </a>
               <a
-                className="inline-block w-full lg:w-auto py-2 px-6 font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
+                className="shadow inline-block w-full lg:w-auto py-2 px-6 font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
                 href={useGetChunk("home_hero_secondary_cta","Url")}
               >
                 {useGetChunk("home_hero_secondary_cta","Button Text")}
