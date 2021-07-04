@@ -2,6 +2,7 @@ import Head from "next/head";
 import Styles from "./Styles";
 import { useGetChunk } from "editmode-react";
 import Footer from "../sections/Footer";
+import TopNav from "../sections/TopNav";
 import handleNav from "../utils/handleNav";
 import { useEffect } from "react";
 
@@ -20,6 +21,7 @@ function Layout(props) {
         <title>{defaultMetaTitle}</title>
       </Head>
       <Styles />
+      <TopNav />
       {props.children}
       <Footer />
     </div>
