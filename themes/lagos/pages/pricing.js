@@ -9,7 +9,6 @@ export default function Pricing() {
   return (
     <div>
       <Head />
-
       <section>
         <div class="skew skew-top mr-for-radius">
           <svg
