@@ -6,4 +6,4 @@ function MyApp({ Component, pageProps }) {
   return getLayout(<Component {...pageProps} />);
 }
 
-export default MyApp
+export default MyApp;

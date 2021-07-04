@@ -3,13 +3,15 @@ import Styles from "./Styles";
 import { useGetChunk } from "editmode-react";
 import Footer from "../sections/Footer";
 import TopNav from "../sections/TopNav";
-import handleNav from "../utils/handleNav";
 import { useEffect } from "react";
+import handleNav from "../utils/handleNav";
+import { useRouter } from "next/dist/client/router";
 
 function Layout(props) {
-  // useEffect(() => {
-  //   handleNav();
-  // }, []);
+  const router = useRouter();
+  useEffect(() => {
+    handleNav();
+  }, [router.pathname]);
   const defaultMetaTitle = `${useGetChunk("company_name")} -  ${useGetChunk(
     "company_tagline"
   )}`;

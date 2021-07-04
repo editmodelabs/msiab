@@ -4,7 +4,6 @@ import HowItWorks from "../sections/HowItWorks";
 import Faq from "../sections/FAQ";
 import UserBrands from "../sections/UserBrands";
 import Testimonials from "../sections/Testimonials";
-import TopNav from "../sections/TopNav";
 import EmailCapture from "../sections/EmailCapture";
 import { Editmode } from "editmode-react";
 import Layout from "../components/Layout";
