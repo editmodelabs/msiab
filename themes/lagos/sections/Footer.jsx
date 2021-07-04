@@ -38,7 +38,6 @@ export default function Footer() {
 
               <ChunkCollection identifier="social_links" className="flex">
                 {(getChunk, chunk) => (
-                  
                   <a
                     className="inline-block w-8 mr-2 bg-gray-50 hover:bg-gray-100 rounded text-primary"
                     href={getChunk(chunk, "Url")}
