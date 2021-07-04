@@ -49,10 +49,7 @@ export default function TopNav() {
               </svg>
             )}
             <Link href={getChunk(chunk, "Url")}>
-              <a
-                className="text-sm text-gray-400 hover:text-gray-500 px-8"
-                href={getChunk(chunk, "Url")}
-              >
+              <a className="text-sm text-gray-400 hover:text-gray-500 px-8">
                 <ChunkFieldValue identifier="Title" />
               </a>
             </Link>

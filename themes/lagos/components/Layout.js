@@ -7,9 +7,9 @@ import handleNav from "../utils/handleNav";
 import { useEffect } from "react";
 
 function Layout(props) {
-  useEffect(() => {
-    handleNav();
-  }, []);
+  // useEffect(() => {
+  //   handleNav();
+  // }, []);
   const defaultMetaTitle = `${useGetChunk("company_name")} -  ${useGetChunk(
     "company_tagline"
   )}`;
