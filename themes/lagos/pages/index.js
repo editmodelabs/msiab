@@ -5,7 +5,6 @@ import Faq from "../sections/FAQ";
 import UserBrands from "../sections/UserBrands";
 import Testimonials from "../sections/Testimonials";
 import TopNav from "../sections/TopNav";
-import Footer from "../sections/Footer";
 import EmailCapture from "../sections/EmailCapture";
 import { Editmode } from "editmode-react";
 import Layout from "../components/Layout";
@@ -23,7 +22,6 @@ export default function Home() {
       <UserBrands />
       <Testimonials />
       <EmailCapture />
-      <Footer />
     </>
   );
 }

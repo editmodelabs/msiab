@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Styles from "./Styles";
 import { useGetChunk } from "editmode-react";
+import Footer from "../sections/Footer";
 import handleNav from "../utils/handleNav";
 import { useEffect } from "react";
 
@@ -20,6 +21,7 @@ function Layout(props) {
       </Head>
       <Styles />
       {props.children}
+      <Footer />
     </div>
   );
 }
