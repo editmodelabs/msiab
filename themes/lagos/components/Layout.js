@@ -1,9 +1,16 @@
-import Head from 'next/head'
-import Styles from './Styles'
+import Head from "next/head";
+import Styles from "./Styles";
 import { useGetChunk } from "editmode-react";
+import handleNav from "../utils/handleNav";
+import { useEffect } from "react";
 
 function Layout(props) {
-  const defaultMetaTitle = `${useGetChunk('company_name')} -  ${useGetChunk('company_tagline')}`
+  useEffect(() => {
+    handleNav();
+  }, []);
+  const defaultMetaTitle = `${useGetChunk("company_name")} -  ${useGetChunk(
+    "company_tagline"
+  )}`;
 
   return (
     <div>
@@ -14,7 +21,7 @@ function Layout(props) {
       <Styles />
       {props.children}
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

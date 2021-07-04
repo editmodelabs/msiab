@@ -9,6 +9,8 @@ import Footer from "../sections/Footer";
 import EmailCapture from "../sections/EmailCapture";
 import { Editmode } from "editmode-react";
 import Layout from "../components/Layout";
+import handleNav from "../utils/handleNav";
+import { useEffect } from "react";
 
 export default function Home() {
   return (
