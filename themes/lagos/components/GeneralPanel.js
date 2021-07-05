@@ -28,7 +28,7 @@ const GeneralPanelContent = () => {
                     <ChunkFieldValue identifier="Question" />
                   </span>
                   <svg
-                    className="w-4 h-4 text-green-600"
+                    className="w-4 h-4 text-primary"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
