@@ -4,7 +4,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import { Chunk, ChunkCollection } from "editmode-react";
 import { Editmode } from "editmode-react";
-import api from "../utils/api";
+import fetchPropChunks from "../utils/fetchPropChunks";
 
 export default function Pricing({ data }) {
   const chunks = data.chunks;
@@ -13,8 +13,6 @@ export default function Pricing({ data }) {
     title: chunk.content[0].content,
     url: chunk.content[1].content,
   }));
-
-  console.log(items);
 
   return (
     <div>
@@ -164,18 +162,8 @@ Pricing.getLayout = (page) => (
   </Editmode>
 );
 
-export async function getStaticProps(context) {
-  const tag = "top_nav";
-  const identifier = "navigation_items";
-  const id = process.env.NEXT_PUBLIC_PROJECT_ID;
-  try {
-    var res = await fetch(
-      `https://api2.editmode.com/chunks?limit=&collection_identifier=${identifier}&project_id=${id}&branch_id=&tags%5B%5D=${tag}`
-    );
-    var data = await res.json();
-  } catch (error) {
-    console.error(error);
-  }
+export async function getServerSideProps(context) {
+  const data = await fetchPropChunks();
   return {
     props: { data }, // will be passed to the page component as props
   };

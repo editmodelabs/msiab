@@ -7,10 +7,20 @@ import Testimonials from "../sections/Testimonials";
 import EmailCapture from "../sections/EmailCapture";
 import { Editmode } from "editmode-react";
 import Layout from "../components/Layout";
+import TopNav from "../sections/TopNav";
+import fetchPropChunks from "../utils/fetchPropChunks";
 
-export default function Home() {
+export default function Home({ data }) {
+  const chunks = data.chunks;
+
+  const items = chunks.map((chunk) => ({
+    title: chunk.content[0].content,
+    url: chunk.content[1].content,
+  }));
+
   return (
     <>
+      <TopNav items={items} />
       <Hero />
       <HowItWorks />
       <Features />
@@ -27,3 +37,10 @@ Home.getLayout = (page) => (
     <Layout>{page}</Layout>
   </Editmode>
 );
+
+export async function getServerSideProps(context) {
+  const data = await fetchPropChunks();
+  return {
+    props: { data }, // will be passed to the page component as props
+  };
+}
