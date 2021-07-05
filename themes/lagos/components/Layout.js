@@ -23,7 +23,7 @@ function Layout(props) {
         <title>{defaultMetaTitle}</title>
       </Head>
       <Styles />
-      <TopNav />
+      {/* <TopNav /> */}
       {props.children}
       <Footer />
     </div>
