@@ -5,7 +5,8 @@ import {
   useGetChunk,
 } from "editmode-react";
 import Link from "next/link";
-export default function TopNav() {
+
+function TopNav(props) {
   return (
     <nav className="relative px-6 py-6 flex justify-between items-center bg-white shadow">
       <a className="text-3xl font-bold text-primary leading-none flex" href="/">
@@ -66,3 +67,5 @@ export default function TopNav() {
     </nav>
   );
 }
+
+export default TopNav;
