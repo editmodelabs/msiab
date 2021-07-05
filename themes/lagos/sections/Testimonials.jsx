@@ -20,11 +20,11 @@ export default function Testimonials() {
       <div className="py-20 bg-gray-50 shadow-sm radius-for-skewed overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="pt-8 pb-16 flex flex-wrap justify-center items-center">
-            <div className="mb-10 max-w-lg text-center mx-auto">
+            <div className="max-w-lg text-center mx-auto">
               <span className="text-primary font-bold">
                 <Chunk contentKey="testimonial_home_section" field="Tagline" />
               </span>
-              <h2 className="mt-4 text-4xl lg:text-5xl font-bold font-heading">
+              <h2 className="text-4xl lg:text-5xl font-bold font-heading">
                 <Chunk contentKey="testimonial_home_section" field="Headline" />
               </h2>
             </div>

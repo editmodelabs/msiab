@@ -28,7 +28,7 @@ export default function Footer() {
                 className="text-3xl font-bold text-primary leading-none flex items-center mb-3"
                 href="/"
               >
-                <Chunk identifier="logo_icon" className="w-12 text-primary" />
+                <Chunk identifier="logo_icon" className="w-8 text-primary mr-2" />
                 <Chunk identifier="company_name" className="text-3xl" />
               </a>
               <Chunk
