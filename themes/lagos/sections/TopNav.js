@@ -31,17 +31,17 @@ export default function TopNav() {
             <a className="text-sm text-gray-400 hover:text-gray-500 px-8">
               Home
             </a>
-            </Link>
-          </div>
-          <div className="flex items-center">
+          </Link>
+        </div>
+        <div className="flex items-center">
           <Link href="/pricing" replace>
             <a className="text-sm text-gray-400 hover:text-gray-500 px-8">
-                Pricing
-              </a>
-            </Link>
-          </div>
+              Pricing
+            </a>
+          </Link>
+        </div>
       </div>
-      
+
       {/* <ChunkCollection
         identifier="navigation_items"
         tags={["top_nav"]}
@@ -80,6 +80,53 @@ export default function TopNav() {
       >
         {useGetChunk("home_hero_secondary_cta", "Button Text")}
       </a>
-    </nav >
+      <div className="hidden navbar-menu relative z-50">
+        <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+          <div className="flex items-center mb-8">
+            <a className="mr-auto text-3xl font-bold leading-none" href="#">
+              <img
+                className="h-10"
+                src="atis-assets/logo/atis/atis-mono-black.svg"
+                alt=""
+                width="auto"
+              />
+            </a>
+            <button className="navbar-close">
+              <svg
+                className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ChunkCollection
+              identifier="navigation_items"
+              tags={["top_nav"]}
+              itemClass="mb-1"
+            >
+              {(getChunk, chunk) => (
+                <a
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                  href={getChunk(chunk, "Url")}
+                >
+                  {getChunk(chunk, "Title")}
+                </a>
+              )}
+            </ChunkCollection>
+          </div>
+        </nav>
+      </div>
+    </nav>
   );
 }
