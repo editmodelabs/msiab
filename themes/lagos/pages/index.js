@@ -22,5 +22,5 @@ export default function Home() {
 }
 
 Home.getLayout = (page) => (
-  <Layout>{page}</Layout>
+  <Layout pageName="Home">{page}</Layout>
 );
