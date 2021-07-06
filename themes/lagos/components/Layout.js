@@ -1,19 +1,23 @@
 import Head from 'next/head'
 import Styles from './Styles'
-import { useGetChunk } from "editmode-react";
+import TopNav from "../sections/TopNav";
+import Footer from "../sections/Footer";
+import { useGetChunk, Editmode } from "editmode-react";
 
 function Layout(props) {
-  const defaultMetaTitle = `${useGetChunk('company_name')} -  ${useGetChunk('company_tagline')}`
+  const defaultMetaTitle = `${useGetChunk('company_name')} -  ${props.pageName || useGetChunk('company_tagline')}`
 
   return (
-    <div>
+    <Editmode projectId={process.env.NEXT_PUBLIC_PROJECT_ID}>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>{defaultMetaTitle}</title>
       </Head>
       <Styles />
+      <TopNav pageName={props.pageName}/>
       {props.children}
-    </div>
+      <Footer />
+    </Editmode>
   )
 }
 

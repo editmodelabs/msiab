@@ -864,10 +864,10 @@ dompurify@^2.0.14:
   resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.2.9.tgz#4b42e244238032d9286a0d2c87b51313581d9624"
   integrity sha512-+9MqacuigMIZ+1+EwoEltogyWGFTJZWU3258Rupxs+2CGs4H914G9er6pZbsme/bvb5L67o2rade9n21e4RW/w==
 
-editmode-react@3.1.31-canary.52.2c65fe0.0:
-  version "3.1.31-canary.52.2c65fe0.0"
-  resolved "https://registry.yarnpkg.com/editmode-react/-/editmode-react-3.1.31-canary.52.2c65fe0.0.tgz#c26d4cfb607477f0cf96f8d17924b7e892750a70"
-  integrity sha512-pCQ20EHGJ5y91InfhrQAZffRymifBuETJZIFrh8K7MVSPXyi/YliFqz9Bhe4yA9Ew322vXhvhUcgybs4J5+tsA==
+editmode-react@3.1.31-canary.52.12bae50.0:
+  version "3.1.31-canary.52.12bae50.0"
+  resolved "https://registry.yarnpkg.com/editmode-react/-/editmode-react-3.1.31-canary.52.12bae50.0.tgz#a91a02c4cfc365c76c0e30f4f9c8f1c3c54b1f09"
+  integrity sha512-bIy71pccy3W1POfuBtJH/+WcS9HbhOTMBxNEvbUHcGdcOlQB+lHK5byfIgYFvHX39lzcsojyGEk/fqwQldxF+w==
   dependencies:
     "@emotion/hash" "^0.8.0"
     axios "0.20.0"

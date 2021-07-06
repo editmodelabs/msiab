@@ -1,6 +1,9 @@
 
 import { Chunk, ChunkCollection, ChunkFieldValue, useGetChunk } from "editmode-react";
-export default function TopNav() {
+export default function TopNav({pageName}) {
+
+  const isActive = (navName) => navName === pageName;
+
   return (
     <nav className="relative px-6 py-6 flex justify-between items-center bg-white shadow">
       <a
@@ -47,7 +50,7 @@ export default function TopNav() {
               </svg>
             }
             <a
-              className="text-sm text-gray-400 hover:text-gray-500 px-8"
+              className={`text-sm px-8 ${isActive(getChunk(chunk, "Title")) ? 'text-primary font-semibold' : 'text-gray-400 hover:text-gray-500 ' }`}
               href={getChunk(chunk, "Url")}
             >
               <ChunkFieldValue identifier="Title" />

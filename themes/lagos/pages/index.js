@@ -4,16 +4,12 @@ import HowItWorks from "../sections/HowItWorks";
 import Faq from "../sections/FAQ";
 import UserBrands from "../sections/UserBrands";
 import Testimonials from "../sections/Testimonials";
-import TopNav from "../sections/TopNav";
-import Footer from "../sections/Footer";
 import EmailCapture from "../sections/EmailCapture";
-import { Editmode } from "editmode-react";
-import Layout from "../components/Layout";
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
     <>
-      <TopNav />
       <Hero />
       <HowItWorks />
       <Features />
@@ -21,13 +17,10 @@ export default function Home() {
       <UserBrands />
       <Testimonials />
       <EmailCapture />
-      <Footer />
     </>
   );
 }
 
 Home.getLayout = (page) => (
-  <Editmode projectId={process.env.NEXT_PUBLIC_PROJECT_ID}>
-    <Layout>{page}</Layout>
-  </Editmode>
+  <Layout pageName="Home">{page}</Layout>
 );
