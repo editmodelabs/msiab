@@ -1,23 +1,29 @@
-
 import { ChunkCollection, ChunkFieldValue, Chunk } from "editmode-react";
 
 export default function HowItWorks() {
   return (
     <section className="shadow">
       <div className="skew skew-top mr-for-radius">
-        <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+        <svg
+          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+          viewBox="0 0 10 10"
+          preserveAspectRatio="none"
+        >
           <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
         </svg>
       </div>
       <div className="skew skew-top ml-for-radius">
-        <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+        <svg
+          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+          viewBox="0 0 10 10"
+          preserveAspectRatio="none"
+        >
           <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
         </svg>
       </div>
       <div className="py-20 bg-gray-50 radius-for-skewed">
         <div className="container mx-auto px-4">
           <div className="mb-16 mx-auto max-w-md text-center">
-
             <span className="text-primary font-bold">
               <Chunk contentKey="how_it_works" field="Tagline" />
             </span>
@@ -26,7 +32,6 @@ export default function HowItWorks() {
             </h2>
           </div>
           <div className="flex flex-wrap -mx-4">
-
             <ChunkCollection
               identifier="how_it_works_steps"
               className="flex flex-wrap -mx-4"
@@ -44,7 +49,7 @@ export default function HowItWorks() {
                   <ChunkFieldValue
                     identifier="Description"
                     className="text-gray-500 leading-loose"
-                  /> 
+                  />
                 </div>
               )}
             </ChunkCollection>
@@ -52,15 +57,23 @@ export default function HowItWorks() {
         </div>
       </div>
       <div className="skew skew-bottom mr-for-radius">
-        <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+        <svg
+          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+          viewBox="0 0 10 10"
+          preserveAspectRatio="none"
+        >
           <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
         </svg>
       </div>
       <div className="skew skew-bottom ml-for-radius">
-        <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+        <svg
+          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+          viewBox="0 0 10 10"
+          preserveAspectRatio="none"
+        >
           <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
         </svg>
       </div>
     </section>
-  )
+  );
 }
