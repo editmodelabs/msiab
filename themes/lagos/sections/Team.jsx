@@ -56,10 +56,10 @@ export default function Team() {
                           {getChunk(chunk, "FacebookURL") && (
                             <a
                               href={getChunk(chunk, "FacebookURL")}
-                              class="mr-3"
+                              className="mr-3"
                             >
                               <svg
-                                class="text-primary"
+                                className="text-primary"
                                 width="22"
                                 height="22"
                                 viewBox="0 0 22 22"
@@ -96,10 +96,10 @@ export default function Team() {
                           {getChunk(chunk, "TwitterURL") && (
                             <a
                               href={getChunk(chunk, "TwitterURL")}
-                              class="mr-3"
+                              className="mr-3"
                             >
                               <svg
-                                class="text-primary"
+                                className="text-primary"
                                 width="22"
                                 height="22"
                                 viewBox="0 0 22 22"
@@ -136,10 +136,10 @@ export default function Team() {
                           {getChunk(chunk, "InstagramURL") && (
                             <a
                               href={getChunk(chunk, "InstagramURL")}
-                              class="mr-3"
+                              className="mr-3"
                             >
                               <svg
-                                class="text-primary"
+                                className="text-primary"
                                 width="22"
                                 height="22"
                                 viewBox="0 0 22 22"
