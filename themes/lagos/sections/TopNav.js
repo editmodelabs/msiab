@@ -41,39 +41,6 @@ export default function TopNav() {
           </Link>
         </div>
       </div>
-
-      {/* <ChunkCollection
-        identifier="navigation_items"
-        tags={["top_nav"]}
-        className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto"
-      >
-        {(getChunk, chunk, index) => (
-          <div className="flex items-center">
-            {index != 0 && (
-              <svg
-                className="w-4 h-4 current-fill"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            )}
-            <Link href={getChunk(chunk, "Url")}>
-              <a className="text-sm text-gray-400 hover:text-gray-500 px-8">
-                <ChunkFieldValue identifier="Title" />
-              </a>
-            </Link>
-          </div>
-        )}
-      </ChunkCollection> */}
-
       <a
         className="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-primary font-bold rounded-l-xl rounded-t-xl transition duration-200"
         href={useGetChunk("home_hero_secondary_cta", "Url")}
@@ -84,14 +51,15 @@ export default function TopNav() {
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
         <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
           <div className="flex items-center mb-8">
-            <a className="mr-auto text-3xl font-bold leading-none" href="#">
-              <img
-                className="h-10"
-                src="atis-assets/logo/atis/atis-mono-black.svg"
-                alt=""
-                width="auto"
-              />
-            </a>
+            <div className="mr-auto text-3xl font-bold leading-none">
+              <a
+                className="text-3xl font-bold text-primary leading-none flex"
+                href="/"
+              >
+                <Chunk identifier="logo_icon" className="w-5 text-primary" />
+                <Chunk identifier="company_name" className="text-lg" />
+              </a>
+            </div>
             <button className="navbar-close">
               <svg
                 className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
@@ -110,20 +78,22 @@ export default function TopNav() {
             </button>
           </div>
           <div>
-            <ChunkCollection
-              identifier="navigation_items"
-              tags={["top_nav"]}
-              itemClass="mb-1"
-            >
-              {(getChunk, chunk) => (
-                <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
-                  href={getChunk(chunk, "Url")}
-                >
-                  {getChunk(chunk, "Title")}
-                </a>
-              )}
-            </ChunkCollection>
+            <div>
+              <div className="mb-1">
+                <Link href="/" replace>
+                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded">
+                    Home
+                  </a>
+                </Link>
+              </div>
+              <div className="mb-1">
+                <Link href="/pricing" replace>
+                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded">
+                    Pricing
+                  </a>
+                </Link>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
