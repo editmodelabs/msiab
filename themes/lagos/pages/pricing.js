@@ -31,8 +31,11 @@ export default function Pricing() {
                 <Chunk identifier='pricing_page_description' />
               </div>
             </div>
-            <ChunkCollection identifier="pricing_packages" className="flex flex-wrap" itemClass="mb-8 w-full p-8 flex flex-wrap items-center bg-white rounded shadow" >
-
+            <ChunkCollection
+              identifier="pricing_packages"
+              className="flex flex-wrap"
+              itemClass="mb-8 w-full p-8 flex flex-wrap items-center bg-white rounded shadow"
+            >
               {(getChunk, chunk) => (
                 <>
                   <div className="w-full lg:w-1/5 px-3 self-start">
@@ -75,7 +78,6 @@ export default function Pricing() {
                   </div>
                 </>
               )}
-
             </ChunkCollection>
           </div>
         </div>

@@ -5,7 +5,7 @@ import Footer from "../sections/Footer";
 import { useGetChunk, Editmode } from "editmode-react";
 
 function Layout(props) {
-  const defaultMetaTitle = `${useGetChunk('company_name')} -  ${props.pageName || useGetChunk('company_tagline')}`
+  const defaultMetaTitle = `${useGetChunk('company_name')} -  ${useGetChunk('company_tagline')}`
 
   return (
     <Editmode projectId={process.env.NEXT_PUBLIC_PROJECT_ID}>
@@ -14,11 +14,11 @@ function Layout(props) {
         <title>{defaultMetaTitle}</title>
       </Head>
       <Styles />
-      <TopNav pageName={props.pageName}/>
+      <TopNav/>
       {props.children}
       <Footer />
     </Editmode>
   )
 }
 
-export default Layout
+export default Layout;

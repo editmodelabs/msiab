@@ -1,11 +1,13 @@
-import { Chunk, ChunkCollection, ChunkFieldValue, useGetChunk } from "editmode-react";
+import {
+  Chunk,
+  ChunkCollection,
+  ChunkFieldValue,
+  useGetChunk,
+} from "editmode-react";
 const NavBar = () => {
-
-  const primaryColor = useGetChunk("primary_color")
+  const primaryColor = useGetChunk("primary_color");
   return (
-    
     <section className="relative overflow-hidden pb-56 sm:pb-80">
-      
       <img
         className="hidden sm:block md:block absolute w-full"
         src="atis-assets/background/lines.svg"
@@ -20,21 +22,24 @@ const NavBar = () => {
             <div>
               <a
                 className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 bg-primary text-white font-semibold leading-loose rounded-l-xl rounded-t-xl transition duration-200"
-                href={useGetChunk("home_hero_primary_cta","Url")}
+                href={useGetChunk("home_hero_primary_cta", "Url")}
               >
-                {useGetChunk("home_hero_primary_cta","Button Text")}
+                {useGetChunk("home_hero_primary_cta", "Button Text")}
               </a>
               <a
                 className="shadow inline-block w-full lg:w-auto py-2 px-6 font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
-                href={useGetChunk("home_hero_secondary_cta","Url")}
+                href={useGetChunk("home_hero_secondary_cta", "Url")}
               >
-                {useGetChunk("home_hero_secondary_cta","Button Text")}
+                {useGetChunk("home_hero_secondary_cta", "Button Text")}
               </a>
             </div>
           </div>
         </div>
         <div className="absolute inset-x-0 max-w-3xl mx-auto px-4">
-          <Chunk contentKey="home_hero_image" className="rounded-3xl md:rounded-6xl md:rounded-br-none" />
+          <Chunk
+            contentKey="home_hero_image"
+            className="rounded-3xl md:rounded-6xl md:rounded-br-none"
+          />
         </div>
       </div>
       <div className="hidden navbar-menu relative z-50">
