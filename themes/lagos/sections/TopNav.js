@@ -1,6 +1,6 @@
 
 import { Chunk, ChunkCollection, ChunkFieldValue, useGetChunk } from "editmode-react";
-export default function TopNav() {
+export default function TopNav({pageName}) {
   return (
     <nav className="relative px-6 py-6 flex justify-between items-center bg-white shadow">
       <a
