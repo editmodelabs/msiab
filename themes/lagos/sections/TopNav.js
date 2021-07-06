@@ -28,14 +28,14 @@ export default function TopNav() {
       </div>
       <div className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto">
         <div className="flex items-center">
-          <Link href="/" replace>
+          <Link href="/">
             <a className="text-sm text-gray-400 hover:text-gray-500 px-8">
               Home
             </a>
           </Link>
         </div>
         <div className="flex items-center">
-          <Link href="/pricing" replace>
+          <Link href="/pricing">
             <a className="text-sm text-gray-400 hover:text-gray-500 px-8">
               Pricing
             </a>

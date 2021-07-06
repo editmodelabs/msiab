@@ -38,7 +38,7 @@ export default function HowItWorks() {
               itemClass="mb-8 lg:mb-0 w-full md:w-1/2 lg:w-1/3 px-4"
             >
               {(getChunk, chunk, index) => (
-                <div className="py-10 px-6 bg-white shadow rounded text-center">
+                <div className="py-10 px-6 bg-white shadow rounded text-center my-3">
                   <span className="mb-6 w-16 h-16 inline-flex justify-center items-center bg-primary-100 rounded text-2xl text-primary font-bold">
                     {index + 1}
                   </span>
