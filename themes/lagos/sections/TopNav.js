@@ -25,7 +25,24 @@ export default function TopNav() {
           </svg>
         </button>
       </div>
-      <ChunkCollection
+      <div className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto">
+        <div className="flex items-center">
+          <Link href="/" replace>
+            <a className="text-sm text-gray-400 hover:text-gray-500 px-8">
+              Home
+            </a>
+            </Link>
+          </div>
+          <div className="flex items-center">
+          <Link href="/pricing" replace>
+            <a className="text-sm text-gray-400 hover:text-gray-500 px-8">
+                Pricing
+              </a>
+            </Link>
+          </div>
+      </div>
+      
+      {/* <ChunkCollection
         identifier="navigation_items"
         tags={["top_nav"]}
         className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto"
@@ -55,7 +72,7 @@ export default function TopNav() {
             </Link>
           </div>
         )}
-      </ChunkCollection>
+      </ChunkCollection> */}
 
       <a
         className="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-primary font-bold rounded-l-xl rounded-t-xl transition duration-200"
@@ -63,6 +80,6 @@ export default function TopNav() {
       >
         {useGetChunk("home_hero_secondary_cta", "Button Text")}
       </a>
-    </nav>
+    </nav >
   );
 }
