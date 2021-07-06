@@ -1,8 +1,9 @@
-import { ChunkCollection, ChunkFieldValue } from "editmode-react";
+import { ChunkCollection, ChunkFieldValue, useGetChunk } from "editmode-react";
 import { useState } from "react";
 import handleClick from "../utils/handleClick";
 
 const GeneralPanelContent = () => {
+  const primaryColor = useGetChunk("primary_color");
   const [activeQuestions, setActiveQuestions] = useState([]);
 
   return (
@@ -32,7 +33,7 @@ const GeneralPanelContent = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    stroke={primaryColor ? primaryColor : "grey"}
                   >
                     <path
                       strokeLinecap="round"
