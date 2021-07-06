@@ -6,6 +6,7 @@ import {
 } from "editmode-react";
 import Link from "next/link";
 export default function TopNav() {
+  const primaryColor = useGetChunk("primary_color");
   return (
     <nav className="relative px-6 py-6 flex justify-between items-center bg-white shadow">
       <a className="text-3xl font-bold text-primary leading-none flex" href="/">
@@ -81,14 +82,14 @@ export default function TopNav() {
             <div>
               <div className="mb-1">
                 <Link href="/" replace>
-                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded">
+                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-600 rounded">
                     Home
                   </a>
                 </Link>
               </div>
               <div className="mb-1">
                 <Link href="/pricing" replace>
-                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded">
+                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-600 rounded">
                     Pricing
                   </a>
                 </Link>
