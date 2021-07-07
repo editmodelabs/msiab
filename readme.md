@@ -8,8 +8,6 @@ Additionally, you get a real live codebase, running on Tailwind and Next.js, tha
 ## Contents
 - [What's Included](#whats-included)
 - [How It Works](#how-it-works)
-- [Working with content](#working-with-content)
-- [FAQ](#faq)
 
 ---
 ### What's Included
@@ -42,6 +40,9 @@ The goal of Marketing Site in a Box is to provide the two pillars of any marketi
 | <h3> Lagos </h3>             |  <h3>Manila</h3> | <h3>Dublin</h3>
 :-------------------------:|:-------------------------:|:-------------------------:
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Feditmodelabs%2Fmsiab%2Ftree%2Fmain%2Fthemes%2Flagos?&env=NEXT_PUBLIC_PROJECT_ID)  | Coming Soon | Coming Soon
+[<img src="https://camo.githubusercontent.com/bf5c9492905b6d3b558552de2c848c7cce2e0a0f0ff922967115543de9441522/68747470733a2f2f646576656c6f7065722e737461636b626c69747a2e636f6d2f696d672f6f70656e5f696e5f737461636b626c69747a2e737667" />](https://stackblitz.com/github/editmodelabs/msiab/tree/main/themes/lagos) | - |
+[View Demo](https://msiab-sogal.vercel.app/) | - |
+[Browse Code](https://github.com/editmodelabs/msiab/tree/main/themes/lagos) 
 [<img src="/themes/lagos/preview.png" width="350" />](https://msiab-sogal.vercel.app/) |  <img src="/themes/comingsoon.png" width="350" /> |  <img src="/themes/comingsoon.png" width="350" /> 
 
 ---
