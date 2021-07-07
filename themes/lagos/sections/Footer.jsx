@@ -1,5 +1,11 @@
-import { Chunk, ChunkCollection, ChunkFieldValue } from "editmode-react";
+import {
+  Chunk,
+  ChunkCollection,
+  ChunkFieldValue,
+  useGetChunk,
+} from "editmode-react";
 export default function Footer() {
+  const primaryColor = useGetChunk("primary_color");
   return (
     <section>
       <div className="skew skew-top mr-for-radius">
@@ -8,7 +14,7 @@ export default function Footer() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 0 10 10 0 10" />
+          <polygon fill={primaryColor} points="0 0 10 10 0 10" />
         </svg>
       </div>
       <div className="skew skew-top ml-for-radius">
@@ -17,7 +23,7 @@ export default function Footer() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 10 10 0 10 10" />
+          <polygon fill={primaryColor} points="0 10 10 0 10 10" />
         </svg>
       </div>
       <div className="py-20 radius-for-skewed">
@@ -46,7 +52,7 @@ export default function Footer() {
                       <ChunkFieldValue
                         identifier="Image"
                         className="h-8 w-8 text-primary"
-                        // stroke={getChunk(chunk, "Image")}
+                        fill={getChunk(chunk, "Image")}
                       />
                     </a>
                   );
@@ -131,7 +137,7 @@ export default function Footer() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 0 10 0 0 10" />
+          <polygon fill={primaryColor} points="0 0 10 0 0 10" />
         </svg>
       </div>
       <div className="skew skew-bottom ml-for-radius">
@@ -140,7 +146,7 @@ export default function Footer() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 0 10 0 10 10" />
+          <polygon fill={primaryColor} points="0 0 10 0 10 10" />
         </svg>
       </div>
     </section>

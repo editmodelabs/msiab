@@ -1,6 +1,12 @@
-import { ChunkCollection, ChunkFieldValue, Chunk } from "editmode-react";
+import {
+  ChunkCollection,
+  ChunkFieldValue,
+  Chunk,
+  useGetChunk,
+} from "editmode-react";
 
 export default function HowItWorks() {
+  const primaryColor = useGetChunk("primary_color");
   return (
     <section className="shadow">
       <div className="skew skew-top mr-for-radius">
@@ -9,7 +15,7 @@ export default function HowItWorks() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
+          <polygon fill={primaryColor} points="0 0 10 10 0 10"></polygon>
         </svg>
       </div>
       <div className="skew skew-top ml-for-radius">
@@ -18,7 +24,7 @@ export default function HowItWorks() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
+          <polygon fill={primaryColor} points="0 10 10 0 10 10"></polygon>
         </svg>
       </div>
       <div className="py-20 bg-gray-50 radius-for-skewed">
@@ -62,7 +68,7 @@ export default function HowItWorks() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+          <polygon fill={primaryColor} points="0 0 10 0 0 10"></polygon>
         </svg>
       </div>
       <div className="skew skew-bottom ml-for-radius">
@@ -71,7 +77,7 @@ export default function HowItWorks() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
+          <polygon fill={primaryColor} points="0 0 10 0 10 10"></polygon>
         </svg>
       </div>
     </section>

@@ -9,8 +9,16 @@ export default function TopNav() {
   const primaryColor = useGetChunk("primary_color");
   return (
     <nav className="relative px-6 py-6 flex justify-between items-center bg-white shadow">
-      <a className="text-3xl font-bold text-primary leading-none flex" href="/">
-        <Chunk identifier="logo_icon" className="w-5 text-primary" />
+      <a
+        className="text-3xl font-bold text-primary leading-none flex"
+        href="/"
+        style={{ color: primaryColor }}
+      >
+        <Chunk
+          identifier="logo_icon"
+          className="w-5 text-primary"
+          fill={primaryColor}
+        />
         <Chunk identifier="company_name" className="text-lg" />
       </a>
 
