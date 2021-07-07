@@ -1,6 +1,12 @@
-import { Chunk, ChunkCollection, ChunkFieldValue } from "editmode-react";
+import {
+  Chunk,
+  ChunkCollection,
+  ChunkFieldValue,
+  useGetChunk,
+} from "editmode-react";
 
 export default function Features() {
+  const primaryColor = useGetChunk("primary_color");
   return (
     <>
       <section>
@@ -46,6 +52,7 @@ export default function Features() {
                       <ChunkFieldValue
                         identifier="Image"
                         className="h-8 w-8 md:w-12 md:h-12 text-primary"
+                        fill={primaryColor}
                       />
                     </span>
                   </div>

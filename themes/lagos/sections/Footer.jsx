@@ -52,12 +52,12 @@ export default function Footer() {
                   return (
                     <a
                       className="inline-block w-8 mr-2 bg-gray-50 hover:bg-gray-100 rounded text-primary"
+                      style={{ color: primaryColor }}
                       href={getChunk(chunk, "Url")}
                     >
                       <ChunkFieldValue
                         identifier="Image"
                         className="h-8 w-8 text-primary"
-                        fill={primaryColor}
                       />
                     </a>
                   );

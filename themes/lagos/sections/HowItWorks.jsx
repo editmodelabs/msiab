@@ -30,7 +30,10 @@ export default function HowItWorks() {
       <div className="py-20 bg-gray-50 radius-for-skewed">
         <div className="container mx-auto px-4">
           <div className="mb-16 mx-auto max-w-md text-center">
-            <span className="text-primary font-bold">
+            <span
+              className="text-primary font-bold"
+              style={{ color: primaryColor }}
+            >
               <Chunk contentKey="how_it_works" field="Tagline" />
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold font-heading leading-tight mt-2">
@@ -45,7 +48,10 @@ export default function HowItWorks() {
             >
               {(getChunk, chunk, index) => (
                 <div className="py-10 px-6 bg-white shadow rounded text-center my-3">
-                  <span className="mb-6 w-16 h-16 inline-flex justify-center items-center bg-primary-100 rounded text-2xl text-primary font-bold">
+                  <span
+                    className="mb-6 w-16 h-16 inline-flex justify-center items-center bg-primary-100 rounded text-2xl text-primary font-bold"
+                    style={{ color: primaryColor }}
+                  >
                     {index + 1}
                   </span>
                   <ChunkFieldValue
