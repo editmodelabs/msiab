@@ -52,6 +52,7 @@ export default function TopNav() {
       </div>
       <a
         className="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-primary font-bold rounded-l-xl rounded-t-xl transition duration-200"
+        style={{ color: primaryColor }}
         href={useGetChunk("home_hero_secondary_cta", "Url")}
       >
         {useGetChunk("home_hero_secondary_cta", "Button Text")}
@@ -64,8 +65,13 @@ export default function TopNav() {
               <a
                 className="text-3xl font-bold text-primary leading-none flex"
                 href="/"
+                style={{ color: primaryColor }}
               >
-                <Chunk identifier="logo_icon" className="w-5 text-primary" />
+                <Chunk
+                  identifier="logo_icon"
+                  className="w-5 text-primary"
+                  fill={primaryColor}
+                />
                 <Chunk identifier="company_name" className="text-lg" />
               </a>
             </div>

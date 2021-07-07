@@ -33,8 +33,13 @@ export default function Footer() {
               <a
                 className="text-3xl font-bold text-primary leading-none flex items-center mb-3"
                 href="/"
+                style={{ color: primaryColor }}
               >
-                <Chunk identifier="logo_icon" className="w-12 text-primary" />
+                <Chunk
+                  identifier="logo_icon"
+                  className="w-12 text-primary"
+                  fill={primaryColor}
+                />
                 <Chunk identifier="company_name" className="text-3xl" />
               </a>
               <Chunk
@@ -52,7 +57,7 @@ export default function Footer() {
                       <ChunkFieldValue
                         identifier="Image"
                         className="h-8 w-8 text-primary"
-                        fill={getChunk(chunk, "Image")}
+                        fill={primaryColor}
                       />
                     </a>
                   );
