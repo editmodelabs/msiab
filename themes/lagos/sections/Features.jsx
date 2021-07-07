@@ -31,7 +31,10 @@ export default function Features() {
         <div className="py-20 radius-for-skewed">
           <div className="container mx-auto px-4">
             <div className="mb-16 max-w-md mx-auto text-center">
-              <span className="text-primary font-bold">
+              <span
+                className="text-primary font-bold"
+                style={{ color: primaryColor }}
+              >
                 <Chunk contentKey="feature_home_section" field="Tagline" />
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold font-heading leading-tight mt-3">
