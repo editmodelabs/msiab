@@ -17,7 +17,7 @@ Go show off your new site to a friend... or two.
 <br/>
 
 🚀🚀🚀
- 
- # Preview
 
- ![Preview of Lagos](preview.png "Preview")
+# Preview
+
+![Preview of Lagos](preview.png "Preview")

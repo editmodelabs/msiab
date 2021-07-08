@@ -3,11 +3,11 @@ import {useGetChunk} from 'editmode-react'
 const Styles = () => {
   const primaryColor = useGetChunk("primary_color")
   const font = useGetChunk('google_font_family')
-
+  const fontStyle = font ? `@import url('https://fonts.googleapis.com/css2?family=${font}&display=swap');` : '';
   return (
     <style global jsx>
       {`
-        @import url('https://fonts.googleapis.com/css2?family=${font}&display=swap');
+        ${fontStyle}
         .text-primary {
           color: ${primaryColor};
         }

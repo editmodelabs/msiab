@@ -1,5 +1,11 @@
-import { Chunk, ChunkCollection, ChunkFieldValue } from "editmode-react";
+import {
+  Chunk,
+  ChunkCollection,
+  ChunkFieldValue,
+  useGetChunk,
+} from "editmode-react";
 export default function Footer() {
+  const primaryColor = useGetChunk("primary_color");
   return (
     <section>
       <div className="skew skew-top mr-for-radius">
@@ -8,7 +14,7 @@ export default function Footer() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 0 10 10 0 10" />
+          <polygon fill={primaryColor} points="0 0 10 10 0 10" />
         </svg>
       </div>
       <div className="skew skew-top ml-for-radius">
@@ -17,7 +23,7 @@ export default function Footer() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 10 10 0 10 10" />
+          <polygon fill={primaryColor} points="0 10 10 0 10 10" />
         </svg>
       </div>
       <div className="py-20 radius-for-skewed">
@@ -27,8 +33,13 @@ export default function Footer() {
               <a
                 className="text-3xl font-bold text-primary leading-none flex items-center mb-3"
                 href="/"
+                style={{ color: primaryColor }}
               >
-                <Chunk identifier="logo_icon" className="w-8 text-primary mr-2" />
+                <Chunk
+                  identifier="logo_icon"
+                  className="w-12 text-primary"
+                  fill={primaryColor}
+                />
                 <Chunk identifier="company_name" className="text-3xl" />
               </a>
               <Chunk
@@ -37,18 +48,20 @@ export default function Footer() {
               />
 
               <ChunkCollection identifier="social_links" className="flex">
-                {(getChunk, chunk) => (
-                  <a
-                    className="inline-block w-8 mr-2 bg-gray-50 hover:bg-gray-100 rounded text-primary"
-                    href={getChunk(chunk, "Url")}
-                  >
-                    <ChunkFieldValue
-                      identifier="Image"
-                      className="h-8 w-8 text-primary"
-                      stroke={getChunk(chunk, "Image")}
-                    />
-                  </a>
-                )}
+                {(getChunk, chunk) => {
+                  return (
+                    <a
+                      className="inline-block w-8 mr-2 bg-gray-50 hover:bg-gray-100 rounded text-primary"
+                      style={{ color: primaryColor }}
+                      href={getChunk(chunk, "Url")}
+                    >
+                      <ChunkFieldValue
+                        identifier="Image"
+                        className="h-8 w-8 text-primary"
+                      />
+                    </a>
+                  );
+                }}
               </ChunkCollection>
             </div>
             <div className="w-full lg:w-2/3 lg:pl-16 flex flex-wrap justify-between">
@@ -129,7 +142,7 @@ export default function Footer() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 0 10 0 0 10" />
+          <polygon fill={primaryColor} points="0 0 10 0 0 10" />
         </svg>
       </div>
       <div className="skew skew-bottom ml-for-radius">
@@ -138,7 +151,7 @@ export default function Footer() {
           viewBox="0 0 10 10"
           preserveAspectRatio="none"
         >
-          <polygon fill="currentColor" points="0 0 10 0 10 10" />
+          <polygon fill={primaryColor} points="0 0 10 0 10 10" />
         </svg>
       </div>
     </section>
