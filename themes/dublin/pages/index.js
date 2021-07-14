@@ -1,11 +1,9 @@
-import TopNavbar from "../sections/TopNavbar";
 import Hero from "../sections/Hero";
 import HowItWorks from "../sections/HowItWorks";
 import Features from "../sections/Features";
 import Faq from "../sections/FAQ";
 import Testimonials from "../sections/Testimonials";
 import UserBrands from "../sections/UserBrands";
-import Footer from "../sections/Footer";
 import Layout from '../components/Layout'
 
 
