@@ -1,35 +1,31 @@
-import Head from 'next/head'
-import { useGetChunk } from "editmode-react";
+import Head from "next/head";
+import Styles from "./Styles";
+import TopNavbar from "../sections/TopNavbar";
+import Footer from "../sections/Footer";
+import { useGetChunk, Editmode } from "editmode-react";
+import handleNav from "../utils/handleNav";
+import { useEffect } from "react";
 
 function Layout(props) {
-  const primaryColor = useGetChunk("primary_color")
-  const font = useGetChunk('google_font_family')
-  const defaultMetaTitle = `${useGetChunk('company_name')} -  ${useGetChunk('company_tagline')}`
+  const defaultMetaTitle = `${useGetChunk("company_name")} -  ${useGetChunk(
+    "company_tagline"
+  )}`;
+  useEffect(() => {
+    handleNav();
+  }, []);
 
   return (
-    <div>
+    <Editmode projectId={process.env.NEXT_PUBLIC_PROJECT_ID}>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>{defaultMetaTitle}</title>
       </Head>
+      <Styles />
+      <TopNavbar />
       {props.children}
-      <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=${font}&display=swap');
-        .text-primary {
-          color: ${primaryColor};
-        }
-        .bg-primary {
-          background-color: ${primaryColor};
-        }
-        .bg-primary-100 {
-          background-color: ${primaryColor}10;
-        }
-        .border-primary {
-          border-color: ${primaryColor};
-        }
-      `}</style>
-    </div>
-  )
+      <Footer />
+    </Editmode>
+  );
 }
 
-export default Layout
+export default Layout;
