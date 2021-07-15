@@ -67,7 +67,7 @@ export default function Footer() {
             <h3 className="mb-16 text-xl font-bold">
               <Chunk identifier="email_capture_section_headline"/>
             </h3>
-            <form action={
+            <form method="POST" action={
               `https://formsubmit.co/${
                 useGetChunk("email_capture_email_address")
               }`
