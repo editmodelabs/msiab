@@ -20,7 +20,7 @@ const TopNavbar = () => {
           <div className="hidden lg:block absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
             <ul className="flex items-center text-white space-x-10">
               <li>
-                <a className="text-white font-bold text-lg" href="#">Home</a>
+                <a className="text-white font-bold text-lg" href="/">Home</a>
               </li>
               <span>
                 <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@ const TopNavbar = () => {
                 </svg>
               </span>
               <li>
-                <a className="text-white font-bold text-lg" href="#">About Us</a>
+                <a className="text-white font-bold text-lg" href="/team">Team</a>
               </li>
               <span>
                 <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +36,7 @@ const TopNavbar = () => {
                 </svg>
               </span>
               <li>
-                <a className="text-white font-bold text-lg" href="#">Testimonials</a>
+                <a className="text-white font-bold text-lg" href="/pricing">Pricing</a>
               </li>
             </ul>
           </div>
@@ -63,16 +63,19 @@ const TopNavbar = () => {
           <div>
             <ul>
               <li className="mb-1 px-10">
-                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Product</a>
+                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="/">Home</a>
               </li>
               <li className="mb-1 px-10">
-                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Story</a>
+                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="/team">Team</a>
               </li>
               <li className="mb-1 px-10">
-                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Features</a>
+                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="/pricing">Pricing</a>
               </li>
               <li className="mb-1 px-10">
-                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Contact</a>
+                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="/company">About Us</a>
+              </li>
+              <li className="mb-1 px-10">
+                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="/contact">Contact</a>
               </li>
             </ul>
           </div>
