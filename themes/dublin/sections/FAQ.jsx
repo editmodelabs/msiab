@@ -1,7 +1,7 @@
 import {Chunk} from "editmode-react";
-import GeneralPanelContent from "../components/FaqTabs";
+import FaqTabs from "../components/FaqTabs";
 
-export default function Faq() {
+export default function Faqs() {
 
   return (
     <section className="py-20 2xl:py-40 bg-blue-50">
@@ -11,7 +11,7 @@ export default function Faq() {
           <h2 className="mt-8 text-7xl font-bold font-heading"><Chunk contentKey="faq_section_heading"/></h2>
         </div>
         <div className="max-w-4xl mx-auto">
-          <GeneralPanelContent />
+          <FaqTabs />
         </div>
       </div>
     </section>
