@@ -5,8 +5,6 @@ import Faq from "../sections/FAQ";
 import Testimonials from "../sections/Testimonials";
 import UserBrands from "../sections/UserBrands";
 import Layout from '../components/Layout'
-
-
 export default function Home() {
   return (
     <div>

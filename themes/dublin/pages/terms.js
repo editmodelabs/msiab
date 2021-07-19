@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 
 export default function Terms() {
   return (
-    <section className="pb-12 lg:pb-24 pt-12 lg:pt-20 overflow-hidden bg-gray-100 min-h-screen">
+    <section className="pb-12 lg:pb-24 pt-12 lg:pt-20 overflow-hidden bg-gray-100">
       <div className="container px-4 mx-auto">
         <div className="rounded bg-white shadow px-12 py-10 text-center">
           <h1 className="text-xl lg:text-3xl font-bold mb-10">

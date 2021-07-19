@@ -1,4 +1,5 @@
 import { Chunk, useGetChunk } from "editmode-react";
+import Link from "next/link";
 
 const TopNavbar = () => {
   return (
@@ -20,7 +21,9 @@ const TopNavbar = () => {
           <div className="hidden lg:block absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
             <ul className="flex items-center text-white space-x-10">
               <li>
-                <a className="text-white font-bold text-lg" href="/">Home</a>
+                <Link href="/">
+                  <a className="text-white font-bold text-lg">Home</a>
+                </Link>
               </li>
               <span>
                 <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +31,9 @@ const TopNavbar = () => {
                 </svg>
               </span>
               <li>
-                <a className="text-white font-bold text-lg" href="/team">Team</a>
+                <Link href="/team">
+                  <a className="text-white font-bold text-lg">Team</a>
+                </Link>
               </li>
               <span>
                 <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +41,9 @@ const TopNavbar = () => {
                 </svg>
               </span>
               <li>
-                <a className="text-white font-bold text-lg" href="/pricing">Pricing</a>
+                <Link href="/pricing">
+                  <a className="text-white font-bold text-lg">Pricing</a>
+                </Link>
               </li>
             </ul>
           </div>

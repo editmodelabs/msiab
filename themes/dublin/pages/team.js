@@ -5,7 +5,7 @@ export default function AboutUs() {
   const primaryColor = useGetChunk("primary_color");
 
   return (
-    <section className="py-12 lg:py-20 overflow-hidden bg-gray-800 min-h-screen border-t border-gray-700">
+    <section className="py-12 lg:py-20 overflow-hidden bg-gray-800 border-t border-gray-700">
       <div className="container px-4 mx-auto">
         <span className="font-bold" style={{color: primaryColor}}>
           <Chunk contentKey="team_section_heading_before"/>
