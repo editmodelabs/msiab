@@ -5,3 +5,7 @@
   content: "\2713";
   margin-right: 0.75rem;
 }
+
+.blog-post-body p {
+  word-wrap: break-word;
+}
