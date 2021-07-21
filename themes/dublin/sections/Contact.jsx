@@ -74,10 +74,6 @@ export default function Contact() {
                   <input class="mb-3 w-full px-12 py-4 bg-white font-bold placeholder-gray-900 rounded-full focus:outline-none" type="email" placeholder="example@shuffle.dev" />
                   <input class="mb-3 w-full px-12 py-4 bg-white font-bold placeholder-gray-900 rounded-full focus:outline-none" type="text" placeholder="Subject" />
                   <textarea class="w-full mb-6 px-12 py-4 bg-white font-bold placeholder-gray-900 rounded-3xl resize-none focus:outline-none" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                  <div class="flex mb-10">
-                    <input type="checkbox" />
-                    <p class="pl-4 max-w-xs text-sm text-gray-300">By singning up, you agree to our Terms, Data Policy and Cookies.</p>
-                  </div>
                   <button class="py-4 px-12 text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200">Send message</button>
                 </form>
               </div>
