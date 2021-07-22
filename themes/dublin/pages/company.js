@@ -9,7 +9,7 @@ export default function AboutUs() {
           <Chunk contentKey="about_us_static_page" field="Title"/>
         </h1>
         <div className="rounded bg-white shadow px-12 py-10">
-          <Chunk contentKey="about_us_static_page" field="Body" className="w-full static-page-body"/>
+          <Chunk contentKey="about_us_static_page" field="Body" className="w-full static-page-body prose"/>
         </div>
       </div>
     </section>

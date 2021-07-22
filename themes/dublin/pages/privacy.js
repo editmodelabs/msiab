@@ -10,7 +10,7 @@ export default function Privacy() {
           <Chunk contentKey="privacy_policy_static_page" field="Title"/>
         </h1>
         <div className="rounded bg-white shadow px-12 py-10">
-          <Chunk contentKey="privacy_policy_static_page" field="Body" className="w-full static-page-body"/>
+          <Chunk contentKey="privacy_policy_static_page" field="Body" className="w-full static-page-body prose"/>
         </div>
       </div>
     </section>

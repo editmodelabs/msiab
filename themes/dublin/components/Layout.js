@@ -19,6 +19,7 @@ function Layout(props) {
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>{defaultMetaTitle}</title>
+        <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css" />
       </Head>
       <Styles />
       <TopNavbar />
