@@ -1,4 +1,5 @@
 import {Chunk, ChunkCollection, useGetChunk, ChunkFieldValue} from "editmode-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -15,12 +16,13 @@ export default function Footer() {
                   <ChunkCollection identifier="navigation_items"
                     tags={["footer_nav_1"]}>
                       {(getChunk, chunk) => (
-                        <li className="mb-5">
-                          <a className="hover:underline"
-                            href={ getChunk(chunk, "Url") }>
-                            { getChunk(chunk, "Title") } 
-                          </a>
-                        </li>
+                        <Link href={getChunk(chunk, "Url")}>
+                          <a className="hover:underline">
+                            <p className="my-5">
+                              {getChunk(chunk, "Title")}
+                            </p>
+                          </a> 
+                        </Link>
                       )} 
                   </ChunkCollection>
                 </ul>
@@ -33,12 +35,13 @@ export default function Footer() {
                   <ChunkCollection identifier="navigation_items"
                     tags={["footer_nav_2"]}>
                       {(getChunk, chunk) => (
-                        <li className="mb-5">
-                          <a className="hover:underline"
-                            href={getChunk(chunk, "Url")}>
-                            {getChunk(chunk, "Title")} 
-                          </a>
-                        </li>
+                        <Link href={getChunk(chunk, "Url")}>
+                          <a className="hover:underline">
+                            <p className="my-5">
+                              {getChunk(chunk, "Title")}
+                            </p>
+                          </a> 
+                        </Link>
                       )} 
                   </ChunkCollection>
                 </ul>
@@ -51,12 +54,13 @@ export default function Footer() {
                   <ChunkCollection identifier="navigation_items"
                     tags={["footer_nav_3"]}>
                     {(getChunk, chunk) => (
-                      <li className="mb-5">
-                        <a className="hover:underline"
-                          href={getChunk(chunk, "Url")}>
-                          {getChunk(chunk, "Title")} 
-                        </a>
-                      </li>
+                      <Link href={getChunk(chunk, "Url")}>
+                        <a className="hover:underline">
+                          <p className="my-5">
+                            {getChunk(chunk, "Title")}
+                          </p>
+                        </a> 
+                      </Link>
                     )} 
                   </ChunkCollection>
                 </ul>
@@ -98,34 +102,28 @@ export default function Footer() {
         <div className="flex flex-wrap items-center pt-10 mb-8 lg:mb-0">
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <div className="md:flex items-center">
-              <a className="inline-flex text-gray-900 text-xl font-bold" href="/">
-                <Chunk identifier="logo_icon" className="w-12 text-primary"/>
-                <Chunk identifier="company_name" className="text-3xl"/>
-              </a>
+              <Link href="/">
+                <a className="inline-flex text-gray-900 text-xl">
+                  <Chunk identifier="logo_icon" className="w-12 text-primary"/>
+                  <Chunk identifier="company_name" className="text-3xl"/>
+                </a>
+              </Link>
               <span className="hidden md:inline-block mx-8 w-px h-8 bg-gray-50"></span>
               <p className="hidden lg:block text-sm">
                 <span>© 2021.</span>
-                <span className="text-gray-300">All rights reserved.</span>
+                <span className="text-gray-300 ml-1">All rights reserved.</span>
               </p>
             </div>
           </div>
           <div className="w-full md:w-1/2">
             <div className="md:flex items-center justify-end">
               <ChunkCollection identifier="social_links" className="flex">
-                {
-                (getChunk, chunk) => (
-
-                  <a className="inline-block mr-2"
-                    href={
-                      getChunk(chunk, "Url")
-                  }>
-                    <ChunkFieldValue identifier="Image" className="h-8 w-8 text-primary"
-                      stroke={
-                        getChunk(chunk, "Image")
-                      }/>
+                {(getChunk, chunk) => (
+                  <a className="inline-block mr-2" href={getChunk(chunk, "Url")}>
+                    <ChunkFieldValue identifier="Image" className="h-8 w-8 text-primary"/>
                   </a>
-                )
-              } </ChunkCollection>
+                )} 
+              </ChunkCollection>
             </div>
           </div>
         </div>
