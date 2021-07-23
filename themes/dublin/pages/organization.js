@@ -8,7 +8,7 @@ export default function Organization() {
         <h1 className="text-xl lg:text-3xl font-bold mb-10 text-center">
           <Chunk contentKey="organization_static_page" field="Title"/>
         </h1>
-        <div className="rounded bg-white shadow px-12 py-10">
+        <div className="rounded bg-white shadow px-12 py-12 lg:py-20 flex flex-col items-center">
           <Chunk contentKey="organization_static_page" field="Body" className="w-full static-page-body prose"/>
         </div>
       </div>
