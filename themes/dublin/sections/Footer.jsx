@@ -72,7 +72,7 @@ export default function Footer() {
                 useGetChunk("email_capture_email_address")
               }`
             }>
-              <div className="md:max-w-sm mb-8 flex items-center bg-white border border-gray-100 rounded-full">
+              <div className="mb-8 flex items-center bg-white border border-gray-100 rounded-full">
                 <span className="inline-block pl-6">
                   <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="18.5" cy="18.5" r="9.5" fill="#1F40FF" fillOpacity="0.15"></circle>
@@ -80,7 +80,7 @@ export default function Footer() {
                     <circle cx="18.5" cy="18.5" r="2.5" fill="#282C36"></circle>
                   </svg>
                 </span>
-                <input className="pl-4 py-4 rounded-full placeholder-gray-900 font-bold" type="email"
+                <input className="pl-4 py-4 rounded-full placeholder-gray-900 font-bold w-full" type="email"
                   placeholder={
                     useGetChunk("email_capture_input_placeholder")
                   }/>
