@@ -6,10 +6,13 @@ const TopNavbar = () => {
     <section className="bg-gray-800">
       <nav className="relative">
         <div className="flex py-8 px-4 lg:px-8 justify-between items-center">
-          <a className="text-2xl text-white font-bold inline-flex" href="#">
-            <Chunk identifier="logo_icon" className="w-5 text-primary mr-1"/>
-            <Chunk identifier="company_name" className="text-lg"/>
-          </a>
+          <Link href="/">
+            <a className="text-2xl text-white font-bold inline-flex">
+              <Chunk identifier="logo_icon" className="w-5 text-primary mr-1"/>
+              <Chunk identifier="company_name" className="text-lg"/>
+            </a>
+          </Link>
+          
           <div className="lg:hidden">
             <button className="p-2 navbar-burger">
               <svg className="w-10 h-3" width="39" height="13" viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,19 +73,39 @@ const TopNavbar = () => {
           <div>
             <ul>
               <li className="mb-1 px-10">
-                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="/">Home</a>
+                <Link href="/">
+                  <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl">
+                    Home
+                  </a>
+                </Link>
               </li>
               <li className="mb-1 px-10">
-                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="/team">Team</a>
+                <Link href="/team">
+                  <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl">
+                    Team
+                  </a>
+                </Link>
               </li>
               <li className="mb-1 px-10">
-                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="/pricing">Pricing</a>
+                <Link href="/pricing">
+                  <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl">
+                    Pricing
+                  </a>
+                </Link>
               </li>
               <li className="mb-1 px-10">
-                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="/company">About Us</a>
+                <Link href="/company">
+                  <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl">
+                    About Us
+                  </a>
+                </Link>
               </li>
               <li className="mb-1 px-10">
-                <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="/contact">Contact</a>
+                <Link href="/contact">
+                  <a className="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl">
+                    Contact
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
