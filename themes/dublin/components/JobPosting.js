@@ -11,8 +11,8 @@ const JobPosting = () => {
 
   return (
     <div className="block hover:bg-gray-50 cursor-pointer" onClick={handleClick}>
-      <div className="px-4 py-4 sm:px-6">
-        <div className="flex items-center justify-between">
+      <div className="py-4">
+        <div className="flex items-center justify-between px-4 sm:px-6">
           <p className="font-medium text-primary truncate text-xl">
             <ChunkFieldValue identifier="Role" />
           </p>
@@ -22,7 +22,7 @@ const JobPosting = () => {
             </p>
           </div>
         </div>
-        <div className="mt-2 sm:flex sm:justify-between">
+        <div className="mt-2 sm:flex sm:justify-between px-4 sm:px-6">
           <div className="sm:flex">
             <p className="flex items-center text-sm text-gray-400">
               <svg className="flex-shrink-0 mr-1 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -48,7 +48,9 @@ const JobPosting = () => {
           </div>
         </div>
         {showJobDescription && (
-          <ChunkFieldValue identifier="Job Description" className="mt-8 pt-6 border-t border-gray-200"/>
+          <div className="mt-8 pt-12 pb-8 border-t border-gray-200 px-4 sm:px-6">
+            <ChunkFieldValue identifier="Job Description" className="prose"/>
+          </div>
         )}
       </div>
     </div>
