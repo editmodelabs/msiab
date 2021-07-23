@@ -62,11 +62,15 @@ export default function Contact() {
                     useGetChunk("email_capture_email_address")
                   }`
                 }>
-                  <h3 class="mb-10 text-2xl font-bold text-white">Send a message!</h3>
-                  <input class="mb-3 w-full px-12 py-4 bg-white font-bold placeholder-gray-900 rounded-full focus:outline-none" type="email" placeholder="example@shuffle.dev" />
-                  <input class="mb-3 w-full px-12 py-4 bg-white font-bold placeholder-gray-900 rounded-full focus:outline-none" type="text" placeholder="Subject" />
-                  <textarea class="w-full mb-6 px-12 py-4 bg-white font-bold placeholder-gray-900 rounded-3xl resize-none focus:outline-none" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                  <button class="py-4 px-12 text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200">Send message</button>
+                  <h3 class="mb-10 text-2xl font-bold text-white">
+                    <Chunk identifier="contact_us_form" field="Headline"/>
+                  </h3>
+                  <input class="mb-3 w-full px-12 py-4 bg-white font-bold placeholder-gray-900 rounded-full focus:outline-none" type="email" placeholder={useGetChunk("contact_form_email_placeholder")} />
+                  <input class="mb-3 w-full px-12 py-4 bg-white font-bold placeholder-gray-900 rounded-full focus:outline-none" type="text" placeholder={useGetChunk("contact_form_subject_placeholder")} />
+                  <textarea class="w-full mb-6 px-12 py-4 bg-white font-bold placeholder-gray-900 rounded-3xl resize-none focus:outline-none" name="" id="" cols="30" rows="10" placeholder={useGetChunk("contact_form_message_placeholder")}></textarea>
+                  <button class="py-4 px-12 text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200">
+                    <Chunk identifier="contact_us_form_cta" field="Button Text"/>
+                  </button>
                 </form>
               </div>
             </div>
