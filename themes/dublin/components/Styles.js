@@ -1,13 +1,15 @@
-import {useGetChunk} from 'editmode-react'
+import { useGetChunk } from "editmode-react";
 
 const Styles = () => {
-  const primaryColor = useGetChunk("primary_color")
-  const font = useGetChunk('google_font_family')
-  const fontStyle = font ? `@import url('https://fonts.googleapis.com/css2?family=${font}&display=swap');` : '';
+  const primaryColor = useGetChunk("primary_color");
+  const font = useGetChunk("google_font_family_name");
   return (
     <style global jsx>
       {`
-        ${fontStyle}
+        body,
+        em-span {
+          font-family: ${font};
+        }
         .text-primary {
           color: ${primaryColor};
         }
