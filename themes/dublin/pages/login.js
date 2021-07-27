@@ -1,5 +1,5 @@
-import SignIn from "../../sections/SignIn";
-import Layout from "../../components/Layout";
+import SignIn from "../sections/SignIn";
+import Layout from "../components/Layout";
 
 export default function Login() {
   return (

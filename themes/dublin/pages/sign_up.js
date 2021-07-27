@@ -1,5 +1,5 @@
-import Register from "../../sections/Register";
-import Layout from "../../components/Layout";
+import Register from "../sections/Register";
+import Layout from "../components/Layout";
 
 export default function SignUp() {
   return (
