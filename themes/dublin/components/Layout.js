@@ -10,6 +10,7 @@ function Layout(props) {
   const defaultMetaTitle = `${useGetChunk("company_name")} -  ${useGetChunk(
     "company_tagline"
   )}`;
+  const font_composition = useGetChunk("google_font_family_composition");
   useEffect(() => {
     handleNav();
   }, []);
@@ -19,7 +20,10 @@ function Layout(props) {
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>{defaultMetaTitle}</title>
-        <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css" />
+        <link
+          href={`https://fonts.googleapis.com/css2?family=${font_composition}&display=swap`}
+          rel="stylesheet"
+        />
       </Head>
       <Styles />
       <TopNavbar />
