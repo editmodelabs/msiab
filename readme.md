@@ -1,34 +1,15 @@
 # Marketing Site in a box
 
-
-Marketing site in a box gives you everything you need to get a beautiful website or landing page, deployed to the internet, in less than 10 minutes.
+Marketing site in a box gives you everything you need to get a beautiful website or landing page, deployed to the internet, in just a few minutes.
 And because it's [powered by Editmode](https://editmode.com), all of the content can be managed, updated and changed by you or anyone on your team - technical or otherwise.
 Additionally, you get a real live codebase, running on Tailwind and Next.js, that you can modify and update as you please 🤗
 
-## Contents
-- [What's Included](#whats-included)
-- [How It Works](#how-it-works)
+<img src="https://cln.sh/u5DBJC/download" width="450" /><img src="https://img.editmode.com/production/content_pieces/cnk_bedf219dd3ed7efb2d14/i5LlBOZfkdYS/images/original/content_hub.gif" width="450" />
+
+There are two parts to Marketing Site In A Box - The pre-built theme(s), which you can browse here, and the content, which we've pre-packaged into a clonable Editmode project. We've spent a good deal of time and energy preparing and polishing both to make sure that you you have everything you need to get up and running super quickly.
 
 ---
-### What's Included
-
-The goal of Marketing Site in a Box is to provide the two pillars of any marketing site - the **theme** and the **content** - together, in one place. 
-
-- Beautiful homepage
-- Fully content-managed
-- Inline editing 🙀
-- Content Sections
-  - Features
-  - About Us
-  - Terms
-  - Privacy Policy
-  - Jobs
-  - Testimonials
-  - Team Members
-  - Pricing
-
----
-### How It Works
+### Getting Started
 
 #### 1. 👇  Get an Editmode project id by cloning the Marketing Site Starter project. 
 
@@ -47,6 +28,10 @@ The goal of Marketing Site in a Box is to provide the two pillars of any marketi
 [<img src="/themes/lagos/preview.png" width="350" />](https://msiab-sogal.vercel.app/) |  <img src="/themes/comingsoon.png" width="350" /> |  <img src="/themes/comingsoon.png" width="350" /> 
 
 ---
+
+### What Is Editmode?
+
+
 
 ### Powered By
 
