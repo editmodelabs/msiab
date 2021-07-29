@@ -4,7 +4,7 @@ Marketing site in a box gives you everything you need to get a beautiful website
 And because it's [powered by Editmode](https://editmode.com), all of the content can be managed, updated and changed by you or anyone on your team - technical or otherwise.
 Additionally, you get a real live codebase, running on Tailwind and Next.js, that you can modify and update as you please 🤗
 
-<img src="https://img.editmode.com/production/content_pieces/cnk_00ba0a21eeeab1bcb5c3/i5LlBOZfkdYS/images/original/msiab.png" width="405" /><img src="https://img.editmode.com/production/content_pieces/cnk_bedf219dd3ed7efb2d14/i5LlBOZfkdYS/images/original/content_hub.gif" width="380" />
+<img src="https://img.editmode.com/production/content_pieces/cnk_00ba0a21eeeab1bcb5c3/i5LlBOZfkdYS/images/original/msiab_gap.png" width="425" /><img src="https://img.editmode.com/production/content_pieces/cnk_bedf219dd3ed7efb2d14/i5LlBOZfkdYS/images/original/content_hub.gif" width="380" />
 
 There are two parts to Marketing Site In A Box - The pre-built theme(s), which you can browse here, and the content, which we've pre-packaged into a clonable Editmode project. We've spent a good deal of time and energy preparing and polishing both to make sure that you you have everything you need to get up and running super quickly.
 
