@@ -9,7 +9,7 @@ export default function TopNav() {
   const primaryColor = useGetChunk("primary_color");
   return (
     <nav className="relative px-6 py-6 flex justify-between items-center bg-white shadow">
-      <a
+      {/* <a
         className="text-3xl font-bold text-primary leading-none flex"
         href="/"
         style={{ color: primaryColor }}
@@ -111,7 +111,7 @@ export default function TopNav() {
             </div>
           </div>
         </nav>
-      </div>
+      </div> */}
     </nav>
   );
 }

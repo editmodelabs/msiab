@@ -1,11 +1,11 @@
-import { Chunk, ChunkCollection, useGetChunk } from "editmode-react";
+// import { Chunk, ChunkCollection, useGetChunk } from "editmode-react";
 import Layout from "../components/Layout";
 
 export default function Pricing() {
-  const primaryColor = useGetChunk("primary_color");
+  // const primaryColor = useGetChunk("primary_color");
   return (
     <div>
-      <section>
+      {/* <section>
         <div className="skew skew-top mr-for-radius">
           <svg
             className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
@@ -139,7 +139,7 @@ export default function Pricing() {
             <polygon fill={primaryColor} points="0 0 10 0 10 10"></polygon>
           </svg>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

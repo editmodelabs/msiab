@@ -7,7 +7,7 @@ import handleNav from "../utils/handleNav";
 import { useEffect } from "react";
 import Link from "next/link";
 
-function Layout(props) {
+function Layout({ children }) {
   const defaultMetaTitle = `${useGetChunk("company_name")} -  ${useGetChunk(
     "company_tagline"
   )}`;
@@ -17,7 +17,7 @@ function Layout(props) {
   }, []);
 
   return (
-    <Editmode projectId={process.env.NEXT_PUBLIC_PROJECT_ID}>
+    <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>{defaultMetaTitle}</title>
@@ -28,9 +28,9 @@ function Layout(props) {
       </Head>
       <Styles />
       <TopNav />
-      {props.children}
+      {children}
       <Footer />
-    </Editmode>
+    </>
   );
 }
 

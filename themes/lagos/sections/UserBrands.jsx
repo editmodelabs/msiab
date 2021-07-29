@@ -3,7 +3,7 @@ import { Chunk, ChunkFieldValue, ChunkCollection } from "editmode-react";
 export default function UserBrands() {
   return (
     <section className="py-20">
-      <div className="container mx-auto px-4">
+      {/* <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center">
           <div className="mb-12 lg:mb-0 w-full lg:w-1/2">
             <div className="max-w-md">
@@ -25,7 +25,7 @@ export default function UserBrands() {
             </div>
           </ChunkCollection>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
