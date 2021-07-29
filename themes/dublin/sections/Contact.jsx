@@ -59,7 +59,7 @@ export default function Contact() {
                 <form 
                   method="POST" action={
                   `https://formsubmit.co/${
-                    useGetChunk("email_capture_email_address")
+                    useGetChunk("contact_info_email")
                   }`
                 }>
                   <h3 class="mb-10 text-2xl font-bold text-white">
