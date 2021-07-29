@@ -15,7 +15,7 @@ const BlogPost = (props) => {
     <div className="w-full h-full cursor-pointer" onClick={handleClick}>
       <div className="relative h-56">
         <img className="w-full h-full object-cover object-top rounded-t" src={getChunk(chunk, "Image")} />
-        <div className="absolute bottom-0 left-0 ml-8 mb-6 px-3 pb-3 pt-1 inline-block bg-white rounded-b-2xl border-t-4 border-blue-500">
+        <div className="absolute bottom-0 left-0 ml-8 mb-6 px-3 pb-3 pt-1 inline-block bg-white rounded-b-2xl border-t-4 border-primary">
           <p className="text-xs uppercase text-gray-300">
             {getChunk(chunk, "Published At")}
           </p>
