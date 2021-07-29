@@ -6,10 +6,10 @@ import {
 } from "editmode-react";
 
 export default function HowItWorks() {
-  // const primaryColor = useGetChunk("primary_color");
+  const primaryColor = useGetChunk("primary_color");
   return (
     <section className="shadow">
-      {/* <div className="skew skew-top mr-for-radius">
+      <div className="skew skew-top mr-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
@@ -85,7 +85,7 @@ export default function HowItWorks() {
         >
           <polygon fill={primaryColor} points="0 0 10 0 10 10"></polygon>
         </svg>
-      </div> */}
+      </div>
     </section>
   );
 }

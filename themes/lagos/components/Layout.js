@@ -16,6 +16,7 @@ function Layout({ children }) {
     handleNav();
   }, []);
 
+  console.log(children);
   return (
     <>
       <Head>
