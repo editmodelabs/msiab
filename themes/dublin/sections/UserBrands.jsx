@@ -1,4 +1,4 @@
-import {Chunk, ChunkFieldValue, ChunkCollection, useGetChunk} from "editmode-react";
+import {Chunk, ChunkFieldValue, ChunkCollection} from "editmode-react";
 
 export default function UserBrands() {
   return (
