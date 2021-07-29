@@ -1,6 +1,6 @@
 # Marketing Site in a box
 
-Marketing site in a box gives you everything you need to get a beautiful website or landing page, deployed to the internet, in just a few minutes.
+Marketing site in a box gives you everything you need for a beautiful marketing site or landing page in just a few clicks.
 And because it's [powered by Editmode](https://editmode.com), all of the content can be managed, updated and changed by you or anyone on your team - technical or otherwise.
 Additionally, you get a real live codebase, running on Tailwind and Next.js, that you can modify and update as you please 🤗
 
