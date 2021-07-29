@@ -1,4 +1,4 @@
-import {ChunkCollection, ChunkFieldValue, useGetChunk, Chunk} from "editmode-react";
+import {ChunkCollection, ChunkFieldValue, Chunk} from "editmode-react";
 
 export default function PricingPlans() {
 

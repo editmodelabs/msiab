@@ -1,4 +1,4 @@
-import {Chunk, ChunkCollection, ChunkFieldValue, useGetChunk} from "editmode-react"
+import {Chunk, ChunkCollection, ChunkFieldValue} from "editmode-react"
 import Layout from "../components/Layout";
 
 export default function AboutUs() {
