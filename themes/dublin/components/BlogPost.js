@@ -22,7 +22,7 @@ const BlogPost = (props) => {
         </div>
       </div>
       <div className="pt-10 pb-14 px-5 h-64 bg-white rounded-b-lg">
-        <span className="inline-block mb-6 py-1 px-3 text-white font-bold rounded-xl bg-blue-500 uppercase">
+        <span className="inline-block mb-6 py-1 px-3 text-white font-bold rounded-xl bg-primary uppercase">
           {getChunk(chunk, "Category")}
         </span>
         <h3 className="mb-4 text-2xl font-bold truncate">

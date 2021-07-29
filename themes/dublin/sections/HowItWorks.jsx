@@ -10,7 +10,7 @@ export default function HowItWorks() {
               <div className="max-w-md">
                 <span className="text-lg font-bold text-blue-500"><Chunk contentKey="how_it_works" field="Tagline"/></span>
                 <h2 className="mt-12 mb-10 text-6xl font-bold font-heading"><Chunk contentKey="how_it_works" field="Headline"/></h2>
-                <a className="inline-block px-12 py-5 text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200"
+                <a className="inline-block px-12 py-5 text-white font-bold bg-primary hover:bg-blue-600 rounded-full transition duration-200"
                   href={
                     useGetChunk("home_hero_primary_cta", "Url")
                 }>

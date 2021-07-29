@@ -6,7 +6,7 @@ export default function Features() {
   return (
     <>
       <section className="relative py-20 2xl:py-40 bg-gray-800 overflow-hidden">
-      <div className="absolute h-40 w-40 bg-blue-500 bottom-0 right-0 -mr-20 -mb-20 rounded-full"></div>
+      <div className="absolute h-40 w-40 bg-primary bottom-0 right-0 -mr-20 -mb-20 rounded-full"></div>
         <div className="container px-4 mx-auto">
           <div>
             <span className="text-primary font-bold mb-6">

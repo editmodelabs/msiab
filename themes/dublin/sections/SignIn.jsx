@@ -45,7 +45,7 @@ export default function SignIn() {
               </div>
             </div>
             <div>
-              <button class="py-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full transition duration-200">
+              <button class="py-4 w-full bg-primary hover:bg-blue-600 text-white font-bold rounded-full transition duration-200">
                 <Chunk identifier="login_form_cta" field="Button Text"/>
               </button>
             </div>

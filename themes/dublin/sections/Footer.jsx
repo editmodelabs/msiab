@@ -88,7 +88,7 @@ export default function Footer() {
                   placeholder={
                     useGetChunk("email_capture_input_placeholder")
                   }/>
-                <button className="ml-auto px-4 px-8 lg:px-8 py-5 text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200 whitespace-nowrap">
+                <button className="ml-auto px-4 px-8 lg:px-8 py-5 text-white font-bold bg-primary hover:bg-blue-600 rounded-full transition duration-200 whitespace-nowrap">
                   {
                   useGetChunk("email_capture_button_text")
                 } </button>

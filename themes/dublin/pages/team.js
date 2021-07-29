@@ -2,12 +2,11 @@ import {Chunk, ChunkCollection, ChunkFieldValue, useGetChunk} from "editmode-rea
 import Layout from "../components/Layout";
 
 export default function AboutUs() {
-  const primaryColor = useGetChunk("primary_color");
 
   return (
     <section className="py-12 lg:py-20 overflow-hidden bg-gray-800 border-t border-gray-700">
       <div className="container px-4 mx-auto">
-        <span className="font-bold" style={{color: primaryColor}}>
+        <span className="font-bold text-primary">
           <Chunk contentKey="team_section_heading_before"/>
         </span>
         <h1 className="text-xl lg:text-5xl font-bold mb-12 text-white">

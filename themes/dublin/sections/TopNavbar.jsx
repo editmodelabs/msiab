@@ -116,7 +116,7 @@ const TopNavbar = () => {
                   Sign in
                 </a>
               </Link>
-              <a className="block py-4 px-12 text-white text-center font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200" href={useGetChunk("home_hero_secondary_cta", "Url")}>{useGetChunk("home_hero_secondary_cta", "Button Text")}</a>
+              <a className="block py-4 px-12 text-white text-center font-bold bg-primary hover:bg-blue-600 rounded-full transition duration-200" href={useGetChunk("home_hero_secondary_cta", "Url")}>{useGetChunk("home_hero_secondary_cta", "Button Text")}</a>
             </div>
             <p className="mt-6 mb-4 text-lg text-center">
               <span>2021 © All rights reserved.</span>
