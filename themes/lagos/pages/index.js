@@ -5,11 +5,9 @@ import Faq from "../sections/FAQ";
 import UserBrands from "../sections/UserBrands";
 import Testimonials from "../sections/Testimonials";
 import EmailCapture from "../sections/EmailCapture";
-import Layout from "../components/Layout";
-import { Editmode, useGetChunk } from "editmode-react";
-import { data } from "autoprefixer";
+import withEditmode, { getStaticProps } from "../components/withEditmode";
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Hero />
@@ -23,20 +21,6 @@ export default function Home() {
   );
 }
 
-Home.getLayout = (page) => {
-  return <Layout pageName="Home">{page}</Layout>;
-};
+export { getStaticProps };
 
-export const getStaticProps = async () => {
-  const res = await fetch(
-    "https://api.editmode.com/chunks/?project_id=prj_gaf3K12dTGwe"
-  );
-  const { chunks } = await res.json();
-
-  return {
-    props: {
-      chunks,
-    },
-    revalidate: 50,
-  };
-};
+export default withEditmode(Home);
