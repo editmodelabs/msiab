@@ -1,6 +1,7 @@
 // import { ChunkCollection, ChunkFieldValue, useGetChunk } from "editmode-react";
 import { useState } from "react";
 import handleClick from "../utils/handleClick";
+import { useGetChunk, ChunkCollection, ChunkFieldValue } from "editmode-react";
 
 const GeneralPanelContent = () => {
   const primaryColor = useGetChunk("primary_color");
@@ -8,7 +9,7 @@ const GeneralPanelContent = () => {
 
   return (
     <div className="container mx-auto px-4">
-      {/* <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <ul>
           <ChunkCollection
             identifier="faqs"
@@ -61,7 +62,7 @@ const GeneralPanelContent = () => {
             )}
           </ChunkCollection>
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -10,7 +10,7 @@ export default function Features() {
   return (
     <>
       <section>
-        {/* <div className="skew skew-top mr-for-radius">
+        <div className="skew skew-top mr-for-radius">
           <svg
             className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
             viewBox="0 0 10 10"
@@ -127,7 +127,7 @@ export default function Features() {
           >
             <polygon fill="currentColor" points="0 0 10 0 10 10" />
           </svg>
-        </div> */}
+        </div>
       </section>
     </>
   );

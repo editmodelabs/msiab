@@ -6,10 +6,10 @@ import {
 } from "editmode-react";
 
 export default function Testimonials() {
-  // const primaryColor = useGetChunk("primary_color");
+  const primaryColor = useGetChunk("primary_color");
   return (
     <section>
-      {/* <div className="skew skew-top ml-for-radius">
+      <div className="skew skew-top ml-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
@@ -78,7 +78,7 @@ export default function Testimonials() {
         >
           <polygon fill="currentColor" points="0 0 10 0 10 10" />
         </svg>
-      </div> */}
+      </div>
     </section>
   );
 }

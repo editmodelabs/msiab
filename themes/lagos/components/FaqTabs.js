@@ -4,13 +4,13 @@ import Tabs from "./Tabs";
 import Tab from "./Tab";
 import GeneralPanelContent from "./GeneralPanel";
 import PaymentPanelContent from "./PaymentsPanel";
-// import { Chunk, useGetChunk } from "editmode-react";
+import { Chunk, useGetChunk } from "editmode-react";
 
 export default function FaqTabs() {
-  // const primaryColor = useGetChunk("primary_color");
+  const primaryColor = useGetChunk("primary_color");
   return (
     <Tabs>
-      {/* <div className="border-b">
+      <div className="border-b">
         <div className="mb-16 max-w-xl mx-auto px-4 text-center">
           <span
             className="text-primary font-bold"
@@ -48,7 +48,7 @@ export default function FaqTabs() {
 
       <Panel>
         <PaymentPanelContent />
-      </Panel> */}
+      </Panel>
     </Tabs>
   );
 }

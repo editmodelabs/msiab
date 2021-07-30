@@ -42,7 +42,7 @@ export default function HowItWorks() {
           </div>
           <div className="flex flex-wrap -mx-4">
             <ChunkCollection
-              identifier="how_it_works_steps"
+              identifier="How It Works Step"
               className="flex flex-wrap -mx-4"
               itemClass="mb-8 lg:mb-0 w-full md:w-1/2 lg:w-1/3 px-4"
             >

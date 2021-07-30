@@ -2,8 +2,9 @@
 import Layout from "../components/Layout";
 import { useGetChunk, Chunk, ChunkCollection } from "editmode-react";
 
-export default function Pricing() {
+export default function Pricing(props) {
   const primaryColor = useGetChunk("primary_color");
+  console.log(props);
   return (
     <div>
       <section>
