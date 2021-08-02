@@ -1,10 +1,11 @@
+import Layout from "../components/Layout";
 import PricingSection from "../components/Pricing";
-import withEditmode, { getStaticProps } from "../components/withEditmode";
+import { getStaticProps } from "../components/withEditmode";
 
-function Pricing() {
+export default function Pricing() {
   return <PricingSection />;
 }
 
-export { getStaticProps };
+Pricing.getLayout = (page) => <Layout pageName="Pricing">{page}</Layout>;
 
-export default withEditmode(Pricing);
+export { getStaticProps };

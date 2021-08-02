@@ -22,7 +22,7 @@ export const getStaticProps = async () => {
     props: {
       chunks,
     },
-    revalidate: 35,
+    revalidate: 45,
   };
 };
 

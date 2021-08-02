@@ -6,12 +6,11 @@ import handleNav from "../utils/handleNav";
 import { useEffect } from "react";
 import CustomHead from "./CustomHead";
 
-function Layout({ chunks, children }) {
+function Layout({ children }) {
   useEffect(() => {
     handleNav();
   }, []);
-  console.log(chunks);
-
+  const { chunks } = children.props;
   return (
     <>
       <Editmode projectId="prj_gaf3K12dTGwe" defaultChunks={chunks}>

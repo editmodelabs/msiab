@@ -3,13 +3,13 @@ import { useState } from "react";
 import handleClick from "../utils/handleClick";
 
 const PaymentPanelContent = () => {
-  // const primaryColor = useGetChunk("primary_color");
-  // const [activePaymentQuestions, setActivePaymentQuestions] = useState([]);
+  const primaryColor = useGetChunk("primary_color");
+  const [activePaymentQuestions, setActivePaymentQuestions] = useState([]);
 
   return (
     <div className="container mx-auto px-4">
       <div className="max-w-3xl mx-auto">
-        {/* <ul>
+        <ul>
           <ChunkCollection
             identifier="faqs"
             tags={["faq_payment"]}
@@ -66,7 +66,7 @@ const PaymentPanelContent = () => {
               </li>
             )}
           </ChunkCollection>
-        </ul> */}
+        </ul>
       </div>
     </div>
   );

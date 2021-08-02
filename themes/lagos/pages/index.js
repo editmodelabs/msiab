@@ -5,9 +5,10 @@ import Faq from "../sections/FAQ";
 import UserBrands from "../sections/UserBrands";
 import Testimonials from "../sections/Testimonials";
 import EmailCapture from "../sections/EmailCapture";
-import withEditmode, { getStaticProps } from "../components/withEditmode";
+import Layout from "../components/Layout";
+import { getStaticProps } from "../components/withEditmode";
 
-function Home() {
+export default function Home() {
   return (
     <>
       <Hero />
@@ -21,6 +22,8 @@ function Home() {
   );
 }
 
-export { getStaticProps };
+Home.getLayout = (page) => {
+  return <Layout pageName="Home">{page}</Layout>;
+};
 
-export default withEditmode(Home);
+export { getStaticProps };
