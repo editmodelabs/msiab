@@ -10,7 +10,7 @@ const Tab = ({ children }) => {
 
   return (
     <button
-      className={cn("tab", isActive && "active") + add_cn}
+      className={`${cn("tab", isActive && "active")} ${add_cn}`}
       onClick={onClick}
     >
       {children}
