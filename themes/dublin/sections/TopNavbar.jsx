@@ -8,16 +8,30 @@ const TopNavbar = () => {
         <div className="flex py-8 px-4 lg:px-8 justify-between items-center">
           <Link href="/">
             <a className="text-2xl text-white font-bold inline-flex">
-              <Chunk identifier="logo_icon" className="w-5 text-primary mr-1"/>
-              <Chunk identifier="company_name" className="text-lg"/>
+              <Chunk identifier="logo_icon" className="w-5 text-primary mr-1" />
+              <Chunk identifier="company_name" className="text-lg" />
             </a>
           </Link>
-          
+
           <div className="lg:hidden">
             <button className="p-2 navbar-burger">
-              <svg className="w-10 h-3" width="39" height="13" viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="w-10 h-3"
+                width="39"
+                height="13"
+                viewBox="0 0 39 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <rect width="39" height="2" rx="1" fill="#C4C4C4"></rect>
-                <rect x="19" y="11" width="20" height="2" rx="1" fill="#C4C4C4"></rect>
+                <rect
+                  x="19"
+                  y="11"
+                  width="20"
+                  height="2"
+                  rx="1"
+                  fill="#C4C4C4"
+                ></rect>
               </svg>
             </button>
           </div>
@@ -29,7 +43,13 @@ const TopNavbar = () => {
                 </Link>
               </li>
               <span>
-                <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  width="5"
+                  height="5"
+                  viewBox="0 0 5 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
                 </svg>
               </span>
@@ -39,7 +59,13 @@ const TopNavbar = () => {
                 </Link>
               </li>
               <span>
-                <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  width="5"
+                  height="5"
+                  viewBox="0 0 5 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
                 </svg>
               </span>
@@ -51,13 +77,12 @@ const TopNavbar = () => {
             </ul>
           </div>
           <div className="hidden lg:block">
-            <a className="inline-block px-12 py-4 text-white font-bold border border-gray-200 hover:border-white rounded"
-              href={
-                useGetChunk("home_hero_secondary_cta", "Url")
-            }>
-              {
-              useGetChunk("home_hero_secondary_cta", "Button Text")
-            } </a>
+            <a
+              className="inline-block px-12 py-4 text-white font-bold border border-gray-200 hover:border-white rounded"
+              href={useGetChunk("home_hero_secondary_cta", "Url")}
+            >
+              {useGetChunk("home_hero_secondary_cta", "Button Text")}{" "}
+            </a>
           </div>
         </div>
       </nav>
@@ -65,9 +90,12 @@ const TopNavbar = () => {
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
         <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-8 bg-white overflow-y-auto">
           <div className="flex items-center mb-16 pr-6">
-            <a className="ml-10 mr-auto text-2xl text-gray-800 font-bold inline-flex" href="#">
-              <Chunk identifier="logo_icon" className="w-5 text-primary mr-1"/>
-              <Chunk identifier="company_name" className="text-lg"/>
+            <a
+              className="ml-10 mr-auto text-2xl text-gray-800 font-bold inline-flex"
+              href="#"
+            >
+              <Chunk identifier="logo_icon" className="w-5 text-primary mr-1" />
+              <Chunk identifier="company_name" className="text-lg" />
             </a>
           </div>
           <div>
@@ -116,7 +144,12 @@ const TopNavbar = () => {
                   Sign in
                 </a>
               </Link>
-              <a className="block py-4 px-12 text-white text-center font-bold bg-primary hover:bg-blue-600 rounded-full transition duration-200" href={useGetChunk("home_hero_secondary_cta", "Url")}>{useGetChunk("home_hero_secondary_cta", "Button Text")}</a>
+              <a
+                className="block py-4 px-12 text-white text-center font-bold bg-primary hover:bg-blue-600 rounded-full transition duration-200"
+                href={useGetChunk("home_hero_secondary_cta", "Url")}
+              >
+                {useGetChunk("home_hero_secondary_cta", "Button Text")}
+              </a>
             </div>
             <p className="mt-6 mb-4 text-lg text-center">
               <span>2021 © All rights reserved.</span>
