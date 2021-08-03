@@ -13,7 +13,7 @@ function Layout({ children }) {
   const { chunks } = children.props;
   return (
     <>
-      <Editmode projectId="prj_gaf3K12dTGwe" defaultChunks={chunks}>
+      <Editmode projectId="prj_gaf3K12dTGwe" defaultChunks={chunks} next={true}>
         <CustomHead />
         <Styles />
         <TopNav />
