@@ -4,12 +4,24 @@ import Link from "next/link";
 const TopNavbar = () => {
   return (
     <section className="bg-gray-800">
+      {/* <nav className="flex items-center flex-wrap p-3 ">
+        <Link href="/">
+          <a className="inline-flex items-center p-2 mr-4">
+            <Chunk identifier="logo_icon" className="w-5 text-primary mr-1" />
+            <span>
+              <Chunk identifier="company_name" className="text-lg" />
+            </span>
+          </a>
+        </Link>
+      </nav> */}
       <nav className="relative">
         <div className="flex py-8 px-4 lg:px-8 justify-between items-center">
           <Link href="/">
-            <a className="text-2xl text-white font-bold inline-flex">
+            <a className="inline-flex items-center p-2 mr-4 font-bold text-primary leading-none flex">
               <Chunk identifier="logo_icon" className="w-5 text-primary mr-1" />
-              <Chunk identifier="company_name" className="text-lg" />
+              <span>
+                <Chunk identifier="company_name" className="text-lg" />
+              </span>
             </a>
           </Link>
 
