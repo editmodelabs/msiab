@@ -6,7 +6,7 @@ import { useGetChunk, Editmode } from "editmode-react";
 import handleNav from "../utils/handleNav";
 import { useEffect } from "react";
 
-function Layout(props) {
+function Layout({ children }) {
   const defaultMetaTitle = `${useGetChunk("company_name")} -  ${useGetChunk(
     "company_tagline"
   )}`;
@@ -14,9 +14,14 @@ function Layout(props) {
   useEffect(() => {
     handleNav();
   }, []);
+  const { chunks } = children.props;
 
   return (
-    <Editmode projectId={process.env.NEXT_PUBLIC_PROJECT_ID}>
+    <Editmode
+      projectId={process.env.NEXT_PUBLIC_PROJECT_ID}
+      defaultChunks={chunks}
+      next={true}
+    >
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>{defaultMetaTitle}</title>
@@ -27,7 +32,7 @@ function Layout(props) {
       </Head>
       <Styles />
       <TopNavbar />
-      {props.children}
+      {children}
       <Footer />
     </Editmode>
   );

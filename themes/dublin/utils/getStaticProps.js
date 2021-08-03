@@ -11,5 +11,3 @@ export const getStaticProps = async () => {
     revalidate: 45,
   };
 };
-
-export default withEditmode;
