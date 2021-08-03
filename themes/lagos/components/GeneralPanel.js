@@ -1,6 +1,7 @@
-import { ChunkCollection, ChunkFieldValue, useGetChunk } from "editmode-react";
+// import { ChunkCollection, ChunkFieldValue, useGetChunk } from "editmode-react";
 import { useState } from "react";
 import handleClick from "../utils/handleClick";
+import { useGetChunk, ChunkCollection, ChunkFieldValue } from "editmode-react";
 
 const GeneralPanelContent = () => {
   const primaryColor = useGetChunk("primary_color");

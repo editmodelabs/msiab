@@ -6,6 +6,7 @@ import UserBrands from "../sections/UserBrands";
 import Testimonials from "../sections/Testimonials";
 import EmailCapture from "../sections/EmailCapture";
 import Layout from "../components/Layout";
+import { getStaticProps } from "../components/withEditmode";
 
 export default function Home() {
   return (
@@ -21,4 +22,8 @@ export default function Home() {
   );
 }
 
-Home.getLayout = (page) => <Layout pageName="Home">{page}</Layout>;
+Home.getLayout = (page) => {
+  return <Layout pageName="Home">{page}</Layout>;
+};
+
+export { getStaticProps };

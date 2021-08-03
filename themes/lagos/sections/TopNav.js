@@ -1,11 +1,12 @@
-import {
-  Chunk,
-  ChunkCollection,
-  ChunkFieldValue,
-  useGetChunk,
-} from "editmode-react";
+import { Chunk, useGetChunk } from "editmode-react";
 import Link from "next/link";
+import handleNav from "../utils/handleNav";
+import { useEffect } from "react";
+
 export default function TopNav() {
+  useEffect(() => {
+    handleNav();
+  }, []);
   const primaryColor = useGetChunk("primary_color");
   return (
     <nav className="relative px-6 py-6 flex justify-between items-center bg-white shadow">

@@ -1,11 +1,9 @@
-import {
-  Chunk,
-  ChunkCollection,
-  ChunkFieldValue,
-  useGetChunk,
-} from "editmode-react";
+import { Chunk, useGetChunk } from "editmode-react";
+import { Image } from "editmode-react";
 const NavBar = () => {
   const primaryColor = useGetChunk("primary_color");
+  const img = useGetChunk("home_hero_image");
+  console.log(img);
   return (
     <section className="relative overflow-hidden pb-56 sm:pb-80">
       <img
