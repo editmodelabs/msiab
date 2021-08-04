@@ -22,7 +22,8 @@ export default function AboutUs() {
               <div className="flex items-center">
                 <ChunkFieldValue
                   identifier="Avatar"
-                  className="h-48 w-1/3 object-cover rounded"
+                  className="h-48 md:w-1/3 object-cover rounded w-60 h-48"
+                  // style={{ width: "245px", height: "192px" }}
                 />
                 <div className="pl-10 w-2/3">
                   <h3 className="mb-4 text-3xl font-bold font-heading text-white">
