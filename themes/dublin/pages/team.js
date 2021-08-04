@@ -7,10 +7,10 @@ export default function AboutUs() {
     <section className="py-12 lg:py-20 overflow-hidden bg-gray-800 border-t border-gray-700">
       <div className="container px-4 mx-auto">
         <span className="font-bold text-primary">
-          <Chunk contentKey="team_section_heading_before"/>
+          <Chunk contentKey="team_section" field="Tagline"/>
         </span>
         <h1 className="text-xl lg:text-5xl font-bold mb-12 text-white">
-          <Chunk contentKey="team_section_heading"/>
+          <Chunk contentKey="team_section" field="Headline"/>
         </h1>
         <ChunkCollection 
           className="flex flex-wrap -mx-4 items-center" 
