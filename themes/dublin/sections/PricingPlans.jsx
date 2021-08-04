@@ -7,10 +7,14 @@ export default function PricingPlans() {
       <div className="container px-4 mx-auto">
         <div className="mb-16 md:mb-24 text-center">
           <p className="text-lg font-bold text-primary">
-            <Chunk identifier="pricing_page_tagline" />
+            <Chunk identifier="pricing_section" field="Tagline"/>
           </p>
-          <h2 className="mb-8 md:mb-14 text-5xl lg:text-6xl 2xl:text-7xl text-white font-bold font-heading"><Chunk identifier="pricing_page_headline" /></h2>
-          <p className="text-lg text-gray-200"><Chunk identifier="pricing_page_description" /></p>
+          <h2 className="mb-8 md:mb-14 text-5xl lg:text-6xl 2xl:text-7xl text-white font-bold font-heading">
+            <Chunk identifier="pricing_section" field="Headline"/>
+          </h2>
+          <p className="text-lg text-gray-200">
+            <Chunk identifier="pricing_section" field="Description"/>
+          </p>
         </div>
         <ChunkCollection
           identifier="pricing_packages"
