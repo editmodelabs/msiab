@@ -6,7 +6,8 @@ Clone the starter Editmode project [here](https://app.editmode.com/projects/prj_
 
 **Step #2**
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Feditmodelabs%2Fmsiab%2Ftree%2Fmain%2Fthemes%2Fdublin?&env=NEXT_PUBLIC_PROJECT_ID)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Feditmodelabs%2Fmsiab%2Ftree%2Fintegrations%2Fthemes%2Fdublin?&integration-ids=oac_KxaKzLl1KakFnclDJURDmQtI)
 
 <br/>
 
