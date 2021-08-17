@@ -14,7 +14,7 @@ const withEditmode = (Component) => {
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    "https://api.editmode.com/chunks/?project_id=prj_gaf3K12dTGwe"
+    `https://api.editmode.com/chunks/?project_id=${process.env.NEXT_PUBLIC_PROJECT_ID}`
   );
   const { chunks } = await res.json();
 
