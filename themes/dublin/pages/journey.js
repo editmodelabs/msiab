@@ -1,7 +1,6 @@
 import { Chunk } from "editmode-react";
 import Layout from "../components/Layout";
 import { getStaticProps } from "../utils/getStaticProps";
-
 export default function Journey() {
   return (
     <section className="pb-12 lg:pb-24 pt-12 lg:pt-20 overflow-hidden bg-gray-100">

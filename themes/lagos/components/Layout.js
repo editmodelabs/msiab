@@ -13,7 +13,11 @@ function Layout({ children }) {
   const { chunks } = children.props;
   return (
     <>
-      <Editmode projectId={process.env.NEXT_PUBLIC_PROJECT_ID} defaultChunks={chunks} next={true}>
+      <Editmode
+        projectId={process.env.NEXT_PUBLIC_PROJECT_ID}
+        defaultChunks={chunks}
+        next={true}
+      >
         <CustomHead />
         <Styles />
         <TopNav />

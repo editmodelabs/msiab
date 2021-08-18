@@ -40,7 +40,9 @@ export default function Footer() {
                   className="w-12 text-primary"
                   fill={primaryColor}
                 />
-                <Chunk identifier="company_name" className="text-3xl" />
+                <span className="flex flex-col justify-center">
+                  <Chunk identifier="company_name" className="text-3xl" />
+                </span>
               </a>
               <Chunk
                 identifier="company_tagline"

@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "alpinejs": "^3.2.1",
-    "editmode-react": "3.1.31-canary.52.39b030d.0",
+    "editmode-react": "^3.1.35",
     "next": "10.2.3",
     "react": "16.*",
     "react-dom": "16.*",
@@ -19,6 +19,8 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6"
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
   }
 }

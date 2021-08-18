@@ -10,18 +10,14 @@ export default function TopNav() {
   const primaryColor = useGetChunk("primary_color");
   return (
     <nav className="relative px-6 py-6 flex justify-between items-center bg-white shadow">
-      <a
-        className="text-3xl font-bold text-primary leading-none flex"
-        href="/"
-        style={{ color: primaryColor }}
-      >
-        <Chunk
-          identifier="logo_icon"
-          className="w-5 text-primary"
-          fill={primaryColor}
-        />
-        <Chunk identifier="company_name" className="text-lg" />
-      </a>
+      <Link href="/">
+        <a className="inline-flex items-center p-2 mr-4 font-bold text-primary leading-none flex">
+          <Chunk identifier="logo_icon" className="w-5 text-primary mr-1" />
+          <span>
+            <Chunk identifier="company_name" className="text-lg" />
+          </span>
+        </a>
+      </Link>
 
       <div className="lg:hidden">
         <button className="navbar-burger flex items-center text-gray-400 p-3">
@@ -63,18 +59,17 @@ export default function TopNav() {
         <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
           <div className="flex items-center mb-8">
             <div className="mr-auto text-3xl font-bold leading-none">
-              <a
-                className="text-3xl font-bold text-primary leading-none flex"
-                href="/"
-                style={{ color: primaryColor }}
-              >
-                <Chunk
-                  identifier="logo_icon"
-                  className="w-5 text-primary"
-                  fill={primaryColor}
-                />
-                <Chunk identifier="company_name" className="text-lg" />
-              </a>
+              <Link href="/">
+                <a className="inline-flex items-center p-2 mr-4 font-bold text-primary leading-none flex">
+                  <Chunk
+                    identifier="logo_icon"
+                    className="w-5 text-primary mr-1"
+                  />
+                  <span>
+                    <Chunk identifier="company_name" className="text-lg" />
+                  </span>
+                </a>
+              </Link>
             </div>
             <button className="navbar-close">
               <svg
