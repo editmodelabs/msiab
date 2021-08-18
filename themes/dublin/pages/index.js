@@ -4,7 +4,8 @@ import Features from "../sections/Features";
 import Faq from "../sections/FAQ";
 import Testimonials from "../sections/Testimonials";
 import UserBrands from "../sections/UserBrands";
-import Layout from '../components/Layout'
+import Layout from "../components/Layout";
+import { getStaticProps } from "../utils/getStaticProps";
 export default function Home() {
   return (
     <div>
@@ -18,6 +19,6 @@ export default function Home() {
   );
 }
 
-Home.getLayout = (page) => (
-    <Layout>{page}</Layout>
-);
+Home.getLayout = (page) => <Layout>{page}</Layout>;
+
+export { getStaticProps };

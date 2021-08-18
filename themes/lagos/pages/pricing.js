@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import PricingSection from "../components/Pricing";
-import { getStaticProps } from "../components/withEditmode";
+import { getStaticProps } from "../utils/getStaticProps";
 
 export default function Pricing() {
   return <PricingSection />;
