@@ -15,15 +15,15 @@ export default function StillCloning() {
         <div className="py-16">
           <div className="text-center">
             <p className="text-sm font-semibold text-indigo-600 uppercase tracking-wide">
-              HELLO, OWNER OF A NEW, BEAUTIFUL WEBSITE!
+              HELLO, OWNER OF A NEW, BEAUTIFUL WEBSITE.
             </p>
             <h1 className="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
-              Page not ready yet.
+              Page not ready yet - but not for long!
             </h1>
             <p className="mt-2 text-base text-gray-500">
-              We are still cloning your starter content - your page should be
-              ready after refreshing it in a few minutes. This will happen just
-              once in the lifecycle of your website.
+              We are still setting up your template - your page should be ready
+              upon refresh in 3-4 minutes. This will happen just once for this
+              website.
             </p>
             {/* <div className="mt-6">
                 <a
