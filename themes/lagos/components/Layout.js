@@ -1,16 +1,20 @@
-import Styles from "./Styles";
-import TopNav from "../sections/TopNav";
-import Footer from "../sections/Footer";
 import { Editmode } from "editmode-react";
 import handleNav from "../utils/handleNav";
 import { useEffect } from "react";
-import CustomHead from "./CustomHead";
+import LayoutBody from "./LayoutBody";
+import StillCloning from "./StillCloning";
 
 function Layout({ children }) {
   useEffect(() => {
     handleNav();
   }, []);
   const { chunks } = children.props;
+  const { ready } = children.props;
+  let view;
+
+  if (ready === false) {
+    view = <StillCloning />;
+  } else view = <LayoutBody children={children} />;
   return (
     <>
       <Editmode
@@ -18,11 +22,7 @@ function Layout({ children }) {
         defaultChunks={chunks}
         next={true}
       >
-        <CustomHead />
-        <Styles />
-        <TopNav />
-        {children}
-        <Footer />
+        {view}
       </Editmode>
     </>
   );
