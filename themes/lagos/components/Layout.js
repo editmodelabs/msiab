@@ -14,18 +14,17 @@ function Layout({ children }) {
 
   if (ready === false) {
     view = <StillCloning />;
-  } else view = <LayoutBody children={children} />;
-  return (
-    <>
+  } else
+    view = (
       <Editmode
         projectId={process.env.NEXT_PUBLIC_PROJECT_ID}
         defaultChunks={chunks}
         next={true}
       >
-        {view}
+        <LayoutBody children={children} />{" "}
       </Editmode>
-    </>
-  );
+    );
+  return <>{view}</>;
 }
 
 export default Layout;

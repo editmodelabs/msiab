@@ -26,13 +26,13 @@ export default function StillCloning() {
               once in the lifecycle of your website.
             </p>
             {/* <div className="mt-6">
-              <a
-                href="#"
-                className="text-base font-medium text-indigo-600 hover:text-indigo-500"
-              >
-                Go back home<span aria-hidden="true"> &rarr;</span>
-              </a>
-            </div> */}
+                <a
+                  href="#"
+                  className="text-base font-medium text-indigo-600 hover:text-indigo-500"
+                >
+                  Go back home<span aria-hidden="true"> &rarr;</span>
+                </a>
+              </div> */}
           </div>
         </div>
       </main>
