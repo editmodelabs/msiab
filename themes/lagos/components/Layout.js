@@ -1,15 +1,22 @@
 import { Editmode } from "editmode-react";
 import handleNav from "../utils/handleNav";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import LayoutBody from "./LayoutBody";
 import StillCloning from "./StillCloning";
 
 function Layout({ children }) {
-  useEffect(() => {
-    handleNav();
-  }, []);
   const { chunks } = children.props;
   const { ready } = children.props;
+  useEffect(() => {
+    handleNav();
+    let interval;
+    if (ready === false) {
+      interval = setInterval(() => {
+        window.location.reload();
+      }, 240000);
+    }
+    return () => clearInterval(interval);
+  }, []);
   let view;
 
   if (ready === false) {
