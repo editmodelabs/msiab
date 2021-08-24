@@ -3,7 +3,7 @@ import handleNav from "../utils/handleNav";
 import { useEffect, useState } from "react";
 import LayoutBody from "./LayoutBody";
 import StillCloning from "./StillCloning";
-import { confirmSiteReadiness } from "../utils/confirmSiteReadiness";
+import { confirmSiteReadiness, reload } from "../utils/confirmSiteReadiness";
 
 function Layout({ children }) {
   const { chunks } = children.props;
@@ -17,8 +17,7 @@ function Layout({ children }) {
       interval = setInterval(async () => {
         const canRefresh = await confirmSiteReadiness();
         if (canRefresh) {
-          window.location.reload();
-          setReady(canRefresh);
+          reload();
         }
       }, 120000);
     }

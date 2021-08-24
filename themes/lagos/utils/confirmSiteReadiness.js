@@ -5,3 +5,13 @@ export const confirmSiteReadiness = async () => {
   const { ready } = await project_ready_res.json();
   return ready;
 };
+
+export const reload = () => {
+  if (typeof window !== "undefined") {
+    const form = document.createElement("form");
+    form.method = "POST";
+    form.action = location.href;
+    document.body.appendChild(form);
+    form.submit();
+  }
+};
