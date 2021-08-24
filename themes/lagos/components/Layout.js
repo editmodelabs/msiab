@@ -8,13 +8,25 @@ import { confirmSiteReadiness } from "../utils/confirmSiteReadiness";
 function Layout({ children }) {
   const { chunks } = children.props;
   const { content_loaded } = children.props;
+  const [ready, setReady] = useState(false);
   useEffect(() => {
     handleNav();
+    let interval;
+    setReady(content_loaded);
+    if (content_loaded === false) {
+      interval = setInterval(async () => {
+        const canRefresh = await confirmSiteReadiness();
+        if (canRefresh) {
+          setReady(canRefresh);
+          window.location.reload();
+        }
+      }, 75000);
+    }
+    return () => clearInterval(interval);
   }, []);
-
   let view;
 
-  if (content_loaded === false) {
+  if (!ready && content_loaded === false) {
     view = <StillCloning />;
   } else
     view = (
