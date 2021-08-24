@@ -9,23 +9,6 @@ function Layout({ children }) {
   const { ready } = children.props;
   useEffect(() => {
     handleNav();
-    let interval;
-    function reload() {
-      if ("caches" in window) {
-        caches.keys().then((names) => {
-          names.forEach(async (name) => {
-            await caches.delete(name);
-          });
-        });
-        window.location.reload();
-      }
-    }
-    if (ready === false) {
-      interval = setInterval(() => {
-        reload();
-      }, 210000);
-    }
-    return () => clearInterval(interval);
   }, []);
   let view;
 
