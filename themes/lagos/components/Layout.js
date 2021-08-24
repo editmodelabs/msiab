@@ -25,7 +25,7 @@ function Layout({ children }) {
   }, []);
   let view;
 
-  if (!ready && !content_loaded) {
+  if (content_loaded == false) {
     view = <StillCloning />;
   } else
     view = (
