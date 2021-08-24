@@ -17,13 +17,13 @@ function Layout({ children }) {
       interval = setInterval(async () => {
         const canRefresh = await confirmSiteReadiness();
         if (canRefresh) setReady(canRefresh);
-      }, 75000);
+      }, 120000);
     }
     return () => clearInterval(interval);
   }, []);
   let view;
 
-  if (ready === false) {
+  if (!ready && !content_loaded) {
     view = <StillCloning />;
   } else
     view = (
