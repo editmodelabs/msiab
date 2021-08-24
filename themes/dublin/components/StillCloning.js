@@ -21,18 +21,10 @@ export default function StillCloning() {
               Page not ready yet - but not for long!
             </h1>
             <p className="mt-2 text-base text-gray-500">
-              We are still setting up your template - your page should be ready
-              upon refresh in 3-4 minutes. This will happen just once for this
-              website.
+              We are still setting up your template - your page will
+              automatically refresh when it's ready in about 3-4 minutes. This
+              will happen just once for this website.
             </p>
-            {/* <div className="mt-6">
-                <a
-                  href="#"
-                  className="text-base font-medium text-indigo-600 hover:text-indigo-500"
-                >
-                  Go back home<span aria-hidden="true"> &rarr;</span>
-                </a>
-              </div> */}
           </div>
         </div>
       </main>
