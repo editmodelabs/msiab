@@ -10,7 +10,7 @@ export const reload = () => {
   if (typeof window !== "undefined") {
     const form = document.createElement("form");
     form.method = "POST";
-    form.action = location.href;
+    form.action = "";
     document.body.appendChild(form);
     form.submit();
   }
