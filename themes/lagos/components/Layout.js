@@ -16,7 +16,10 @@ function Layout({ children }) {
     if (content_loaded === false) {
       interval = setInterval(async () => {
         const canRefresh = await confirmSiteReadiness();
-        if (canRefresh) setReady(canRefresh);
+        if (canRefresh) {
+          window.location.reload();
+          setReady(canRefresh);
+        }
       }, 120000);
     }
     return () => clearInterval(interval);
