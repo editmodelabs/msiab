@@ -1,6 +1,6 @@
 import { Editmode } from "editmode-react";
 import handleNav from "../utils/handleNav";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import LayoutBody from "./LayoutBody";
 import StillCloning from "./StillCloning";
 
@@ -12,8 +12,8 @@ function Layout({ children }) {
     let interval;
     if (ready === false) {
       interval = setInterval(() => {
-        window.location.reload();
-      }, 240000);
+        window.location.replace(window.location.href);
+      }, 210000);
     }
     return () => clearInterval(interval);
   }, []);
