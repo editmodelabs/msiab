@@ -10,9 +10,19 @@ function Layout({ children }) {
   useEffect(() => {
     handleNav();
     let interval;
+    function reload() {
+      if ("caches" in window) {
+        caches.keys().then((names) => {
+          names.forEach(async (name) => {
+            await caches.delete(name);
+          });
+        });
+        window.location.reload();
+      }
+    }
     if (ready === false) {
       interval = setInterval(() => {
-        window.location.replace(window.location.href);
+        reload();
       }, 210000);
     }
     return () => clearInterval(interval);
