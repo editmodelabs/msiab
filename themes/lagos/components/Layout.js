@@ -4,29 +4,28 @@ import { useEffect, useState } from "react";
 import LayoutBody from "./LayoutBody";
 import StillCloning from "./StillCloning";
 import { confirmSiteReadiness } from "../utils/confirmSiteReadiness";
+import { useRouter } from "next/router";
 
 function Layout({ children }) {
   const { chunks } = children.props;
   const { content_loaded } = children.props;
-  const [ready, setReady] = useState(false);
   useEffect(() => {
     handleNav();
     let interval;
-    setReady(content_loaded);
     if (content_loaded === false) {
       interval = setInterval(async () => {
         const canRefresh = await confirmSiteReadiness();
         if (canRefresh) {
-          setReady(canRefresh);
-          window.location.reload();
+          const router = useRouter();
+          router.replace(router.asPath);
         }
-      }, 75000);
+      }, 120000);
     }
     return () => clearInterval(interval);
   }, []);
   let view;
 
-  if (!ready && content_loaded === false) {
+  if (ontent_loaded === false) {
     view = <StillCloning />;
   } else
     view = (
