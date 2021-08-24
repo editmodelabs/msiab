@@ -12,7 +12,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       chunks,
-      ready,
+      content_loaded: ready,
     },
     revalidate: 15,
   };

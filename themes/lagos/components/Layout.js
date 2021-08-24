@@ -1,29 +1,23 @@
 import { Editmode } from "editmode-react";
 import handleNav from "../utils/handleNav";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import LayoutBody from "./LayoutBody";
 import StillCloning from "./StillCloning";
+import { confirmSiteReadiness } from "../utils/confirmSiteReadiness";
 
 function Layout({ children }) {
   const { chunks } = children.props;
-  const { ready } = children.props;
+  const { content_loaded } = children.props;
+  const [ready, setReady] = useState(false);
   useEffect(() => {
     handleNav();
     let interval;
-    function reload() {
-      if ("caches" in window) {
-        caches.keys().then((names) => {
-          names.forEach(async (name) => {
-            await caches.delete(name);
-          });
-        });
-        window.location.reload();
-      }
-    }
-    if (ready === false) {
-      interval = setInterval(() => {
-        reload();
-      }, 210000);
+    setReady(content_loaded);
+    if (content_loaded === false) {
+      interval = setInterval(async () => {
+        const canRefresh = await confirmSiteReadiness();
+        if (canRefresh) setReady(canRefresh);
+      }, 75000);
     }
     return () => clearInterval(interval);
   }, []);
