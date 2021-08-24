@@ -5,6 +5,7 @@ import LayoutBody from "./LayoutBody";
 import StillCloning from "./StillCloning";
 import { confirmSiteReadiness } from "../utils/confirmSiteReadiness";
 import { useRouter } from "next/router";
+import Router from "next/router";
 
 function Layout({ children }) {
   const { chunks } = children.props;
@@ -16,16 +17,15 @@ function Layout({ children }) {
       interval = setInterval(async () => {
         const canRefresh = await confirmSiteReadiness();
         if (canRefresh) {
-          const router = useRouter();
-          router.replace(router.asPath);
+          Router.reload(window.location.pathname);
         }
-      }, 120000);
+      }, 75000);
     }
     return () => clearInterval(interval);
   }, []);
   let view;
 
-  if (ontent_loaded === false) {
+  if (content_loaded === false) {
     view = <StillCloning />;
   } else
     view = (
