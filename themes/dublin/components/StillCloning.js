@@ -21,9 +21,9 @@ export default function StillCloning() {
               Page not ready yet - but not for long!
             </h1>
             <p className="mt-2 text-base text-gray-500">
-              We are still setting up your template - your page should be ready
-              to use upon refreshing it in about 3-4 minutes. This will happen
-              just once for this website.
+              We are still setting up your template - this page will
+              automatically refresh when the template is ready in a few minutes.
+              This will happen just once for this website.
             </p>
           </div>
         </div>
